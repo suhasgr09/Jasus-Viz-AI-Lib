@@ -48,14 +48,14 @@ export default function StackedAreaChart() {
       .style('cursor', 'crosshair')
       .on('mousemove', (event, d) => {
         const [mx] = d3.pointer(event);
-        const date = x.invert(mx);
-        const bisect = d3.bisector((r: any) => r.data.month).left;
+        const date = new Date(x.invert(mx) as unknown as number);
+        const bisect = d3.bisector((r: any) => r.data.month as Date).left;
         const idx = Math.max(0, Math.min(d.length - 1, bisect(d, date)));
         const pt = d[idx];
         const val = (pt[1] - pt[0]);
         show(
           `<div style="font-weight:700;color:#a78bfa;margin-bottom:4px">${d.key}</div>` +
-          `Month: <strong>${d3.timeFormat('%b %Y')(pt.data.month)}</strong><br>` +
+          `Month: <strong>${d3.timeFormat('%b %Y')(new Date(pt.data.month as number))}</strong><br>` +
           `Revenue: <strong>${fmt(val)}</strong>`,
           event.clientX, event.clientY
         );
