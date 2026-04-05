@@ -1,0 +1,1001 @@
+payment_id,order_id,customer_id,payment_date,payment_method,amount,status,processor_fee,net_amount,currency,region,category
+1,1,71,2023-08-17,Debit Card,69.52,completed,1.46,68.06,USD,South,Food
+2,2,140,2024-08-27,Credit Card,1359.88,completed,39.76,1320.12,USD,West,Electronics
+3,3,60,2024-09-10,Debit Card,51.38,completed,0.94,50.44,USD,North,Books
+4,4,180,2024-03-05,Crypto,2516.01,pending,25.27,0.0,USD,South,Sports
+5,5,2,2023-06-16,Credit Card,2711.3,completed,78.84,2632.46,USD,West,Home & Garden
+6,6,196,2023-04-15,PayPal,737.64,completed,25.3,712.34,USD,North,Sports
+7,7,89,2023-09-30,PayPal,730.76,completed,25.31,705.45,USD,North,Food
+8,8,97,2024-07-19,Debit Card,4056.45,completed,61.28,3995.17,USD,East,Food
+9,9,93,2023-07-19,Debit Card,8866.0,completed,133.28,8732.72,USD,North,Electronics
+10,10,21,2023-04-17,Debit Card,3101.36,completed,46.94,3054.42,USD,West,Home & Garden
+11,11,94,2024-01-18,Debit Card,4794.9,completed,72.06,4722.84,USD,East,Clothing
+12,12,175,2023-03-16,Debit Card,3171.6,failed,47.93,0.0,USD,Central,Food
+13,13,63,2024-04-18,PayPal,1616.4,completed,55.17,1561.23,USD,West,Home & Garden
+14,14,84,2023-03-02,Debit Card,2046.78,pending,30.92,0.0,USD,South,Electronics
+15,15,17,2024-08-05,Crypto,2239.38,completed,22.83,2216.55,USD,East,Clothing
+16,16,165,2023-05-27,Debit Card,3213.44,completed,48.52,3164.92,USD,East,Clothing
+17,17,138,2024-08-24,Bank Transfer,2990.16,completed,15.22,2974.94,USD,West,Books
+18,18,36,2024-05-22,Debit Card,2394.47,completed,36.16,2358.31,USD,North,Electronics
+19,19,41,2024-03-08,Debit Card,322.64,completed,4.99,317.65,USD,Central,Electronics
+20,20,120,2023-09-16,PayPal,2520.7,completed,86.14,2434.56,USD,Central,Electronics
+21,21,138,2023-10-03,Credit Card,1369.8,completed,39.95,1329.85,USD,East,Electronics
+22,22,117,2023-09-30,PayPal,2202.1,completed,75.22,2126.88,USD,Central,Clothing
+23,23,161,2024-10-17,Credit Card,7764.75,failed,225.36,0.0,USD,Central,Books
+24,24,196,2024-07-08,Credit Card,564.62,refunded,16.82,0.0,USD,Central,Electronics
+25,25,5,2024-01-07,Credit Card,3309.2,completed,96.22,3212.98,USD,East,Clothing
+26,26,146,2023-04-01,Credit Card,248.46,completed,7.58,240.88,USD,West,Electronics
+27,27,33,2024-05-04,Bank Transfer,6913.62,failed,34.79,0.0,USD,Central,Clothing
+28,28,156,2023-08-08,PayPal,2395.8,completed,81.88,2313.92,USD,Central,Food
+29,29,103,2024-10-28,Credit Card,2505.37,completed,72.8,2432.57,USD,East,Sports
+30,30,64,2023-03-07,Credit Card,3884.33,failed,112.83,0.0,USD,East,Electronics
+31,31,151,2023-01-11,Debit Card,5304.61,completed,80.01,5224.6,USD,North,Food
+32,32,9,2023-03-14,Bank Transfer,236.66,completed,1.4,235.26,USD,Central,Clothing
+33,33,55,2023-05-16,Debit Card,3025.26,completed,45.53,2979.73,USD,Central,Books
+34,34,122,2023-07-17,Bank Transfer,2004.48,completed,10.51,1993.97,USD,North,Electronics
+35,35,106,2023-02-26,Debit Card,2525.32,completed,38.06,2487.26,USD,North,Electronics
+36,36,28,2023-07-16,Debit Card,4751.11,completed,71.5,4679.61,USD,South,Books
+37,37,47,2024-04-21,Credit Card,1115.85,completed,32.85,1083.0,USD,South,Electronics
+38,38,141,2023-02-23,Bank Transfer,6074.55,completed,30.49,6044.06,USD,Central,Electronics
+39,39,61,2024-02-24,Credit Card,1390.65,completed,40.52,1350.13,USD,West,Sports
+40,40,16,2024-01-26,Credit Card,3031.0,completed,88.22,2942.78,USD,North,Sports
+41,41,117,2024-03-12,Credit Card,4172.67,completed,121.15,4051.52,USD,Central,Food
+42,42,76,2023-03-04,Debit Card,1305.92,completed,19.97,1285.95,USD,Central,Food
+43,43,81,2023-02-22,Credit Card,633.06,completed,18.65,614.41,USD,Central,Sports
+44,44,136,2023-03-02,Debit Card,7821.7,completed,117.79,7703.91,USD,Central,Electronics
+45,45,18,2023-09-01,Bank Transfer,233.52,completed,1.32,232.2,USD,West,Electronics
+46,46,153,2024-09-29,Credit Card,2410.72,completed,70.34,2340.38,USD,North,Sports
+47,47,81,2023-08-01,PayPal,5411.01,completed,184.39,5226.62,USD,East,Clothing
+48,48,172,2023-11-06,Bank Transfer,1808.19,completed,9.42,1798.77,USD,West,Home & Garden
+49,49,160,2023-04-14,Credit Card,28.83,completed,1.02,27.81,USD,North,Books
+50,50,34,2023-03-15,Debit Card,1787.87,completed,27.3,1760.57,USD,South,Home & Garden
+51,51,140,2023-11-06,Debit Card,830.8,completed,12.96,817.84,USD,Central,Food
+52,52,142,2024-11-11,Credit Card,150.79,completed,4.54,146.25,USD,North,Clothing
+53,53,28,2024-07-20,Bank Transfer,559.26,completed,3.03,556.23,USD,South,Home & Garden
+54,54,184,2023-07-29,Credit Card,3043.9,completed,88.57,2955.33,USD,East,Books
+55,55,14,2024-10-11,Crypto,2068.96,completed,21.1,2047.86,USD,West,Home & Garden
+56,56,198,2024-10-14,Debit Card,13.52,completed,0.59,12.93,USD,East,Clothing
+57,57,110,2023-01-13,Bank Transfer,4171.2,completed,21.34,4149.86,USD,North,Electronics
+58,58,95,2024-07-19,PayPal,1375.35,failed,47.19,0.0,USD,South,Sports
+59,59,94,2024-01-02,Credit Card,128.55,completed,4.18,124.37,USD,South,Food
+60,60,91,2024-07-29,Bank Transfer,2681.04,completed,13.79,2667.25,USD,West,Books
+61,61,61,2023-07-01,PayPal,2316.25,completed,78.91,2237.34,USD,West,Electronics
+62,62,86,2024-11-16,Credit Card,2217.6,completed,64.75,2152.85,USD,South,Home & Garden
+63,63,28,2023-02-09,Debit Card,2368.5,completed,35.73,2332.77,USD,West,Clothing
+64,64,118,2023-11-10,PayPal,2864.47,completed,97.53,2766.94,USD,South,Clothing
+65,65,103,2023-10-15,Credit Card,331.72,completed,9.97,321.75,USD,North,Home & Garden
+66,66,103,2024-07-06,Credit Card,3870.36,completed,112.66,3757.7,USD,East,Electronics
+67,67,67,2024-08-20,Credit Card,1756.52,completed,51.4,1705.12,USD,East,Electronics
+68,68,89,2023-11-20,Crypto,1201.2,completed,12.49,1188.71,USD,West,Books
+69,69,148,2023-09-18,Debit Card,1058.08,completed,16.01,1042.07,USD,North,Food
+70,70,138,2024-11-18,Credit Card,81.76,refunded,2.64,0.0,USD,South,Home & Garden
+71,71,171,2024-10-01,Credit Card,554.96,completed,16.55,538.41,USD,East,Food
+72,72,77,2023-11-15,Credit Card,1445.12,completed,42.18,1402.94,USD,West,Home & Garden
+73,73,142,2023-07-18,Bank Transfer,4551.56,completed,23.15,4528.41,USD,West,Food
+74,74,45,2024-08-07,Credit Card,4423.51,completed,128.74,4294.77,USD,East,Sports
+75,75,78,2023-08-07,Debit Card,7518.42,completed,113.05,7405.37,USD,West,Books
+76,76,120,2024-03-31,Credit Card,6581.6,completed,191.25,6390.35,USD,South,Books
+77,77,189,2024-11-08,Bank Transfer,6366.4,completed,32.24,6334.16,USD,North,Home & Garden
+78,78,159,2023-04-08,Bank Transfer,5671.37,completed,28.61,5642.76,USD,South,Food
+79,79,51,2023-01-28,PayPal,1162.0,completed,39.69,1122.31,USD,North,Clothing
+80,80,197,2024-04-13,Debit Card,4921.28,completed,74.22,4847.06,USD,West,Food
+81,81,179,2024-05-23,Credit Card,1923.75,completed,55.99,1867.76,USD,West,Clothing
+82,82,2,2023-04-20,PayPal,1648.75,completed,56.45,1592.3,USD,West,Clothing
+83,83,179,2024-04-22,Bank Transfer,2418.18,completed,12.24,2405.94,USD,North,Books
+84,84,32,2023-05-20,PayPal,3673.2,pending,125.11,0.0,USD,West,Food
+85,85,153,2024-03-30,PayPal,8398.17,completed,285.96,8112.21,USD,Central,Food
+86,86,141,2023-06-13,Crypto,3676.08,completed,37.0,3639.08,USD,West,Sports
+87,87,164,2024-06-18,Credit Card,3394.17,completed,98.82,3295.35,USD,West,Food
+88,88,20,2023-10-22,Debit Card,1127.44,completed,17.22,1110.22,USD,South,Home & Garden
+89,89,139,2023-05-25,Credit Card,1795.86,completed,52.22,1743.64,USD,South,Clothing
+90,90,181,2023-03-07,PayPal,4530.63,completed,154.18,4376.45,USD,West,Sports
+91,91,107,2023-08-01,Debit Card,3009.49,completed,45.42,2964.07,USD,West,Sports
+92,92,6,2024-08-15,Credit Card,8992.7,completed,261.24,8731.46,USD,West,Sports
+93,93,77,2024-02-07,Debit Card,471.66,completed,7.45,464.21,USD,West,Books
+94,94,57,2023-08-16,Bank Transfer,7216.74,completed,36.51,7180.23,USD,East,Sports
+95,95,87,2024-11-29,Credit Card,309.92,completed,9.14,300.78,USD,West,Food
+96,96,33,2024-06-30,PayPal,2526.3,completed,86.27,2440.03,USD,North,Sports
+97,97,7,2024-10-21,Debit Card,5403.03,completed,81.52,5321.51,USD,West,Clothing
+98,98,67,2023-12-05,Credit Card,1424.4,failed,41.45,0.0,USD,South,Sports
+99,99,98,2024-03-08,Credit Card,1892.66,completed,55.03,1837.63,USD,East,Electronics
+100,100,139,2023-12-27,Credit Card,233.44,completed,7.06,226.38,USD,South,Food
+101,101,167,2023-02-04,PayPal,1175.13,completed,40.07,1135.06,USD,South,Clothing
+102,102,62,2024-04-30,Bank Transfer,312.56,pending,1.74,0.0,USD,North,Books
+103,103,66,2024-01-15,PayPal,1646.33,completed,56.1,1590.23,USD,South,Books
+104,104,184,2023-06-19,Credit Card,9641.0,completed,279.92,9361.08,USD,East,Electronics
+105,105,80,2024-11-27,Bank Transfer,336.49,completed,2.12,334.37,USD,West,Sports
+106,106,177,2023-09-07,PayPal,298.34,completed,10.45,287.89,USD,North,Food
+107,107,154,2024-08-05,Debit Card,4259.0,completed,64.04,4194.96,USD,North,Home & Garden
+108,108,95,2024-06-05,PayPal,3906.9,completed,133.09,3773.81,USD,East,Electronics
+109,109,28,2024-01-06,Bank Transfer,5768.7,completed,29.33,5739.37,USD,West,Food
+110,110,188,2024-10-28,Bank Transfer,1102.85,completed,5.96,1096.89,USD,East,Books
+111,111,120,2024-08-31,PayPal,6992.1,completed,238.06,6754.04,USD,East,Home & Garden
+112,112,23,2024-04-07,Credit Card,3329.68,completed,97.04,3232.64,USD,South,Sports
+113,113,98,2023-01-31,Debit Card,5835.09,completed,87.93,5747.16,USD,West,Home & Garden
+114,114,91,2023-12-16,Debit Card,1478.04,completed,22.66,1455.38,USD,East,Books
+115,115,133,2023-04-01,Credit Card,2521.08,completed,73.25,2447.83,USD,South,Food
+116,116,195,2024-12-08,Debit Card,3455.9,completed,52.14,3403.76,USD,West,Food
+117,117,5,2023-10-30,Bank Transfer,3629.6,completed,18.41,3611.19,USD,South,Sports
+118,118,149,2024-05-01,Bank Transfer,1252.56,completed,6.4,1246.16,USD,Central,Books
+119,119,191,2023-12-07,Crypto,2587.44,completed,26.03,2561.41,USD,East,Food
+120,120,65,2023-05-06,Credit Card,2086.5,completed,60.99,2025.51,USD,South,Home & Garden
+121,121,196,2023-07-11,PayPal,1490.92,completed,50.86,1440.06,USD,South,Clothing
+122,122,151,2024-06-21,PayPal,2269.92,completed,77.41,2192.51,USD,Central,Home & Garden
+123,123,76,2024-01-08,Credit Card,1668.6,completed,48.87,1619.73,USD,South,Home & Garden
+124,124,33,2023-02-17,Bank Transfer,355.47,completed,2.18,353.29,USD,North,Books
+125,125,33,2024-05-20,Debit Card,3502.2,completed,53.01,3449.19,USD,North,Electronics
+126,126,123,2023-12-18,Credit Card,2769.25,completed,80.43,2688.82,USD,South,Electronics
+127,127,123,2023-03-08,Credit Card,4237.47,completed,123.09,4114.38,USD,West,Sports
+128,128,176,2023-06-06,Crypto,871.89,completed,9.12,862.77,USD,South,Books
+129,129,64,2024-07-28,Debit Card,471.6,completed,7.35,464.25,USD,West,Books
+130,130,58,2024-06-20,Bank Transfer,7928.4,completed,39.89,7888.51,USD,West,Sports
+131,131,151,2023-11-12,Crypto,2282.85,completed,23.31,2259.54,USD,Central,Books
+132,132,190,2023-08-04,Debit Card,613.54,completed,9.69,603.85,USD,South,Home & Garden
+133,133,45,2023-03-19,Debit Card,248.22,completed,3.82,244.4,USD,South,Electronics
+134,134,153,2023-10-28,Bank Transfer,3192.0,completed,16.4,3175.6,USD,North,Clothing
+135,135,180,2023-03-15,Credit Card,3549.4,completed,103.27,3446.13,USD,South,Home & Garden
+136,136,51,2023-04-28,Debit Card,6313.51,completed,94.92,6218.59,USD,Central,Clothing
+137,137,37,2023-03-04,Credit Card,2273.3,completed,66.32,2206.98,USD,South,Home & Garden
+138,138,146,2024-03-26,Crypto,7514.6,pending,75.49,0.0,USD,North,Sports
+139,139,70,2024-07-08,Crypto,3513.7,completed,35.49,3478.21,USD,West,Sports
+140,140,111,2023-11-29,Crypto,903.09,completed,9.23,893.86,USD,Central,Home & Garden
+141,141,173,2024-08-27,Crypto,50.21,completed,0.99,49.22,USD,North,Food
+142,142,196,2023-06-30,Credit Card,2612.16,completed,76.11,2536.05,USD,West,Books
+143,143,47,2024-03-22,Credit Card,6876.9,completed,199.8,6677.1,USD,West,Electronics
+144,144,86,2024-11-20,Credit Card,2835.84,completed,82.64,2753.2,USD,North,Clothing
+145,145,127,2024-11-09,Debit Card,2296.36,completed,34.76,2261.6,USD,West,Books
+146,146,81,2023-12-01,Bank Transfer,460.28,completed,2.67,457.61,USD,North,Sports
+147,147,1,2024-07-11,Credit Card,7026.78,completed,204.03,6822.75,USD,West,Sports
+148,148,93,2024-05-25,PayPal,195.7,completed,6.8,188.9,USD,West,Electronics
+149,149,34,2024-03-24,Credit Card,960.33,completed,28.04,932.29,USD,West,Electronics
+150,150,156,2024-12-29,Credit Card,486.71,completed,14.29,472.42,USD,South,Home & Garden
+151,151,105,2023-08-20,PayPal,211.86,completed,7.4,204.46,USD,North,Sports
+152,152,40,2023-10-28,Debit Card,1302.48,completed,19.83,1282.65,USD,Central,Food
+153,153,124,2023-09-07,PayPal,1896.03,completed,64.64,1831.39,USD,West,Books
+154,154,154,2023-05-22,PayPal,974.4,completed,33.46,940.94,USD,North,Home & Garden
+155,155,130,2023-01-04,Debit Card,2425.36,completed,36.51,2388.85,USD,East,Food
+156,156,149,2024-05-18,Credit Card,4195.5,completed,122.14,4073.36,USD,South,Sports
+157,157,86,2024-07-12,Bank Transfer,4405.5,pending,22.2,0.0,USD,West,Sports
+158,158,179,2024-08-10,PayPal,4789.95,refunded,163.23,0.0,USD,West,Clothing
+159,159,191,2024-12-26,Bank Transfer,372.54,completed,2.22,370.32,USD,West,Sports
+160,160,10,2024-05-31,Bank Transfer,1250.95,completed,6.53,1244.42,USD,Central,Home & Garden
+161,161,113,2024-06-25,Crypto,1750.88,completed,17.81,1733.07,USD,West,Electronics
+162,162,168,2023-03-19,Debit Card,1039.7,completed,15.71,1023.99,USD,West,Home & Garden
+163,163,102,2023-03-26,Bank Transfer,3448.61,completed,17.35,3431.26,USD,East,Food
+164,164,82,2024-05-14,Credit Card,3475.8,completed,101.29,3374.51,USD,Central,Electronics
+165,165,162,2023-10-22,Credit Card,777.4,completed,23.01,754.39,USD,South,Food
+166,166,26,2024-10-10,Credit Card,659.46,completed,19.47,639.99,USD,North,Sports
+167,167,8,2023-11-29,Credit Card,2091.18,completed,60.98,2030.2,USD,North,Home & Garden
+168,168,38,2024-06-29,Debit Card,2286.6,completed,34.5,2252.1,USD,West,Books
+169,169,21,2024-01-27,Debit Card,534.84,failed,8.45,0.0,USD,Central,Food
+170,170,150,2023-08-26,Debit Card,2010.8,completed,30.57,1980.23,USD,West,Food
+171,171,171,2024-04-24,Debit Card,2092.41,completed,31.72,2060.69,USD,East,Food
+172,172,114,2024-08-24,Credit Card,1497.6,completed,43.68,1453.92,USD,East,Food
+173,173,117,2023-07-24,Bank Transfer,4853.94,completed,24.39,4829.55,USD,West,Sports
+174,174,147,2024-08-14,PayPal,489.68,completed,16.78,472.9,USD,East,Food
+175,175,169,2023-10-11,PayPal,158.6,completed,5.83,152.77,USD,North,Books
+176,176,191,2023-10-24,Credit Card,911.52,completed,26.63,884.89,USD,South,Books
+177,177,49,2023-09-14,Debit Card,1360.92,completed,20.7,1340.22,USD,South,Food
+178,178,166,2023-11-13,Debit Card,1808.72,completed,27.37,1781.35,USD,West,Electronics
+179,179,34,2023-11-02,Bank Transfer,3526.59,completed,17.94,3508.65,USD,East,Food
+180,180,34,2024-01-10,Debit Card,1287.16,completed,19.65,1267.51,USD,Central,Books
+181,181,66,2023-10-31,Credit Card,3744.72,completed,109.06,3635.66,USD,East,Electronics
+182,182,37,2023-08-22,Credit Card,7224.45,completed,209.78,7014.67,USD,West,Books
+183,183,102,2023-09-29,PayPal,596.4,completed,20.43,575.97,USD,Central,Electronics
+184,184,192,2023-09-29,Credit Card,2811.75,completed,81.85,2729.9,USD,Central,Sports
+185,185,60,2023-01-27,Debit Card,703.56,completed,10.71,692.85,USD,Central,Books
+186,186,57,2023-03-08,Credit Card,5038.55,completed,146.61,4891.94,USD,West,Food
+187,187,30,2023-02-17,Debit Card,3263.7,completed,49.08,3214.62,USD,North,Home & Garden
+188,188,61,2023-05-19,Debit Card,999.68,completed,15.26,984.42,USD,West,Sports
+189,189,191,2024-07-08,Credit Card,4042.68,completed,117.65,3925.03,USD,West,Books
+190,190,168,2024-05-19,Credit Card,2216.4,completed,64.62,2151.78,USD,Central,Sports
+191,191,95,2024-04-01,Credit Card,190.71,completed,5.88,184.83,USD,West,Clothing
+192,192,176,2024-07-14,Credit Card,650.16,completed,19.31,630.85,USD,East,Electronics
+193,193,32,2023-04-04,Bank Transfer,1840.28,completed,9.56,1830.72,USD,South,Food
+194,194,13,2023-09-08,PayPal,9713.8,completed,330.46,9383.34,USD,South,Books
+195,195,196,2023-08-03,PayPal,272.72,pending,9.7,0.0,USD,Central,Clothing
+196,196,38,2023-01-03,Credit Card,1341.12,completed,39.14,1301.98,USD,East,Clothing
+197,197,45,2024-11-07,Credit Card,1362.05,completed,39.66,1322.39,USD,North,Clothing
+198,198,61,2023-11-30,Debit Card,182.33,completed,2.85,179.48,USD,North,Clothing
+199,199,190,2024-06-23,Credit Card,278.46,completed,8.26,270.2,USD,North,Food
+200,200,200,2024-06-10,Credit Card,722.22,completed,21.12,701.1,USD,Central,Electronics
+201,201,158,2024-11-05,Credit Card,3816.0,completed,110.77,3705.23,USD,Central,Home & Garden
+202,202,8,2024-05-05,PayPal,4851.75,completed,165.19,4686.56,USD,West,Sports
+203,203,114,2023-03-26,Credit Card,990.72,completed,29.15,961.57,USD,East,Books
+204,204,71,2024-10-13,PayPal,187.55,pending,6.83,0.0,USD,Central,Books
+205,205,153,2023-10-30,Credit Card,2129.05,completed,62.16,2066.89,USD,West,Books
+206,206,180,2024-11-03,Credit Card,4359.0,completed,126.64,4232.36,USD,Central,Food
+207,207,59,2023-12-14,Debit Card,1525.16,completed,23.28,1501.88,USD,West,Sports
+208,208,81,2023-11-19,Debit Card,5126.24,completed,77.31,5048.93,USD,East,Home & Garden
+209,209,122,2023-04-06,Credit Card,1724.9,completed,50.47,1674.43,USD,North,Electronics
+210,210,190,2023-05-17,Bank Transfer,739.2,failed,3.88,0.0,USD,Central,Electronics
+211,211,144,2024-11-17,Credit Card,9092.07,completed,263.84,8828.23,USD,North,Sports
+212,212,193,2023-02-24,Credit Card,5249.28,completed,152.53,5096.75,USD,East,Books
+213,213,148,2023-08-08,Debit Card,1790.6,completed,27.17,1763.43,USD,South,Food
+214,214,28,2024-07-26,Debit Card,1856.0,failed,28.05,0.0,USD,East,Electronics
+215,215,110,2024-09-28,Credit Card,2602.62,pending,75.66,0.0,USD,Central,Food
+216,216,169,2023-10-02,Bank Transfer,324.0,completed,1.88,322.12,USD,North,Clothing
+217,217,80,2023-12-27,Credit Card,3175.56,completed,92.57,3082.99,USD,North,Clothing
+218,218,103,2023-05-27,Credit Card,1426.65,completed,41.77,1384.88,USD,North,Electronics
+219,219,108,2023-12-17,Credit Card,1895.33,completed,55.3,1840.03,USD,South,Home & Garden
+220,220,199,2024-09-05,Debit Card,3621.9,completed,54.61,3567.29,USD,North,Electronics
+221,221,159,2024-11-24,Debit Card,414.6,completed,6.45,408.15,USD,North,Home & Garden
+222,222,125,2024-03-29,Credit Card,4989.9,completed,144.91,4844.99,USD,West,Home & Garden
+223,223,30,2024-03-18,Credit Card,2650.9,completed,77.31,2573.59,USD,North,Home & Garden
+224,224,171,2023-02-18,Debit Card,4671.72,completed,70.55,4601.17,USD,South,Sports
+225,225,53,2023-08-05,Credit Card,642.4,completed,18.95,623.45,USD,South,Home & Garden
+226,226,2,2024-03-18,Credit Card,1674.2,completed,48.77,1625.43,USD,South,Clothing
+227,227,59,2024-07-28,PayPal,3492.19,completed,118.91,3373.28,USD,East,Electronics
+228,228,11,2023-01-22,Debit Card,5610.41,completed,84.26,5526.15,USD,West,Electronics
+229,229,147,2024-12-30,Credit Card,3190.0,completed,92.99,3097.01,USD,West,Home & Garden
+230,230,84,2024-09-24,PayPal,821.96,completed,28.24,793.72,USD,West,Food
+231,231,28,2024-03-23,Debit Card,583.44,completed,9.2,574.24,USD,Central,Sports
+232,232,80,2023-12-15,Credit Card,746.81,completed,21.95,724.86,USD,South,Home & Garden
+233,233,163,2024-06-30,Debit Card,256.86,completed,4.24,252.62,USD,Central,Clothing
+234,234,166,2023-09-01,Debit Card,2145.48,completed,32.62,2112.86,USD,North,Clothing
+235,235,155,2024-11-05,Debit Card,923.85,failed,14.04,0.0,USD,North,Clothing
+236,236,145,2024-08-18,Debit Card,3754.56,completed,56.47,3698.09,USD,West,Food
+237,237,160,2024-10-04,Bank Transfer,6142.32,completed,31.01,6111.31,USD,East,Clothing
+238,238,114,2023-11-08,Debit Card,582.0,completed,9.0,573.0,USD,East,Books
+239,239,19,2024-04-19,PayPal,358.42,completed,12.42,346.0,USD,West,Electronics
+240,240,74,2024-10-23,Credit Card,375.06,completed,11.04,364.02,USD,North,Books
+241,241,119,2024-07-24,Crypto,5120.0,completed,51.69,5068.31,USD,North,Sports
+242,242,83,2024-05-05,Credit Card,6225.54,completed,180.72,6044.82,USD,Central,Clothing
+243,243,88,2023-03-31,Credit Card,456.02,completed,13.58,442.44,USD,Central,Food
+244,244,182,2024-03-26,Credit Card,146.28,completed,4.35,141.93,USD,Central,Books
+245,245,96,2024-02-02,PayPal,1671.6,completed,57.01,1614.59,USD,West,Home & Garden
+246,246,162,2023-12-10,Bank Transfer,618.4,completed,3.29,615.11,USD,North,Home & Garden
+247,247,99,2023-09-16,Debit Card,1124.76,completed,17.12,1107.64,USD,Central,Clothing
+248,248,170,2023-12-28,Credit Card,498.74,completed,14.72,484.02,USD,East,Food
+249,249,182,2023-11-17,Crypto,894.79,completed,9.24,885.55,USD,Central,Sports
+250,250,172,2024-12-03,Credit Card,4482.83,failed,130.15,0.0,USD,Central,Electronics
+251,251,5,2023-11-16,Credit Card,3593.8,completed,104.38,3489.42,USD,South,Clothing
+252,252,125,2023-08-21,Debit Card,5215.1,completed,78.53,5136.57,USD,South,Clothing
+253,253,26,2024-07-06,PayPal,454.26,completed,15.94,438.32,USD,Central,Electronics
+254,254,159,2024-09-04,Debit Card,4826.91,completed,72.71,4754.2,USD,West,Clothing
+255,255,178,2024-10-04,Bank Transfer,567.12,pending,3.12,0.0,USD,South,Food
+256,256,94,2023-09-04,Credit Card,399.45,completed,11.82,387.63,USD,West,Books
+257,257,115,2024-07-03,Bank Transfer,3774.3,completed,19.22,3755.08,USD,South,Home & Garden
+258,258,50,2024-11-26,PayPal,7239.52,completed,246.32,6993.2,USD,Central,Sports
+259,259,200,2024-06-01,Debit Card,5788.05,completed,87.29,5700.76,USD,Central,Sports
+260,260,155,2023-09-17,Credit Card,2456.16,completed,71.61,2384.55,USD,North,Food
+261,261,142,2024-12-30,Credit Card,7003.04,completed,203.3,6799.74,USD,Central,Electronics
+262,262,42,2024-04-05,Debit Card,465.2,completed,7.36,457.84,USD,Central,Clothing
+263,263,57,2023-12-27,PayPal,705.6,completed,24.25,681.35,USD,North,Sports
+264,264,96,2024-02-02,PayPal,402.48,completed,13.81,388.67,USD,North,Home & Garden
+265,265,26,2024-10-29,Credit Card,151.6,completed,4.66,146.94,USD,East,Clothing
+266,266,121,2023-05-23,Credit Card,119.8,completed,3.76,116.04,USD,West,Sports
+267,267,21,2023-09-23,Credit Card,152.0,completed,4.66,147.34,USD,South,Clothing
+268,268,156,2024-03-12,PayPal,8467.38,completed,288.01,8179.37,USD,North,Home & Garden
+269,269,13,2024-03-06,Credit Card,1232.56,completed,35.98,1196.58,USD,Central,Sports
+270,270,128,2024-07-02,PayPal,179.61,completed,6.24,173.37,USD,North,Food
+271,271,184,2023-10-29,Debit Card,4924.05,completed,74.02,4850.03,USD,West,Electronics
+272,272,147,2023-07-12,PayPal,3592.8,completed,122.59,3470.21,USD,North,Books
+273,273,135,2024-06-03,Debit Card,462.0,completed,7.24,454.76,USD,Central,Books
+274,274,121,2024-10-12,Credit Card,198.27,completed,6.12,192.15,USD,West,Home & Garden
+275,275,92,2023-12-21,Credit Card,3374.28,completed,98.24,3276.04,USD,South,Food
+276,276,189,2023-12-10,Bank Transfer,1547.56,completed,8.12,1539.44,USD,South,Electronics
+277,277,165,2024-12-02,PayPal,3303.36,completed,112.57,3190.79,USD,West,Food
+278,278,35,2024-04-13,Credit Card,5083.36,completed,147.54,4935.82,USD,North,Home & Garden
+279,279,52,2023-11-21,Credit Card,186.76,completed,5.67,181.09,USD,East,Books
+280,280,140,2023-09-20,Credit Card,6430.06,completed,186.58,6243.48,USD,North,Food
+281,281,200,2024-11-02,Credit Card,1026.34,completed,29.95,996.39,USD,East,Home & Garden
+282,282,112,2024-03-27,Bank Transfer,1602.68,completed,8.4,1594.28,USD,West,Home & Garden
+283,283,128,2024-06-17,Credit Card,1503.72,completed,43.84,1459.88,USD,East,Electronics
+284,284,155,2024-07-15,Debit Card,616.98,completed,9.73,607.25,USD,East,Home & Garden
+285,285,170,2023-11-12,Credit Card,178.52,completed,5.41,173.11,USD,West,Books
+286,286,114,2024-04-02,Credit Card,1224.86,completed,35.78,1189.08,USD,North,Food
+287,287,112,2024-10-18,Debit Card,3712.2,completed,56.04,3656.16,USD,North,Electronics
+288,288,192,2023-06-14,Credit Card,2402.92,completed,69.95,2332.97,USD,North,Clothing
+289,289,113,2023-05-10,PayPal,6813.0,completed,232.03,6580.97,USD,North,Clothing
+290,290,146,2024-09-12,PayPal,2211.12,completed,75.38,2135.74,USD,South,Food
+291,291,96,2023-03-23,Credit Card,7120.05,completed,206.85,6913.2,USD,Central,Clothing
+292,292,81,2023-10-15,Crypto,3172.88,completed,31.9,3140.98,USD,South,Electronics
+293,293,128,2024-02-04,PayPal,369.16,completed,12.68,356.48,USD,Central,Electronics
+294,294,181,2023-08-11,Credit Card,3497.49,completed,101.68,3395.81,USD,Central,Home & Garden
+295,295,35,2024-04-07,Debit Card,1665.44,completed,25.17,1640.27,USD,South,Food
+296,296,175,2024-11-16,Debit Card,7479.6,completed,112.39,7367.21,USD,East,Food
+297,297,75,2023-06-11,Debit Card,831.75,completed,12.6,819.15,USD,South,Home & Garden
+298,298,52,2023-09-01,Credit Card,1972.0,completed,57.44,1914.56,USD,West,Electronics
+299,299,95,2024-07-21,Debit Card,3350.88,completed,50.66,3300.22,USD,South,Books
+300,300,102,2024-05-05,Credit Card,112.65,completed,3.58,109.07,USD,Central,Sports
+301,301,19,2023-11-23,Crypto,5775.7,completed,58.16,5717.54,USD,North,Sports
+302,302,89,2024-07-20,Credit Card,5124.75,completed,148.81,4975.94,USD,Central,Clothing
+303,303,15,2024-06-15,Debit Card,1095.75,pending,16.86,0.0,USD,South,Home & Garden
+304,304,182,2023-12-24,PayPal,511.02,completed,17.68,493.34,USD,Central,Home & Garden
+305,305,163,2023-10-09,Credit Card,387.15,completed,11.68,375.47,USD,South,Food
+306,306,24,2024-10-19,Credit Card,3091.4,completed,90.13,3001.27,USD,South,Books
+307,307,169,2024-09-12,Credit Card,1545.27,completed,45.01,1500.26,USD,East,Books
+308,308,8,2023-02-18,Credit Card,826.98,completed,24.15,802.83,USD,Central,Home & Garden
+309,309,107,2024-10-17,Credit Card,2692.48,completed,78.3,2614.18,USD,North,Sports
+310,310,78,2023-09-09,Debit Card,2671.02,failed,40.27,0.0,USD,West,Home & Garden
+311,311,16,2024-03-28,PayPal,616.8,completed,21.23,595.57,USD,West,Sports
+312,312,156,2023-11-20,Credit Card,1589.85,completed,46.51,1543.34,USD,East,Food
+313,313,34,2024-01-15,PayPal,5853.72,completed,199.43,5654.29,USD,Central,Books
+314,314,120,2023-10-03,Debit Card,651.84,completed,10.12,641.72,USD,West,Clothing
+315,315,75,2024-09-24,Credit Card,264.6,completed,7.93,256.67,USD,West,Clothing
+316,316,148,2023-11-20,Credit Card,2446.02,completed,71.06,2374.96,USD,South,Clothing
+317,317,120,2023-11-13,Credit Card,7968.0,completed,231.54,7736.46,USD,West,Electronics
+318,318,130,2023-09-06,Credit Card,1418.67,completed,41.44,1377.23,USD,South,Books
+319,319,73,2024-09-05,Bank Transfer,349.08,pending,2.0,0.0,USD,West,Home & Garden
+320,320,28,2023-05-18,Credit Card,162.9,refunded,4.99,0.0,USD,East,Food
+321,321,94,2024-02-18,Credit Card,4597.32,pending,133.8,0.0,USD,North,Books
+322,322,142,2023-03-19,Credit Card,1824.3,completed,53.31,1770.99,USD,West,Books
+323,323,72,2024-11-30,PayPal,5750.7,completed,195.88,5554.82,USD,Central,Electronics
+324,324,101,2023-12-17,Credit Card,2438.35,completed,71.18,2367.17,USD,Central,Home & Garden
+325,325,131,2024-05-27,PayPal,517.65,completed,18.07,499.58,USD,North,Electronics
+326,326,86,2024-06-15,Credit Card,145.66,completed,4.6,141.06,USD,West,Clothing
+327,327,36,2024-09-22,Debit Card,8942.0,completed,134.61,8807.39,USD,East,Clothing
+328,328,190,2024-08-31,Credit Card,6439.55,completed,186.85,6252.7,USD,East,Books
+329,329,182,2023-11-06,PayPal,4564.67,completed,155.46,4409.21,USD,West,Electronics
+330,330,29,2024-08-21,Debit Card,2027.52,pending,30.86,0.0,USD,East,Food
+331,331,68,2024-08-17,Credit Card,300.47,completed,9.01,291.46,USD,Central,Clothing
+332,332,44,2024-10-08,Debit Card,587.68,completed,9.21,578.47,USD,Central,Sports
+333,333,63,2024-08-09,PayPal,2058.6,completed,70.14,1988.46,USD,North,Clothing
+334,334,108,2024-02-28,Debit Card,223.31,completed,3.56,219.75,USD,South,Sports
+335,335,121,2023-03-07,Credit Card,6606.37,completed,191.69,6414.68,USD,South,Books
+336,336,170,2024-06-22,Credit Card,1978.48,completed,57.5,1920.98,USD,West,Home & Garden
+337,337,137,2024-07-15,PayPal,1395.18,completed,47.83,1347.35,USD,East,Food
+338,338,50,2023-10-14,Credit Card,2762.91,completed,80.3,2682.61,USD,Central,Home & Garden
+339,339,77,2023-10-26,Credit Card,3768.32,pending,109.61,0.0,USD,South,Food
+340,340,90,2023-10-09,Credit Card,2591.04,completed,75.56,2515.48,USD,East,Electronics
+341,341,98,2023-12-23,Credit Card,6458.67,refunded,187.58,0.0,USD,South,Home & Garden
+342,342,183,2023-12-22,Bank Transfer,294.76,completed,1.61,293.15,USD,West,Food
+343,343,55,2024-07-05,Credit Card,3374.37,completed,98.09,3276.28,USD,East,Books
+344,344,158,2024-08-23,Debit Card,656.55,completed,9.95,646.6,USD,South,Clothing
+345,345,136,2024-10-15,Credit Card,673.14,failed,19.66,0.0,USD,South,Electronics
+346,346,184,2023-04-15,Debit Card,838.32,completed,13.05,825.27,USD,South,Electronics
+347,347,41,2024-11-02,Debit Card,8803.26,completed,132.28,8670.98,USD,West,Sports
+348,348,74,2023-10-22,PayPal,2654.26,completed,90.67,2563.59,USD,North,Electronics
+349,349,190,2023-02-11,Bank Transfer,2279.05,completed,11.74,2267.31,USD,South,Sports
+350,350,10,2024-05-22,Crypto,2803.74,pending,28.14,0.0,USD,South,Food
+351,351,3,2024-08-05,Bank Transfer,4389.9,completed,22.06,4367.84,USD,Central,Electronics
+352,352,165,2024-06-21,Credit Card,1604.46,completed,46.78,1557.68,USD,West,Clothing
+353,353,50,2023-12-08,Debit Card,4023.39,completed,60.66,3962.73,USD,South,Food
+354,354,184,2023-01-17,PayPal,4888.5,completed,166.32,4722.18,USD,East,Home & Garden
+355,355,50,2024-09-19,Credit Card,6437.77,completed,187.07,6250.7,USD,West,Sports
+356,356,103,2023-04-08,Credit Card,2844.44,completed,82.73,2761.71,USD,South,Clothing
+357,357,64,2023-09-28,Bank Transfer,2642.88,pending,13.71,0.0,USD,West,Clothing
+358,358,85,2024-08-22,Bank Transfer,5671.65,pending,28.58,0.0,USD,Central,Electronics
+359,359,178,2023-03-05,Credit Card,2957.13,completed,85.91,2871.22,USD,North,Sports
+360,360,176,2024-12-24,PayPal,840.6,completed,28.75,811.85,USD,East,Food
+361,361,76,2024-09-22,Debit Card,1284.64,completed,19.47,1265.17,USD,South,Clothing
+362,362,117,2024-09-12,Credit Card,1208.5,pending,35.19,0.0,USD,East,Sports
+363,363,194,2024-11-13,Crypto,8222.94,completed,82.69,8140.25,USD,South,Clothing
+364,364,21,2024-04-04,PayPal,8744.0,completed,297.66,8446.34,USD,Central,Food
+365,365,145,2023-03-06,Crypto,523.92,completed,5.71,518.21,USD,Central,Books
+366,366,39,2023-12-04,Debit Card,2019.43,completed,30.74,1988.69,USD,Central,Sports
+367,367,184,2024-05-15,Bank Transfer,1367.0,completed,7.19,1359.81,USD,North,Books
+368,368,117,2024-06-12,Credit Card,6079.5,completed,176.67,5902.83,USD,West,Sports
+369,369,119,2023-11-15,PayPal,638.02,failed,22.12,0.0,USD,North,Sports
+370,370,191,2024-08-15,Credit Card,3682.26,completed,106.93,3575.33,USD,North,Electronics
+371,371,17,2023-03-04,Credit Card,2457.56,completed,71.67,2385.89,USD,North,Sports
+372,372,47,2023-05-21,Credit Card,294.22,completed,9.01,285.21,USD,West,Home & Garden
+373,373,97,2023-03-24,Debit Card,2951.39,completed,44.61,2906.78,USD,Central,Clothing
+374,374,138,2024-06-28,Credit Card,764.64,completed,22.4,742.24,USD,South,Food
+375,375,194,2023-11-03,Credit Card,3345.92,completed,97.34,3248.58,USD,West,Food
+376,376,98,2023-09-14,Debit Card,3868.92,completed,58.14,3810.78,USD,West,Home & Garden
+377,377,186,2023-04-28,Bank Transfer,707.25,completed,3.97,703.28,USD,North,Food
+378,378,5,2023-08-02,Debit Card,4331.46,completed,65.13,4266.33,USD,North,Electronics
+379,379,154,2024-12-21,PayPal,432.4,completed,15.04,417.36,USD,North,Clothing
+380,380,60,2023-08-11,Credit Card,408.24,refunded,12.05,0.0,USD,North,Clothing
+381,381,60,2024-08-13,Bank Transfer,8445.09,completed,42.52,8402.57,USD,East,Books
+382,382,83,2023-11-08,PayPal,7748.2,completed,263.6,7484.6,USD,South,Food
+383,383,77,2023-03-05,PayPal,1945.14,completed,66.51,1878.63,USD,Central,Books
+384,384,110,2024-05-23,Credit Card,1889.22,completed,55.23,1833.99,USD,North,Home & Garden
+385,385,82,2024-03-03,PayPal,5121.61,completed,174.63,4946.98,USD,West,Clothing
+386,386,194,2024-05-02,Debit Card,1913.5,completed,29.2,1884.3,USD,South,Clothing
+387,387,37,2023-03-03,PayPal,4294.8,completed,146.24,4148.56,USD,Central,Sports
+388,388,35,2023-09-09,Bank Transfer,3932.04,completed,19.8,3912.24,USD,East,Clothing
+389,389,116,2023-04-05,Credit Card,3576.32,completed,104.15,3472.17,USD,Central,Food
+390,390,97,2024-09-12,PayPal,213.57,completed,7.59,205.98,USD,Central,Electronics
+391,391,195,2024-11-19,Debit Card,294.42,completed,4.6,289.82,USD,Central,Clothing
+392,392,86,2023-01-16,PayPal,1734.4,completed,59.21,1675.19,USD,South,Clothing
+393,393,194,2023-09-07,Bank Transfer,1498.84,completed,7.74,1491.1,USD,Central,Food
+394,394,62,2023-11-27,Crypto,1409.31,completed,14.56,1394.75,USD,East,Sports
+395,395,92,2023-09-26,Credit Card,4037.4,failed,117.56,0.0,USD,East,Books
+396,396,185,2023-11-26,Credit Card,3770.72,completed,109.69,3661.03,USD,South,Home & Garden
+397,397,145,2023-06-02,Crypto,2308.9,completed,23.29,2285.61,USD,North,Home & Garden
+398,398,149,2024-03-05,Credit Card,8418.78,completed,244.52,8174.26,USD,East,Clothing
+399,399,98,2023-09-12,Crypto,1177.96,completed,12.19,1165.77,USD,West,Books
+400,400,126,2024-10-19,Crypto,1456.18,completed,14.97,1441.21,USD,West,Sports
+401,401,91,2023-05-26,Bank Transfer,2206.32,completed,11.38,2194.94,USD,Central,Sports
+402,402,139,2023-03-02,Debit Card,2753.22,completed,41.43,2711.79,USD,Central,Electronics
+403,403,172,2023-01-08,Debit Card,1418.61,completed,21.39,1397.22,USD,West,Clothing
+404,404,39,2023-08-14,Debit Card,309.12,completed,5.01,304.11,USD,Central,Sports
+405,405,164,2024-09-26,Credit Card,419.04,completed,12.45,406.59,USD,West,Food
+406,406,137,2024-02-27,Debit Card,204.64,completed,3.21,201.43,USD,North,Electronics
+407,407,138,2023-01-19,Credit Card,6162.33,completed,178.97,5983.36,USD,Central,Food
+408,408,46,2023-04-12,PayPal,5656.7,completed,192.45,5464.25,USD,Central,Clothing
+409,409,135,2023-12-29,PayPal,800.08,completed,27.6,772.48,USD,East,Sports
+410,410,104,2024-08-01,Credit Card,568.98,completed,16.67,552.31,USD,South,Food
+411,411,21,2024-10-30,Debit Card,1227.92,completed,18.84,1209.08,USD,North,Electronics
+412,412,142,2023-02-28,Credit Card,2505.62,completed,73.02,2432.6,USD,North,Food
+413,413,112,2023-12-06,Credit Card,275.58,completed,8.13,267.45,USD,Central,Electronics
+414,414,59,2024-12-10,Credit Card,7819.66,completed,227.04,7592.62,USD,Central,Sports
+415,415,20,2023-10-17,Bank Transfer,252.45,completed,1.38,251.07,USD,Central,Books
+416,416,81,2023-08-03,Bank Transfer,187.56,pending,1.3,0.0,USD,Central,Clothing
+417,417,77,2024-08-02,Debit Card,6042.27,completed,90.94,5951.33,USD,South,Books
+418,418,139,2024-01-30,Crypto,4421.69,completed,44.59,4377.1,USD,South,Food
+419,419,89,2023-04-11,PayPal,758.67,completed,25.97,732.7,USD,West,Clothing
+420,420,197,2024-09-02,Credit Card,520.77,completed,15.44,505.33,USD,West,Home & Garden
+421,421,116,2023-08-23,Credit Card,318.89,completed,9.64,309.25,USD,East,Books
+422,422,175,2024-11-09,Debit Card,2843.88,completed,42.91,2800.97,USD,West,Electronics
+423,423,64,2023-03-17,Bank Transfer,3024.2,completed,15.6,3008.6,USD,North,Home & Garden
+424,424,163,2024-02-04,PayPal,965.5,pending,33.14,0.0,USD,East,Home & Garden
+425,425,79,2024-01-05,Credit Card,201.2,completed,6.22,194.98,USD,East,Electronics
+426,426,111,2024-07-25,Debit Card,241.05,completed,3.88,237.17,USD,Central,Books
+427,427,23,2024-07-24,Credit Card,785.82,refunded,23.04,0.0,USD,North,Books
+428,428,99,2023-10-28,Crypto,7866.0,completed,78.81,7787.19,USD,West,Sports
+429,429,144,2024-08-08,Credit Card,1091.4,completed,31.88,1059.52,USD,Central,Clothing
+430,430,69,2023-10-04,Credit Card,1155.7,completed,33.67,1122.03,USD,West,Clothing
+431,431,71,2023-11-03,PayPal,263.31,completed,9.2,254.11,USD,West,Electronics
+432,432,64,2024-10-02,Crypto,1555.08,completed,15.96,1539.12,USD,West,Books
+433,433,28,2023-11-10,Credit Card,2036.0,completed,59.38,1976.62,USD,North,Sports
+434,434,98,2024-03-28,PayPal,4637.6,completed,158.06,4479.54,USD,East,Sports
+435,435,83,2024-12-12,Bank Transfer,1447.6,completed,7.7,1439.9,USD,South,Sports
+436,436,102,2023-10-29,Credit Card,1022.23,pending,29.82,0.0,USD,West,Books
+437,437,72,2024-01-12,PayPal,1330.48,completed,45.53,1284.95,USD,North,Books
+438,438,140,2024-11-30,Credit Card,2087.05,completed,60.89,2026.16,USD,Central,Electronics
+439,439,54,2023-10-28,Credit Card,7076.55,completed,205.34,6871.21,USD,North,Sports
+440,440,78,2023-09-17,PayPal,1182.24,failed,40.57,0.0,USD,South,Food
+441,441,19,2024-09-07,Credit Card,5538.26,completed,161.1,5377.16,USD,West,Books
+442,442,178,2024-07-12,PayPal,3503.63,completed,119.6,3384.03,USD,North,Home & Garden
+443,443,22,2023-09-13,Debit Card,5380.92,completed,80.94,5299.98,USD,East,Clothing
+444,444,166,2024-10-27,Bank Transfer,538.6,pending,3.1,0.0,USD,West,Home & Garden
+445,445,26,2023-08-16,Bank Transfer,804.16,completed,4.41,799.75,USD,Central,Food
+446,446,177,2023-08-15,Bank Transfer,4780.57,completed,24.04,4756.53,USD,West,Home & Garden
+447,447,174,2024-12-08,Credit Card,3044.86,pending,88.79,0.0,USD,Central,Clothing
+448,448,124,2023-10-31,Debit Card,5986.32,completed,90.09,5896.23,USD,West,Electronics
+449,449,187,2023-12-23,Debit Card,1666.0,refunded,25.25,0.0,USD,East,Home & Garden
+450,450,134,2023-12-23,Debit Card,5898.15,pending,88.86,0.0,USD,West,Electronics
+451,451,116,2023-03-11,PayPal,5435.85,completed,185.32,5250.53,USD,East,Electronics
+452,452,88,2023-04-22,PayPal,64.72,completed,2.54,62.18,USD,South,Food
+453,453,142,2023-12-06,Crypto,2083.36,completed,21.0,2062.36,USD,Central,Sports
+454,454,104,2023-07-10,Credit Card,1796.55,completed,52.58,1743.97,USD,South,Food
+455,455,189,2023-07-24,Debit Card,2811.34,completed,42.66,2768.68,USD,West,Books
+456,456,181,2023-07-30,Credit Card,2764.58,completed,80.39,2684.19,USD,East,Food
+457,457,138,2024-01-10,Debit Card,872.37,completed,13.48,858.89,USD,East,Clothing
+458,458,172,2024-06-26,Debit Card,921.15,completed,14.29,906.86,USD,East,Books
+459,459,151,2023-12-23,Crypto,3998.8,completed,40.46,3958.34,USD,East,Sports
+460,460,173,2023-11-01,Bank Transfer,1808.0,completed,9.28,1798.72,USD,Central,Books
+461,461,81,2023-09-04,Debit Card,1013.07,completed,15.34,997.73,USD,East,Electronics
+462,462,37,2024-02-05,Credit Card,1138.74,completed,33.27,1105.47,USD,West,Books
+463,463,109,2024-05-13,Credit Card,1447.65,completed,42.29,1405.36,USD,Central,Food
+464,464,126,2023-05-27,Bank Transfer,1678.08,completed,8.49,1669.59,USD,South,Home & Garden
+465,465,92,2024-05-14,PayPal,4674.15,completed,159.18,4514.97,USD,South,Clothing
+466,466,130,2024-05-22,Credit Card,6267.3,completed,182.07,6085.23,USD,West,Food
+467,467,114,2023-06-24,Credit Card,3371.84,refunded,97.95,0.0,USD,North,Books
+468,468,57,2023-02-05,Credit Card,398.96,completed,12.02,386.94,USD,East,Clothing
+469,469,200,2024-08-04,PayPal,2662.02,completed,90.62,2571.4,USD,West,Books
+470,470,30,2024-07-10,Credit Card,1037.68,completed,30.26,1007.42,USD,East,Books
+471,471,113,2023-08-14,Credit Card,762.4,completed,22.26,740.14,USD,West,Electronics
+472,472,9,2023-09-28,Debit Card,1218.96,completed,18.51,1200.45,USD,East,Electronics
+473,473,31,2023-09-03,PayPal,6499.8,completed,221.15,6278.65,USD,South,Food
+474,474,182,2024-10-10,Crypto,6576.28,completed,65.93,6510.35,USD,West,Clothing
+475,475,53,2023-03-03,Debit Card,1478.4,completed,22.3,1456.1,USD,Central,Home & Garden
+476,476,138,2023-11-28,PayPal,2594.52,completed,88.49,2506.03,USD,East,Home & Garden
+477,477,132,2023-04-11,Credit Card,2609.27,completed,75.87,2533.4,USD,South,Sports
+478,478,168,2024-12-20,Credit Card,992.56,completed,29.0,963.56,USD,South,Clothing
+479,479,64,2024-11-24,Credit Card,1785.7,completed,52.15,1733.55,USD,West,Sports
+480,480,69,2024-02-29,Debit Card,1454.15,completed,22.19,1431.96,USD,West,Sports
+481,481,197,2024-02-18,Debit Card,955.95,completed,14.53,941.42,USD,Central,Food
+482,482,95,2024-05-15,Credit Card,3139.92,completed,91.53,3048.39,USD,East,Books
+483,483,188,2024-04-14,Debit Card,435.11,completed,6.97,428.14,USD,East,Electronics
+484,484,110,2024-05-22,Credit Card,3633.66,completed,105.56,3528.1,USD,East,Home & Garden
+485,485,148,2024-08-05,Debit Card,1721.9,completed,26.19,1695.71,USD,West,Home & Garden
+486,486,161,2023-01-19,Credit Card,55.48,completed,2.09,53.39,USD,North,Clothing
+487,487,110,2024-12-06,PayPal,3464.7,completed,117.97,3346.73,USD,South,Food
+488,488,71,2024-11-03,Credit Card,836.9,completed,24.45,812.45,USD,East,Home & Garden
+489,489,167,2023-02-23,Debit Card,567.18,pending,8.78,0.0,USD,West,Food
+490,490,194,2024-03-17,Credit Card,3643.6,completed,105.89,3537.71,USD,North,Food
+491,491,123,2023-05-17,Credit Card,22.16,completed,0.88,21.28,USD,Central,Clothing
+492,492,3,2024-12-15,PayPal,5807.03,completed,197.63,5609.4,USD,East,Electronics
+493,493,123,2023-08-23,Credit Card,4879.7,completed,141.97,4737.73,USD,West,Electronics
+494,494,95,2023-05-21,Credit Card,224.32,completed,6.62,217.7,USD,West,Clothing
+495,495,145,2024-09-17,Crypto,194.3,failed,2.12,0.0,USD,South,Sports
+496,496,161,2023-06-07,Debit Card,4351.2,completed,65.49,4285.71,USD,West,Books
+497,497,23,2023-05-25,Debit Card,6460.2,completed,97.02,6363.18,USD,North,Books
+498,498,110,2023-05-26,Credit Card,2327.13,completed,67.94,2259.19,USD,South,Home & Garden
+499,499,154,2024-09-16,PayPal,383.52,completed,13.5,370.02,USD,East,Food
+500,500,169,2023-08-02,Debit Card,424.71,completed,6.5,418.21,USD,Central,Books
+501,501,101,2024-10-23,Credit Card,1672.46,pending,48.67,0.0,USD,North,Clothing
+502,502,62,2024-10-17,Credit Card,3136.16,failed,91.07,0.0,USD,Central,Electronics
+503,503,4,2023-11-22,Debit Card,7563.64,completed,113.85,7449.79,USD,South,Sports
+504,504,140,2023-06-26,Credit Card,4053.27,completed,117.71,3935.56,USD,West,Electronics
+505,505,4,2023-08-12,PayPal,295.74,completed,10.32,285.42,USD,North,Electronics
+506,506,161,2024-05-29,Credit Card,3325.01,completed,96.75,3228.26,USD,West,Sports
+507,507,138,2024-09-25,Debit Card,595.4,completed,9.23,586.17,USD,South,Home & Garden
+508,508,131,2023-06-10,PayPal,475.2,completed,16.38,458.82,USD,Central,Home & Garden
+509,509,196,2024-11-29,Credit Card,3838.77,completed,111.44,3727.33,USD,North,Home & Garden
+510,510,62,2023-09-09,Credit Card,5128.62,completed,149.21,4979.41,USD,North,Sports
+511,511,156,2023-11-13,Credit Card,917.68,completed,26.97,890.71,USD,South,Electronics
+512,512,180,2023-06-17,Credit Card,355.41,completed,10.41,345.0,USD,West,Home & Garden
+513,513,185,2023-06-22,Credit Card,4437.51,completed,128.92,4308.59,USD,East,Clothing
+514,514,31,2023-02-02,Bank Transfer,3310.2,pending,16.94,0.0,USD,East,Sports
+515,515,68,2024-08-15,Credit Card,2378.79,completed,69.48,2309.31,USD,North,Sports
+516,516,15,2024-08-05,Debit Card,3867.6,completed,58.2,3809.4,USD,South,Home & Garden
+517,517,27,2024-11-21,Crypto,787.68,completed,8.19,779.49,USD,North,Clothing
+518,518,4,2023-02-17,Crypto,106.59,completed,1.45,105.14,USD,West,Home & Garden
+519,519,46,2024-07-22,PayPal,5986.63,pending,203.99,0.0,USD,West,Clothing
+520,520,185,2023-10-08,Debit Card,1406.79,completed,21.29,1385.5,USD,North,Books
+521,521,173,2023-07-06,Credit Card,769.2,completed,22.47,746.73,USD,South,Books
+522,522,18,2023-10-19,Credit Card,954.54,completed,27.84,926.7,USD,East,Home & Garden
+523,523,3,2023-07-28,Debit Card,836.34,completed,12.72,823.62,USD,East,Books
+524,524,63,2024-01-16,Bank Transfer,3710.9,completed,19.03,3691.87,USD,Central,Sports
+525,525,140,2023-09-11,Credit Card,2572.99,completed,74.78,2498.21,USD,South,Electronics
+526,526,139,2024-10-14,Credit Card,235.76,completed,6.96,228.8,USD,North,Home & Garden
+527,527,97,2023-11-14,Credit Card,380.67,completed,11.18,369.49,USD,North,Clothing
+528,528,108,2023-03-03,Debit Card,8357.88,completed,125.71,8232.17,USD,South,Food
+529,529,60,2024-02-27,Credit Card,459.45,completed,13.73,445.72,USD,East,Sports
+530,530,130,2024-10-15,Debit Card,877.44,completed,13.57,863.87,USD,West,Electronics
+531,531,112,2023-05-14,Credit Card,5435.33,pending,158.04,0.0,USD,South,Home & Garden
+532,532,101,2023-12-03,Credit Card,3835.8,completed,111.68,3724.12,USD,East,Sports
+533,533,52,2024-08-24,Credit Card,1085.76,completed,31.91,1053.85,USD,North,Clothing
+534,534,120,2024-02-22,Credit Card,345.48,completed,10.14,335.34,USD,North,Books
+535,535,54,2023-11-12,PayPal,5789.88,completed,196.96,5592.92,USD,West,Home & Garden
+536,536,176,2024-12-22,Credit Card,199.04,completed,6.08,192.96,USD,Central,Electronics
+537,537,84,2023-04-05,PayPal,2931.46,completed,99.78,2831.68,USD,South,Home & Garden
+538,538,174,2023-09-26,Debit Card,3369.08,completed,50.73,3318.35,USD,South,Electronics
+539,539,143,2024-07-17,Bank Transfer,5564.39,completed,28.12,5536.27,USD,South,Electronics
+540,540,36,2023-01-15,Crypto,831.6,completed,8.56,823.04,USD,North,Clothing
+541,541,103,2024-12-03,Debit Card,515.4,completed,8.19,507.21,USD,North,Books
+542,542,20,2023-03-10,Debit Card,2529.28,completed,38.28,2491.0,USD,South,Food
+543,543,24,2023-05-08,PayPal,6084.0,completed,207.21,5876.79,USD,North,Sports
+544,544,147,2024-02-11,Credit Card,176.3,completed,5.58,170.72,USD,West,Electronics
+545,545,45,2023-08-08,PayPal,4461.47,completed,152.11,4309.36,USD,South,Home & Garden
+546,546,39,2024-09-21,Bank Transfer,2032.02,failed,10.39,0.0,USD,Central,Books
+547,547,128,2024-07-20,Credit Card,2603.2,completed,75.92,2527.28,USD,West,Electronics
+548,548,36,2023-07-26,Credit Card,430.47,completed,12.64,417.83,USD,Central,Clothing
+549,549,98,2024-01-06,Credit Card,7172.1,completed,208.23,6963.87,USD,West,Books
+550,550,145,2023-11-29,Debit Card,2804.8,completed,42.41,2762.39,USD,West,Home & Garden
+551,551,153,2023-02-01,Debit Card,107.4,completed,1.86,105.54,USD,East,Electronics
+552,552,197,2023-08-30,Debit Card,4273.12,completed,64.41,4208.71,USD,South,Electronics
+553,553,69,2023-03-02,PayPal,2641.2,completed,90.11,2551.09,USD,South,Books
+554,554,45,2023-09-01,PayPal,2348.19,completed,80.22,2267.97,USD,Central,Home & Garden
+555,555,8,2024-12-18,Credit Card,5489.04,completed,159.43,5329.61,USD,East,Books
+556,556,49,2024-07-09,Debit Card,1431.46,completed,21.6,1409.86,USD,East,Clothing
+557,557,15,2024-09-09,Credit Card,380.64,completed,11.26,369.38,USD,South,Electronics
+558,558,85,2023-07-29,Credit Card,4107.2,completed,119.31,3987.89,USD,South,Home & Garden
+559,559,83,2023-01-24,PayPal,2758.8,completed,93.95,2664.85,USD,South,Books
+560,560,135,2023-03-16,PayPal,1941.55,completed,66.39,1875.16,USD,East,Food
+561,561,87,2023-11-27,Debit Card,3836.04,completed,57.91,3778.13,USD,South,Clothing
+562,562,125,2023-11-22,Credit Card,5557.44,completed,161.28,5396.16,USD,South,Food
+563,563,158,2023-08-17,Credit Card,6269.58,completed,181.92,6087.66,USD,Central,Clothing
+564,564,177,2023-05-12,PayPal,2039.44,completed,69.63,1969.81,USD,South,Food
+565,565,147,2024-08-06,Credit Card,474.65,completed,14.05,460.6,USD,North,Clothing
+566,566,157,2024-10-16,PayPal,3250.4,completed,110.73,3139.67,USD,Central,Electronics
+567,567,191,2023-09-01,Credit Card,1193.92,completed,34.97,1158.95,USD,East,Home & Garden
+568,568,23,2024-11-20,Credit Card,1919.46,completed,56.1,1863.36,USD,East,Sports
+569,569,64,2023-03-13,PayPal,136.28,completed,5.1,131.18,USD,East,Home & Garden
+570,570,13,2024-03-27,Debit Card,1446.4,completed,22.17,1424.23,USD,West,Clothing
+571,571,97,2024-07-16,Credit Card,3487.12,completed,101.62,3385.5,USD,West,Electronics
+572,572,148,2024-12-04,Credit Card,6326.72,completed,183.66,6143.06,USD,South,Clothing
+573,573,9,2023-01-21,Credit Card,622.35,completed,18.47,603.88,USD,East,Home & Garden
+574,574,44,2023-06-17,Debit Card,166.92,completed,2.93,163.99,USD,North,Books
+575,575,158,2024-12-25,Credit Card,516.87,completed,15.17,501.7,USD,North,Sports
+576,576,112,2023-02-26,Credit Card,1833.72,completed,53.29,1780.43,USD,North,Home & Garden
+577,577,105,2024-07-21,Credit Card,3411.31,completed,99.11,3312.2,USD,Central,Home & Garden
+578,578,25,2024-02-08,Credit Card,1522.1,completed,44.46,1477.64,USD,Central,Books
+579,579,93,2024-03-15,Debit Card,1296.48,completed,19.58,1276.9,USD,North,Home & Garden
+580,580,25,2023-08-03,Debit Card,4855.2,completed,72.95,4782.25,USD,South,Food
+581,581,122,2023-11-12,Credit Card,4886.4,pending,142.2,0.0,USD,West,Sports
+582,582,68,2024-10-20,PayPal,7167.36,pending,243.92,0.0,USD,Central,Sports
+583,583,98,2023-07-12,Credit Card,1131.96,completed,33.21,1098.75,USD,West,Electronics
+584,584,68,2023-10-03,Credit Card,2004.03,completed,58.42,1945.61,USD,Central,Electronics
+585,585,171,2023-04-01,PayPal,1886.8,completed,64.44,1822.36,USD,East,Books
+586,586,151,2024-07-21,Bank Transfer,6797.0,completed,34.15,6762.85,USD,North,Sports
+587,587,138,2024-05-01,Debit Card,3607.74,completed,54.6,3553.14,USD,Central,Clothing
+588,588,102,2023-02-06,Credit Card,2446.88,completed,71.37,2375.51,USD,Central,Books
+589,589,174,2023-06-02,Credit Card,6820.74,failed,198.08,0.0,USD,North,Sports
+590,590,43,2023-07-20,Credit Card,2848.74,completed,82.73,2766.01,USD,South,Electronics
+591,591,175,2023-07-27,PayPal,613.06,completed,21.03,592.03,USD,South,Books
+592,592,187,2023-04-01,Debit Card,1469.52,completed,22.37,1447.15,USD,West,Books
+593,593,71,2024-04-14,Crypto,3617.51,completed,36.33,3581.18,USD,North,Food
+594,594,108,2024-02-29,Bank Transfer,5917.0,completed,29.88,5887.12,USD,South,Clothing
+595,595,195,2023-04-21,Debit Card,5624.57,completed,84.53,5540.04,USD,Central,Electronics
+596,596,89,2023-09-28,Credit Card,4344.0,completed,126.1,4217.9,USD,West,Food
+597,597,122,2023-06-29,PayPal,4610.4,completed,157.24,4453.16,USD,East,Sports
+598,598,175,2024-02-17,PayPal,1555.15,completed,53.35,1501.8,USD,North,Sports
+599,599,13,2024-05-03,Crypto,3814.8,completed,38.59,3776.21,USD,East,Home & Garden
+600,600,78,2023-10-16,Credit Card,172.24,completed,5.27,166.97,USD,West,Food
+601,601,59,2023-11-06,Debit Card,1945.56,completed,29.43,1916.13,USD,West,Home & Garden
+602,602,155,2023-04-04,PayPal,3291.84,completed,112.37,3179.47,USD,South,Sports
+603,603,105,2024-05-11,Crypto,3200.05,completed,32.4,3167.65,USD,Central,Home & Garden
+604,604,41,2023-11-15,Credit Card,520.12,completed,15.25,504.87,USD,Central,Sports
+605,605,135,2023-02-02,Credit Card,1956.8,completed,57.19,1899.61,USD,South,Clothing
+606,606,64,2024-04-12,Credit Card,2935.1,completed,85.36,2849.74,USD,North,Home & Garden
+607,607,119,2024-02-14,Debit Card,984.34,completed,14.91,969.43,USD,North,Food
+608,608,126,2024-04-04,Credit Card,124.76,completed,4.03,120.73,USD,South,Sports
+609,609,89,2023-09-24,Credit Card,5280.29,completed,153.37,5126.92,USD,North,Home & Garden
+610,610,42,2023-08-11,Debit Card,196.35,completed,3.09,193.26,USD,South,Food
+611,611,69,2024-02-27,Debit Card,2723.68,completed,41.01,2682.67,USD,Central,Electronics
+612,612,34,2023-06-30,Credit Card,239.68,completed,7.08,232.6,USD,Central,Electronics
+613,613,79,2024-12-30,PayPal,1039.44,completed,35.53,1003.91,USD,East,Sports
+614,614,118,2023-08-15,Credit Card,5545.02,completed,161.01,5384.01,USD,West,Home & Garden
+615,615,102,2023-04-15,Debit Card,7021.51,completed,105.53,6915.98,USD,North,Books
+616,616,153,2023-10-20,Credit Card,3395.04,completed,98.9,3296.14,USD,East,Food
+617,617,87,2024-10-19,Debit Card,973.84,completed,14.78,959.06,USD,East,Home & Garden
+618,618,167,2023-07-15,Credit Card,2968.02,completed,86.31,2881.71,USD,South,Books
+619,619,154,2024-11-09,PayPal,3602.8,completed,122.97,3479.83,USD,East,Food
+620,620,168,2023-10-31,Debit Card,1810.2,completed,27.64,1782.56,USD,East,Sports
+621,621,10,2024-12-29,Debit Card,2563.6,pending,38.88,0.0,USD,Central,Clothing
+622,622,57,2024-07-02,Debit Card,4011.04,completed,60.3,3950.74,USD,West,Food
+623,623,44,2024-07-27,PayPal,3073.44,completed,104.86,2968.58,USD,South,Home & Garden
+624,624,190,2024-07-28,PayPal,952.16,completed,32.48,919.68,USD,South,Food
+625,625,57,2023-08-20,Bank Transfer,3618.45,pending,18.54,0.0,USD,East,Sports
+626,626,150,2024-04-22,Credit Card,2078.78,failed,60.49,0.0,USD,North,Sports
+627,627,150,2024-09-28,PayPal,867.72,refunded,29.86,0.0,USD,North,Sports
+628,628,175,2024-06-26,Debit Card,1769.18,completed,26.73,1742.45,USD,East,Sports
+629,629,39,2023-07-26,Crypto,872.14,completed,9.06,863.08,USD,East,Sports
+630,630,118,2023-11-21,Credit Card,8492.24,completed,246.76,8245.48,USD,South,Electronics
+631,631,46,2024-10-13,Debit Card,2714.4,completed,40.82,2673.58,USD,North,Electronics
+632,632,195,2023-06-22,Bank Transfer,2106.0,completed,10.91,2095.09,USD,Central,Clothing
+633,633,200,2023-05-16,Debit Card,6298.88,completed,94.72,6204.16,USD,Central,Sports
+634,634,123,2023-01-07,PayPal,2865.52,completed,97.57,2767.95,USD,North,Books
+635,635,4,2024-06-28,Credit Card,2566.76,completed,74.76,2492.0,USD,South,Electronics
+636,636,64,2024-12-13,Credit Card,315.21,completed,9.58,305.63,USD,East,Home & Garden
+637,637,129,2023-11-12,PayPal,279.2,completed,9.87,269.33,USD,South,Electronics
+638,638,75,2024-06-16,Bank Transfer,305.22,pending,2.02,0.0,USD,Central,Books
+639,639,176,2023-12-17,PayPal,2416.26,completed,82.5,2333.76,USD,West,Home & Garden
+640,640,104,2023-08-22,Credit Card,606.34,completed,17.94,588.4,USD,South,Food
+641,641,6,2024-06-02,Debit Card,547.7,completed,8.66,539.04,USD,South,Electronics
+642,642,10,2024-10-20,Credit Card,4284.0,completed,124.38,4159.62,USD,East,Books
+643,643,13,2023-04-23,Bank Transfer,581.0,failed,3.39,0.0,USD,North,Electronics
+644,644,98,2024-07-17,Bank Transfer,845.2,completed,4.33,840.87,USD,East,Sports
+645,645,176,2023-01-12,Credit Card,533.6,completed,15.68,517.92,USD,East,Sports
+646,646,70,2024-09-15,Debit Card,1331.72,completed,20.35,1311.37,USD,South,Sports
+647,647,159,2023-10-17,Credit Card,1032.92,completed,30.06,1002.86,USD,North,Electronics
+648,648,52,2023-09-29,Credit Card,1653.28,completed,48.18,1605.1,USD,Central,Clothing
+649,649,76,2023-02-11,Crypto,4238.4,refunded,42.71,0.0,USD,Central,Sports
+650,650,124,2023-09-01,Credit Card,2419.62,completed,70.6,2349.02,USD,North,Electronics
+651,651,147,2024-05-21,PayPal,1361.73,completed,46.77,1314.96,USD,South,Electronics
+652,652,186,2023-09-23,Credit Card,716.55,completed,21.24,695.31,USD,South,Sports
+653,653,13,2023-06-28,Debit Card,1357.4,completed,20.75,1336.65,USD,North,Home & Garden
+654,654,81,2023-05-02,Credit Card,4821.48,completed,140.26,4681.22,USD,North,Electronics
+655,655,170,2023-06-25,Debit Card,426.74,completed,6.88,419.86,USD,East,Home & Garden
+656,656,69,2023-04-09,Credit Card,7166.55,completed,207.93,6958.62,USD,East,Home & Garden
+657,657,103,2023-10-06,PayPal,368.1,completed,12.84,355.26,USD,West,Food
+658,658,167,2023-04-29,Credit Card,6415.2,completed,186.39,6228.81,USD,South,Food
+659,659,41,2024-03-03,PayPal,981.76,completed,33.6,948.16,USD,Central,Sports
+660,660,47,2024-01-27,Debit Card,6475.2,completed,97.54,6377.66,USD,East,Books
+661,661,187,2024-05-10,Debit Card,431.98,completed,6.83,425.15,USD,West,Electronics
+662,662,17,2024-11-01,Debit Card,3123.96,completed,47.0,3076.96,USD,East,Electronics
+663,663,148,2024-08-02,Bank Transfer,6543.81,completed,32.93,6510.88,USD,South,Food
+664,664,177,2024-09-28,Bank Transfer,2881.45,completed,14.85,2866.6,USD,North,Sports
+665,665,170,2024-10-18,Bank Transfer,1948.48,completed,10.04,1938.44,USD,West,Clothing
+666,666,157,2023-01-12,Credit Card,8038.26,completed,233.29,7804.97,USD,South,Books
+667,667,43,2024-05-21,Credit Card,6826.88,completed,198.4,6628.48,USD,East,Clothing
+668,668,13,2023-08-18,Credit Card,5337.42,completed,155.15,5182.27,USD,Central,Food
+669,669,61,2024-04-15,Debit Card,2660.06,completed,40.39,2619.67,USD,West,Books
+670,670,128,2023-11-20,Crypto,728.55,completed,7.45,721.1,USD,North,Sports
+671,671,106,2024-07-25,PayPal,55.81,completed,2.24,53.57,USD,Central,Electronics
+672,672,159,2023-11-09,Debit Card,1190.79,completed,18.05,1172.74,USD,Central,Books
+673,673,117,2024-01-08,Credit Card,2303.21,completed,67.02,2236.19,USD,North,Clothing
+674,674,197,2024-09-07,Credit Card,2539.95,completed,73.87,2466.08,USD,West,Food
+675,675,30,2024-11-07,Debit Card,4312.56,failed,65.07,0.0,USD,South,Electronics
+676,676,163,2024-07-17,Debit Card,1988.69,completed,30.1,1958.59,USD,Central,Home & Garden
+677,677,43,2023-05-26,Bank Transfer,110.64,pending,0.72,0.0,USD,West,Electronics
+678,678,49,2024-02-09,PayPal,2766.33,completed,94.54,2671.79,USD,South,Sports
+679,679,28,2024-03-02,Credit Card,2518.67,completed,73.21,2445.46,USD,North,Food
+680,680,116,2024-11-08,Credit Card,1253.81,completed,36.81,1217.0,USD,Central,Books
+681,681,2,2023-02-21,Debit Card,2410.55,completed,36.51,2374.04,USD,Central,Sports
+682,682,131,2023-07-03,Debit Card,4636.95,completed,69.8,4567.15,USD,Central,Clothing
+683,683,169,2024-09-13,Debit Card,281.3,completed,4.68,276.62,USD,East,Books
+684,684,156,2023-09-15,Crypto,2759.12,completed,27.81,2731.31,USD,East,Sports
+685,685,116,2023-05-24,PayPal,5339.29,completed,181.8,5157.49,USD,West,Books
+686,686,180,2023-11-21,Credit Card,2600.32,completed,75.83,2524.49,USD,Central,Food
+687,687,160,2023-10-27,Credit Card,731.08,completed,21.45,709.63,USD,East,Food
+688,688,167,2024-06-01,PayPal,2453.8,completed,83.8,2370.0,USD,Central,Food
+689,689,195,2024-07-31,PayPal,3922.82,completed,133.84,3788.98,USD,West,Books
+690,690,182,2024-11-22,Debit Card,8960.78,completed,134.72,8826.06,USD,Central,Home & Garden
+691,691,134,2023-01-26,Credit Card,5671.54,completed,164.8,5506.74,USD,West,Clothing
+692,692,52,2023-06-17,Debit Card,673.56,completed,10.33,663.23,USD,East,Food
+693,693,16,2023-11-02,Credit Card,697.32,completed,20.52,676.8,USD,South,Books
+694,694,116,2024-09-22,Crypto,365.1,completed,3.93,361.17,USD,Central,Clothing
+695,695,131,2023-10-23,Debit Card,3555.0,completed,53.66,3501.34,USD,North,Sports
+696,696,176,2024-07-19,Credit Card,2745.6,completed,80.09,2665.51,USD,North,Electronics
+697,697,200,2023-08-22,Credit Card,949.77,completed,27.66,922.11,USD,East,Books
+698,698,51,2023-07-20,Debit Card,6669.54,completed,100.4,6569.14,USD,East,Sports
+699,699,20,2023-06-30,Credit Card,2950.86,completed,85.96,2864.9,USD,Central,Electronics
+700,700,72,2023-10-01,Credit Card,326.43,completed,9.6,316.83,USD,South,Clothing
+701,701,2,2024-04-22,PayPal,8051.82,completed,274.02,7777.8,USD,South,Electronics
+702,702,153,2024-10-02,PayPal,2323.35,completed,79.43,2243.92,USD,Central,Food
+703,703,147,2024-01-03,Bank Transfer,2478.2,completed,12.51,2465.69,USD,North,Food
+704,704,48,2023-03-13,Credit Card,2915.77,completed,85.0,2830.77,USD,Central,Clothing
+705,705,104,2023-12-24,PayPal,3833.48,completed,130.51,3702.97,USD,South,Clothing
+706,706,76,2024-09-25,Bank Transfer,1857.68,completed,9.76,1847.92,USD,Central,Sports
+707,707,167,2023-04-28,Bank Transfer,7429.14,completed,37.29,7391.85,USD,East,Sports
+708,708,158,2023-09-09,Bank Transfer,3621.84,completed,18.48,3603.36,USD,North,Food
+709,709,30,2023-09-21,PayPal,2131.58,completed,72.94,2058.64,USD,Central,Food
+710,710,133,2024-01-21,Debit Card,172.3,completed,3.03,169.27,USD,Central,Books
+711,711,76,2023-07-20,PayPal,3689.55,completed,125.8,3563.75,USD,East,Books
+712,712,43,2024-07-05,PayPal,1423.08,completed,48.72,1374.36,USD,Central,Electronics
+713,713,162,2023-08-09,PayPal,328.02,failed,11.56,0.0,USD,West,Electronics
+714,714,180,2024-03-23,Debit Card,1898.33,completed,28.86,1869.47,USD,North,Food
+715,715,184,2023-02-09,Credit Card,83.8,completed,2.79,81.01,USD,North,Electronics
+716,716,65,2023-03-14,PayPal,186.22,completed,6.46,179.76,USD,Central,Clothing
+717,717,116,2024-02-20,Debit Card,1861.02,completed,28.2,1832.82,USD,West,Home & Garden
+718,718,31,2023-01-09,Credit Card,197.8,completed,5.92,191.88,USD,Central,Electronics
+719,719,19,2024-05-31,Debit Card,523.07,completed,8.25,514.82,USD,North,Home & Garden
+720,720,73,2024-03-25,Credit Card,3052.5,completed,88.96,2963.54,USD,West,Sports
+721,721,137,2023-05-22,Credit Card,239.62,completed,7.2,232.42,USD,West,Books
+722,722,37,2024-11-25,Debit Card,4802.7,completed,72.45,4730.25,USD,East,Electronics
+723,723,37,2023-02-13,Credit Card,7884.18,completed,229.02,7655.16,USD,North,Books
+724,724,141,2023-11-09,Crypto,4001.4,completed,40.17,3961.23,USD,South,Food
+725,725,166,2023-05-27,Bank Transfer,1317.72,completed,6.7,1311.02,USD,South,Clothing
+726,726,65,2023-05-01,Debit Card,2482.88,completed,37.61,2445.27,USD,South,Food
+727,727,193,2024-04-17,Debit Card,8110.34,completed,121.9,7988.44,USD,Central,Electronics
+728,728,65,2023-07-25,Credit Card,3374.8,completed,98.17,3276.63,USD,Central,Sports
+729,729,172,2023-08-29,Credit Card,1999.58,completed,58.11,1941.47,USD,North,Home & Garden
+730,730,50,2024-05-13,Credit Card,791.2,pending,23.16,0.0,USD,West,Home & Garden
+731,731,178,2023-06-09,Credit Card,6628.2,completed,192.53,6435.67,USD,Central,Books
+732,732,110,2023-01-06,Credit Card,4857.72,completed,141.36,4716.36,USD,East,Clothing
+733,733,165,2023-10-11,Credit Card,2860.32,completed,83.28,2777.04,USD,East,Clothing
+734,734,119,2024-01-05,Credit Card,4835.05,completed,140.41,4694.64,USD,East,Sports
+735,735,166,2023-03-28,Debit Card,1059.66,completed,16.15,1043.51,USD,East,Clothing
+736,736,188,2023-03-22,Credit Card,1840.14,completed,53.66,1786.48,USD,North,Electronics
+737,737,149,2024-02-21,Credit Card,5400.22,completed,156.99,5243.23,USD,Central,Clothing
+738,738,140,2024-04-29,Credit Card,556.08,completed,16.43,539.65,USD,South,Home & Garden
+739,739,198,2023-10-27,PayPal,1502.02,completed,51.51,1450.51,USD,South,Sports
+740,740,102,2024-05-29,PayPal,4380.05,completed,149.09,4230.96,USD,North,Food
+741,741,158,2023-06-19,Credit Card,3398.0,completed,98.91,3299.09,USD,Central,Clothing
+742,742,145,2024-11-08,Debit Card,1257.3,completed,19.31,1237.99,USD,South,Food
+743,743,11,2024-05-14,Credit Card,7518.24,completed,218.37,7299.87,USD,South,Electronics
+744,744,11,2023-08-03,Crypto,1690.83,completed,17.36,1673.47,USD,Central,Home & Garden
+745,745,117,2023-02-10,Debit Card,3087.37,completed,46.64,3040.73,USD,East,Electronics
+746,746,71,2023-09-28,Crypto,5416.54,pending,54.57,0.0,USD,Central,Books
+747,747,168,2024-01-12,PayPal,1730.14,completed,59.11,1671.03,USD,Central,Food
+748,748,97,2024-06-14,PayPal,782.25,refunded,26.96,0.0,USD,West,Home & Garden
+749,749,124,2023-01-09,Credit Card,2952.0,completed,85.83,2866.17,USD,Central,Clothing
+750,750,20,2024-10-23,Credit Card,1304.55,completed,37.98,1266.57,USD,East,Clothing
+751,751,93,2023-05-02,PayPal,487.6,completed,16.74,470.86,USD,South,Sports
+752,752,124,2024-05-06,Credit Card,3976.83,completed,115.57,3861.26,USD,West,Clothing
+753,753,106,2023-09-10,Credit Card,1611.58,completed,46.98,1564.6,USD,North,Clothing
+754,754,35,2024-06-11,PayPal,5665.99,completed,193.0,5472.99,USD,North,Books
+755,755,67,2024-06-16,Crypto,163.4,pending,2.13,0.0,USD,West,Books
+756,756,185,2024-11-10,Bank Transfer,6091.78,completed,30.91,6060.87,USD,East,Electronics
+757,757,121,2023-06-26,Credit Card,1591.52,completed,46.38,1545.14,USD,South,Sports
+758,758,150,2023-07-08,Credit Card,1512.8,completed,44.3,1468.5,USD,Central,Food
+759,759,186,2023-12-19,Credit Card,2310.98,completed,67.23,2243.75,USD,West,Books
+760,760,97,2023-05-17,Crypto,742.52,completed,7.71,734.81,USD,North,Electronics
+761,761,130,2024-03-06,Credit Card,1846.18,failed,53.76,0.0,USD,South,Books
+762,762,158,2023-02-09,Credit Card,371.28,completed,11.05,360.23,USD,Central,Books
+763,763,169,2024-09-09,Credit Card,204.52,completed,6.05,198.47,USD,Central,Electronics
+764,764,95,2024-12-15,Credit Card,3687.74,completed,107.06,3580.68,USD,Central,Sports
+765,765,124,2024-01-27,Credit Card,3756.16,completed,109.41,3646.75,USD,East,Books
+766,766,35,2024-05-04,PayPal,1014.03,completed,34.75,979.28,USD,South,Electronics
+767,767,140,2023-09-21,Bank Transfer,3011.5,completed,15.35,2996.15,USD,South,Electronics
+768,768,31,2023-01-11,Credit Card,291.1,completed,8.71,282.39,USD,West,Food
+769,769,81,2024-01-08,Crypto,2418.08,completed,24.65,2393.43,USD,North,Clothing
+770,770,65,2024-07-05,Debit Card,4585.42,completed,69.15,4516.27,USD,West,Books
+771,771,175,2023-07-29,Credit Card,3694.56,completed,107.34,3587.22,USD,West,Books
+772,772,95,2024-07-24,Credit Card,4388.76,completed,127.41,4261.35,USD,West,Home & Garden
+773,773,199,2024-02-13,Debit Card,2909.4,completed,43.89,2865.51,USD,South,Food
+774,774,115,2023-06-16,Bank Transfer,1500.68,completed,7.81,1492.87,USD,North,Clothing
+775,775,87,2024-09-22,PayPal,3455.76,completed,117.78,3337.98,USD,North,Clothing
+776,776,2,2023-06-01,Debit Card,6271.98,completed,94.36,6177.62,USD,West,Books
+777,777,68,2024-01-18,Bank Transfer,680.82,completed,3.54,677.28,USD,North,Books
+778,778,103,2024-11-03,Credit Card,727.24,completed,21.42,705.82,USD,Central,Home & Garden
+779,779,199,2024-10-19,Credit Card,668.8,completed,19.52,649.28,USD,West,Sports
+780,780,169,2023-10-20,Bank Transfer,104.85,completed,0.81,104.04,USD,South,Electronics
+781,781,179,2024-09-21,PayPal,5154.4,completed,175.38,4979.02,USD,South,Food
+782,782,168,2023-06-11,Credit Card,366.14,refunded,10.85,0.0,USD,North,Home & Garden
+783,783,102,2024-08-26,Credit Card,2337.4,completed,68.16,2269.24,USD,South,Books
+784,784,18,2024-07-16,Bank Transfer,369.78,completed,2.23,367.55,USD,East,Food
+785,785,90,2023-10-14,Debit Card,8242.74,completed,123.8,8118.94,USD,South,Books
+786,786,104,2023-01-06,Bank Transfer,1610.77,completed,8.27,1602.5,USD,East,Clothing
+787,787,144,2024-05-30,Credit Card,3578.26,refunded,104.19,0.0,USD,East,Home & Garden
+788,788,66,2024-08-11,Debit Card,1609.84,completed,24.25,1585.59,USD,East,Food
+789,789,145,2023-09-07,Debit Card,7248.0,completed,108.92,7139.08,USD,East,Sports
+790,790,8,2023-05-03,Credit Card,6731.7,completed,195.48,6536.22,USD,East,Electronics
+791,791,57,2024-12-22,Bank Transfer,4142.58,completed,21.21,4121.37,USD,South,Home & Garden
+792,792,133,2023-01-12,PayPal,6691.3,completed,227.93,6463.37,USD,East,Clothing
+793,793,173,2023-12-17,PayPal,510.4,completed,17.63,492.77,USD,North,Books
+794,794,91,2024-08-11,Debit Card,1445.34,completed,21.85,1423.49,USD,East,Clothing
+795,795,52,2023-09-08,PayPal,1764.0,completed,60.27,1703.73,USD,East,Clothing
+796,796,64,2024-01-03,Credit Card,842.96,completed,24.69,818.27,USD,South,Electronics
+797,797,174,2024-05-19,Credit Card,1841.96,completed,53.7,1788.26,USD,Central,Electronics
+798,798,124,2024-09-29,PayPal,8625.78,completed,293.56,8332.22,USD,East,Sports
+799,799,126,2024-06-09,Debit Card,8265.76,completed,124.1,8141.66,USD,East,Sports
+800,800,33,2024-06-25,Debit Card,3010.64,completed,45.28,2965.36,USD,West,Sports
+801,801,89,2024-12-06,Bank Transfer,380.16,failed,2.35,0.0,USD,South,Sports
+802,802,118,2024-12-07,Debit Card,1402.52,completed,21.28,1381.24,USD,North,Electronics
+803,803,26,2024-01-08,Bank Transfer,1349.74,completed,7.21,1342.53,USD,Central,Home & Garden
+804,804,61,2024-04-28,Debit Card,1659.24,completed,25.25,1633.99,USD,Central,Home & Garden
+805,805,109,2024-03-07,Credit Card,1152.48,completed,33.71,1118.77,USD,East,Home & Garden
+806,806,47,2023-05-17,Bank Transfer,1864.46,completed,9.79,1854.67,USD,Central,Food
+807,807,185,2023-09-02,Credit Card,3264.16,completed,94.91,3169.25,USD,Central,Sports
+808,808,190,2024-05-01,Debit Card,1326.65,completed,20.05,1306.6,USD,North,Clothing
+809,809,162,2024-07-02,Credit Card,3532.2,failed,102.77,0.0,USD,East,Sports
+810,810,146,2024-02-12,PayPal,1292.3,completed,44.38,1247.92,USD,North,Food
+811,811,66,2024-10-06,Credit Card,208.32,completed,6.34,201.98,USD,North,Sports
+812,812,93,2024-07-25,PayPal,1469.49,completed,50.46,1419.03,USD,East,Home & Garden
+813,813,90,2024-09-13,PayPal,208.82,completed,7.24,201.58,USD,South,Books
+814,814,138,2023-10-22,Bank Transfer,6206.92,completed,31.44,6175.48,USD,East,Home & Garden
+815,815,189,2023-03-24,Debit Card,4187.27,completed,62.95,4124.32,USD,West,Books
+816,816,38,2024-10-19,Bank Transfer,2345.6,completed,12.07,2333.53,USD,East,Sports
+817,817,19,2023-06-17,Bank Transfer,5759.2,pending,28.94,0.0,USD,East,Clothing
+818,818,75,2023-10-02,Debit Card,1780.35,completed,26.88,1753.47,USD,Central,Food
+819,819,114,2024-01-08,Debit Card,1810.51,completed,27.34,1783.17,USD,Central,Books
+820,820,48,2023-05-10,Credit Card,3148.8,completed,91.45,3057.35,USD,South,Food
+821,821,180,2023-03-23,Credit Card,4234.68,failed,122.99,0.0,USD,South,Clothing
+822,822,17,2024-07-17,PayPal,727.87,completed,25.16,702.71,USD,North,Electronics
+823,823,22,2023-09-28,Debit Card,3436.81,completed,51.73,3385.08,USD,Central,Clothing
+824,824,100,2023-08-26,PayPal,987.42,completed,33.75,953.67,USD,South,Food
+825,825,33,2024-06-25,Credit Card,2243.6,completed,65.31,2178.29,USD,South,Electronics
+826,826,84,2024-04-23,Bank Transfer,666.92,pending,3.61,0.0,USD,Central,Home & Garden
+827,827,179,2023-07-01,Debit Card,4053.6,completed,60.95,3992.65,USD,Central,Books
+828,828,163,2024-03-24,Debit Card,4760.55,completed,71.6,4688.95,USD,Central,Food
+829,829,89,2024-07-07,Debit Card,2849.04,completed,43.16,2805.88,USD,South,Electronics
+830,830,106,2023-06-12,Credit Card,2360.85,completed,68.85,2292.0,USD,East,Electronics
+831,831,195,2023-12-21,Credit Card,264.04,completed,7.79,256.25,USD,East,Sports
+832,832,126,2024-05-05,Debit Card,164.16,completed,2.72,161.44,USD,East,Electronics
+833,833,153,2023-01-08,Credit Card,5599.86,completed,162.73,5437.13,USD,Central,Home & Garden
+834,834,144,2024-02-09,Bank Transfer,1461.67,refunded,7.42,0.0,USD,South,Clothing
+835,835,57,2023-03-23,Debit Card,5395.91,completed,81.09,5314.82,USD,West,Food
+836,836,157,2024-12-02,Debit Card,2085.76,completed,31.48,2054.28,USD,East,Home & Garden
+837,837,106,2023-03-12,Credit Card,7296.48,pending,211.84,0.0,USD,South,Clothing
+838,838,117,2024-04-08,Credit Card,596.3,completed,17.75,578.55,USD,East,Food
+839,839,83,2023-06-05,Debit Card,4970.8,completed,74.7,4896.1,USD,North,Books
+840,840,27,2023-10-05,Debit Card,97.04,completed,1.73,95.31,USD,South,Food
+841,841,60,2023-06-05,Credit Card,5473.8,completed,158.85,5314.95,USD,North,Sports
+842,842,80,2024-01-17,Credit Card,1219.75,completed,35.69,1184.06,USD,West,Food
+843,843,193,2023-02-27,Bank Transfer,336.94,completed,2.01,334.93,USD,East,Sports
+844,844,47,2023-09-15,Credit Card,821.64,completed,24.1,797.54,USD,West,Electronics
+845,845,183,2024-02-02,Debit Card,1949.72,completed,29.39,1920.33,USD,West,Clothing
+846,846,189,2023-04-09,Debit Card,207.18,pending,3.29,0.0,USD,Central,Food
+847,847,175,2023-11-28,Debit Card,1673.35,completed,25.24,1648.11,USD,South,Food
+848,848,141,2023-05-06,Credit Card,747.28,completed,22.17,725.11,USD,East,Sports
+849,849,14,2023-08-12,Credit Card,1033.7,completed,30.11,1003.59,USD,North,Clothing
+850,850,43,2024-08-21,Credit Card,2318.82,completed,67.47,2251.35,USD,North,Sports
+851,851,11,2024-12-10,Debit Card,75.36,completed,1.28,74.08,USD,West,Food
+852,852,198,2023-09-12,Credit Card,1634.4,completed,47.53,1586.87,USD,South,Sports
+853,853,87,2024-10-04,Bank Transfer,1033.62,completed,5.63,1027.99,USD,North,Electronics
+854,854,180,2023-04-22,Bank Transfer,3888.72,completed,19.92,3868.8,USD,South,Sports
+855,855,143,2023-12-23,PayPal,1294.32,completed,44.32,1250.0,USD,West,Food
+856,856,97,2023-05-18,Credit Card,108.99,completed,3.28,105.71,USD,East,Electronics
+857,857,144,2024-07-12,Bank Transfer,5676.48,completed,28.59,5647.89,USD,West,Clothing
+858,858,90,2024-04-25,Credit Card,1850.22,completed,53.88,1796.34,USD,East,Books
+859,859,136,2024-04-06,Debit Card,1518.66,completed,22.89,1495.77,USD,East,Home & Garden
+860,860,1,2024-10-18,Credit Card,3360.96,completed,97.95,3263.01,USD,Central,Sports
+861,861,159,2024-09-29,Credit Card,2652.3,completed,77.13,2575.17,USD,South,Home & Garden
+862,862,138,2023-07-14,Credit Card,992.55,completed,28.91,963.64,USD,Central,Food
+863,863,40,2023-10-17,Bank Transfer,6144.64,completed,31.17,6113.47,USD,East,Sports
+864,864,134,2023-03-11,Credit Card,656.48,completed,19.29,637.19,USD,North,Clothing
+865,865,52,2024-05-14,Debit Card,2624.28,completed,39.48,2584.8,USD,South,Electronics
+866,866,100,2024-05-18,PayPal,575.3,completed,20.03,555.27,USD,Central,Books
+867,867,94,2024-09-13,Bank Transfer,2502.11,completed,12.91,2489.2,USD,North,Electronics
+868,868,21,2024-10-19,Credit Card,2307.2,completed,67.36,2239.84,USD,North,Home & Garden
+869,869,107,2024-12-26,PayPal,6714.36,completed,228.71,6485.65,USD,North,Books
+870,870,188,2023-11-10,Debit Card,2401.83,failed,36.47,0.0,USD,North,Clothing
+871,871,186,2024-06-30,Bank Transfer,902.19,completed,4.68,897.51,USD,West,Clothing
+872,872,64,2024-10-03,Credit Card,1858.29,completed,54.04,1804.25,USD,South,Books
+873,873,28,2024-10-17,Credit Card,3789.36,completed,110.03,3679.33,USD,Central,Home & Garden
+874,874,110,2023-06-22,Credit Card,5291.4,completed,153.78,5137.62,USD,South,Books
+875,875,169,2024-07-02,Credit Card,3312.66,completed,96.43,3216.23,USD,Central,Sports
+876,876,141,2024-01-16,PayPal,5420.76,completed,184.46,5236.3,USD,West,Food
+877,877,83,2023-09-06,Debit Card,5795.3,completed,87.37,5707.93,USD,Central,Books
+878,878,141,2023-09-18,Debit Card,1334.62,completed,20.31,1314.31,USD,East,Sports
+879,879,1,2023-02-06,Crypto,7201.65,completed,72.28,7129.37,USD,East,Books
+880,880,78,2023-11-06,Debit Card,261.22,completed,4.4,256.82,USD,South,Clothing
+881,881,177,2024-07-22,Debit Card,173.14,completed,2.8,170.34,USD,Central,Books
+882,882,40,2023-02-09,Debit Card,8803.27,completed,132.21,8671.06,USD,West,Home & Garden
+883,883,94,2023-09-13,Debit Card,367.55,completed,5.88,361.67,USD,South,Home & Garden
+884,884,103,2023-08-14,Credit Card,504.9,completed,14.97,489.93,USD,North,Food
+885,885,45,2024-12-07,Credit Card,4372.39,completed,127.28,4245.11,USD,Central,Electronics
+886,886,10,2024-08-13,Crypto,6458.4,refunded,64.96,0.0,USD,West,Electronics
+887,887,86,2024-03-20,Bank Transfer,922.66,completed,4.95,917.71,USD,West,Electronics
+888,888,155,2024-10-14,Credit Card,3000.8,completed,87.17,2913.63,USD,West,Electronics
+889,889,82,2024-08-03,Credit Card,2645.7,completed,77.16,2568.54,USD,South,Home & Garden
+890,890,40,2024-11-23,PayPal,5956.8,completed,202.98,5753.82,USD,West,Sports
+891,891,24,2024-03-20,Credit Card,5795.0,completed,168.29,5626.71,USD,East,Sports
+892,892,22,2024-08-11,Credit Card,352.15,completed,10.69,341.46,USD,North,Books
+893,893,103,2024-03-22,Credit Card,1754.61,completed,51.0,1703.61,USD,South,Clothing
+894,894,125,2024-10-29,Bank Transfer,4509.6,pending,22.69,0.0,USD,Central,Clothing
+895,895,189,2023-09-12,Credit Card,5578.56,completed,162.25,5416.31,USD,South,Electronics
+896,896,83,2024-08-13,Credit Card,3505.5,completed,101.91,3403.59,USD,North,Electronics
+897,897,90,2023-11-25,Crypto,3005.1,completed,30.53,2974.57,USD,East,Books
+898,898,44,2024-09-26,Crypto,385.99,completed,4.18,381.81,USD,West,Books
+899,899,60,2024-12-02,Credit Card,1115.15,completed,32.68,1082.47,USD,East,Clothing
+900,900,14,2024-09-29,Debit Card,181.86,completed,2.94,178.92,USD,South,Home & Garden
+901,901,29,2024-04-06,PayPal,174.92,completed,6.18,168.74,USD,West,Electronics
+902,902,138,2023-07-29,PayPal,1193.06,failed,40.85,0.0,USD,Central,Books
+903,903,160,2023-05-26,PayPal,2489.94,completed,84.94,2405.0,USD,North,Sports
+904,904,135,2023-09-19,Crypto,8616.31,completed,86.4,8529.91,USD,South,Electronics
+905,905,179,2023-10-08,Debit Card,1043.4,pending,15.99,0.0,USD,North,Sports
+906,906,170,2024-11-10,Debit Card,37.97,completed,1.04,36.93,USD,East,Electronics
+907,907,167,2023-08-26,Credit Card,149.79,completed,4.69,145.1,USD,West,Books
+908,908,125,2024-06-28,PayPal,1809.68,completed,61.66,1748.02,USD,North,Clothing
+909,909,118,2025-01-02,Debit Card,1769.74,refunded,26.9,0.0,USD,North,Electronics
+910,910,79,2024-05-19,PayPal,3692.16,completed,125.64,3566.52,USD,West,Food
+911,911,176,2024-01-02,Credit Card,84.54,completed,2.85,81.69,USD,East,Clothing
+912,912,16,2023-09-24,Credit Card,2406.52,completed,69.9,2336.62,USD,West,Electronics
+913,913,58,2023-12-19,Credit Card,8546.58,completed,248.31,8298.27,USD,West,Food
+914,914,98,2024-11-26,Credit Card,242.3,completed,7.41,234.89,USD,Central,Food
+915,915,147,2024-03-14,Credit Card,1692.64,completed,49.42,1643.22,USD,East,Books
+916,916,34,2024-10-30,Debit Card,2500.74,refunded,37.64,0.0,USD,South,Books
+917,917,52,2023-11-16,Bank Transfer,6184.8,pending,31.28,0.0,USD,Central,Clothing
+918,918,198,2024-11-05,PayPal,6970.04,completed,237.36,6732.68,USD,Central,Clothing
+919,919,137,2023-05-02,PayPal,424.27,completed,14.59,409.68,USD,South,Home & Garden
+920,920,196,2024-03-02,Credit Card,1824.5,completed,53.16,1771.34,USD,West,Home & Garden
+921,921,164,2023-10-10,Debit Card,5611.2,completed,84.65,5526.55,USD,South,Clothing
+922,922,7,2024-09-20,Credit Card,280.48,completed,8.25,272.23,USD,Central,Home & Garden
+923,923,60,2023-08-29,Debit Card,5713.8,completed,85.92,5627.88,USD,South,Food
+924,924,177,2024-05-04,Credit Card,182.83,completed,5.42,177.41,USD,South,Books
+925,925,167,2023-07-09,Bank Transfer,4740.8,pending,23.98,0.0,USD,West,Sports
+926,926,50,2023-02-05,Credit Card,1169.12,completed,34.04,1135.08,USD,West,Electronics
+927,927,57,2024-11-20,Credit Card,4278.15,completed,124.36,4153.79,USD,South,Clothing
+928,928,113,2024-05-18,Credit Card,277.95,completed,8.56,269.39,USD,East,Sports
+929,929,199,2024-09-16,PayPal,1733.12,completed,59.08,1674.04,USD,West,Food
+930,930,191,2024-09-01,Credit Card,2201.1,completed,63.94,2137.16,USD,Central,Books
+931,931,116,2023-02-14,Bank Transfer,525.44,failed,2.73,0.0,USD,South,Books
+932,932,189,2024-07-26,PayPal,3614.94,completed,123.12,3491.82,USD,West,Books
+933,933,113,2023-11-11,Bank Transfer,197.96,completed,1.3,196.66,USD,East,Sports
+934,934,157,2024-12-07,PayPal,1284.72,completed,44.07,1240.65,USD,Central,Clothing
+935,935,116,2024-05-30,Bank Transfer,6237.0,completed,31.48,6205.52,USD,North,Clothing
+936,936,179,2023-05-21,Credit Card,8915.37,completed,258.94,8656.43,USD,West,Sports
+937,937,46,2024-08-27,Credit Card,2510.09,completed,73.19,2436.9,USD,South,Sports
+938,938,178,2024-12-30,Credit Card,386.37,completed,11.51,374.86,USD,South,Food
+939,939,181,2024-10-11,Credit Card,200.56,completed,6.2,194.36,USD,East,Electronics
+940,940,187,2024-09-21,Credit Card,6036.7,pending,175.2,0.0,USD,South,Sports
+941,941,197,2023-12-11,PayPal,3481.2,completed,118.8,3362.4,USD,Central,Food
+942,942,38,2024-12-30,PayPal,426.25,completed,14.97,411.28,USD,North,Sports
+943,943,197,2023-10-26,Debit Card,1582.1,completed,24.18,1557.92,USD,South,Electronics
+944,944,1,2023-09-20,Credit Card,2402.05,completed,69.82,2332.23,USD,North,Sports
+945,945,140,2024-09-16,PayPal,6854.88,completed,233.22,6621.66,USD,West,Clothing
+946,946,122,2024-02-25,Debit Card,2075.43,completed,31.23,2044.2,USD,West,Electronics
+947,947,63,2023-10-13,Credit Card,6041.0,completed,175.57,5865.43,USD,Central,Food
+948,948,54,2023-07-12,Credit Card,7397.28,completed,214.87,7182.41,USD,South,Electronics
+949,949,9,2024-08-15,Credit Card,278.16,completed,8.52,269.64,USD,Central,Home & Garden
+950,950,13,2024-03-05,Bank Transfer,5066.49,pending,25.63,0.0,USD,South,Clothing
+951,951,178,2024-09-04,Debit Card,3074.9,completed,46.34,3028.56,USD,Central,Books
+952,952,192,2024-01-06,Credit Card,2899.92,failed,84.37,0.0,USD,North,Electronics
+953,953,98,2024-03-16,Debit Card,1648.0,completed,24.87,1623.13,USD,Central,Electronics
+954,954,32,2023-10-09,Debit Card,2380.5,completed,35.95,2344.55,USD,East,Books
+955,955,179,2024-09-21,Credit Card,3705.8,completed,107.9,3597.9,USD,North,Electronics
+956,956,162,2023-04-01,Bank Transfer,6958.18,completed,34.9,6923.28,USD,West,Food
+957,957,181,2024-03-16,Credit Card,9345.6,completed,271.15,9074.45,USD,Central,Home & Garden
+958,958,160,2023-05-15,PayPal,2385.63,completed,81.38,2304.25,USD,Central,Books
+959,959,162,2024-05-21,PayPal,4196.0,completed,143.13,4052.87,USD,South,Books
+960,960,50,2023-05-04,Credit Card,2846.0,completed,82.89,2763.11,USD,North,Sports
+961,961,54,2024-03-01,Credit Card,1480.2,completed,43.25,1436.95,USD,West,Electronics
+962,962,164,2023-01-12,Credit Card,1958.88,completed,57.29,1901.59,USD,South,Food
+963,963,18,2023-11-04,Debit Card,1309.4,completed,20.12,1289.28,USD,Central,Books
+964,964,30,2023-12-10,Credit Card,4231.48,completed,123.18,4108.3,USD,East,Sports
+965,965,8,2023-07-18,PayPal,5888.48,completed,200.52,5687.96,USD,East,Home & Garden
+966,966,10,2023-05-21,Credit Card,7336.0,completed,213.18,7122.82,USD,West,Clothing
+967,967,138,2024-04-20,Credit Card,6698.55,completed,194.68,6503.87,USD,West,Food
+968,968,77,2024-11-26,Bank Transfer,836.76,completed,4.5,832.26,USD,East,Books
+969,969,148,2023-12-06,Credit Card,256.86,completed,7.85,249.01,USD,East,Electronics
+970,970,8,2024-01-23,Debit Card,719.15,completed,10.9,708.25,USD,Central,Clothing
+971,971,48,2023-05-01,Credit Card,5791.58,completed,168.07,5623.51,USD,East,Food
+972,972,70,2023-04-02,PayPal,3920.07,completed,133.64,3786.43,USD,West,Clothing
+973,973,78,2024-06-23,Credit Card,2744.28,completed,80.03,2664.25,USD,East,Clothing
+974,974,10,2023-07-29,Credit Card,760.96,completed,22.18,738.78,USD,North,Sports
+975,975,124,2023-06-08,PayPal,294.78,completed,10.16,284.62,USD,South,Home & Garden
+976,976,135,2023-12-04,Debit Card,5880.96,completed,88.63,5792.33,USD,South,Electronics
+977,977,34,2023-02-09,Debit Card,5779.66,completed,86.9,5692.76,USD,West,Sports
+978,978,80,2024-12-07,Credit Card,1059.78,completed,30.98,1028.8,USD,Central,Electronics
+979,979,12,2024-06-20,Debit Card,2597.1,completed,39.28,2557.82,USD,East,Electronics
+980,980,164,2023-11-26,Debit Card,7228.55,pending,108.68,0.0,USD,South,Clothing
+981,981,82,2024-03-29,Crypto,1419.4,completed,14.6,1404.8,USD,North,Home & Garden
+982,982,30,2024-09-29,PayPal,414.8,completed,14.36,400.44,USD,Central,Books
+983,983,90,2023-11-23,Credit Card,429.04,completed,12.8,416.24,USD,East,Clothing
+984,984,44,2023-11-15,Credit Card,2891.7,completed,84.0,2807.7,USD,Central,Home & Garden
+985,985,34,2024-04-30,Credit Card,4042.98,completed,117.58,3925.4,USD,North,Electronics
+986,986,110,2023-07-06,Credit Card,411.19,completed,12.23,398.96,USD,Central,Books
+987,987,80,2023-07-22,PayPal,4651.2,completed,158.55,4492.65,USD,Central,Electronics
+988,988,24,2024-04-26,Credit Card,4290.9,completed,124.87,4166.03,USD,North,Sports
+989,989,182,2024-04-24,Credit Card,3438.2,completed,100.16,3338.04,USD,West,Clothing
+990,990,158,2024-01-11,Credit Card,609.12,completed,17.98,591.14,USD,West,Clothing
+991,991,84,2024-05-16,Credit Card,4349.95,completed,126.43,4223.52,USD,North,Electronics
+992,992,123,2023-06-24,Debit Card,974.08,completed,15.08,959.0,USD,East,Home & Garden
+993,993,131,2024-02-21,Debit Card,5789.4,completed,87.24,5702.16,USD,North,Home & Garden
+994,994,78,2024-04-18,Credit Card,5876.64,completed,170.6,5706.04,USD,West,Books
+995,995,63,2023-06-15,Bank Transfer,1723.26,completed,8.91,1714.35,USD,West,Sports
+996,996,178,2024-03-18,Debit Card,520.95,completed,8.21,512.74,USD,West,Books
+997,997,61,2024-11-11,Debit Card,3019.94,completed,45.45,2974.49,USD,North,Food
+998,998,30,2024-09-04,Crypto,7964.61,completed,79.96,7884.65,USD,West,Home & Garden
+999,999,114,2023-11-13,Debit Card,960.12,completed,14.56,945.56,USD,West,Electronics
+1000,1000,153,2024-01-26,Debit Card,1176.6,completed,17.96,1158.64,USD,East,Sports

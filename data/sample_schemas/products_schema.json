@@ -1,0 +1,15 @@
+{
+  "name": "products",
+  "description": "Product catalog",
+  "primary_key": "product_id",
+  "fields": {
+    "product_id": { "type": "integer", "nullable": false },
+    "name": { "type": "string", "nullable": false },
+    "category": { "type": "string", "nullable": false },
+    "sub_category": { "type": "string", "nullable": true },
+    "cost": { "type": "float", "nullable": false },
+    "price": { "type": "float", "nullable": false },
+    "stock_units": { "type": "integer", "nullable": false },
+    "rating": { "type": "float", "nullable": true }
+  }
+}

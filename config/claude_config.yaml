@@ -1,0 +1,22 @@
+claude:
+  model: "claude-sonnet-4-5"
+  api_base: "https://api.anthropic.com/v1"
+  max_tokens: 4096
+  temperature: 0.3
+
+prompts:
+  schema_analysis: |
+    Analyze this data schema and suggest optimal visualizations.
+    Schema: {schema}
+    Relationships: {relationships}
+    Return a JSON array of objects with keys: chart_type, reason, priority (1-5).
+
+  data_insight: |
+    Given this processed dataset summary, generate 3-5 concise data insights.
+    Summary: {summary}
+    Return a JSON array of strings, each being one insight sentence.
+
+  viz_recommendation: |
+    Recommend the best chart type for this data pattern.
+    Pattern: {pattern}
+    Return JSON with keys: recommended_chart, alternative_chart, reasoning.

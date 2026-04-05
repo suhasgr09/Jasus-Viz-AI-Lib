@@ -1,0 +1,16 @@
+{
+  "name": "sales",
+  "description": "E-commerce sales transactions",
+  "primary_key": "order_id",
+  "fields": {
+    "order_id": { "type": "integer", "nullable": false, "description": "Unique order identifier" },
+    "customer_id": { "type": "integer", "nullable": false, "description": "Foreign key to customers" },
+    "product_id": { "type": "integer", "nullable": false, "description": "Foreign key to products" },
+    "order_date": { "type": "date", "nullable": false, "description": "Date the order was placed" },
+    "quantity": { "type": "integer", "nullable": false, "description": "Units ordered" },
+    "unit_price": { "type": "float", "nullable": false, "description": "Price per unit (USD)" },
+    "total_amount": { "type": "float", "nullable": false, "description": "Total order value" },
+    "region": { "type": "string", "nullable": true, "description": "Sales region" },
+    "category": { "type": "string", "nullable": true, "description": "Product category" }
+  }
+}
