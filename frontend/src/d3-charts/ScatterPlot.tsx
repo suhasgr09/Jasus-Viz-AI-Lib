@@ -3,13 +3,16 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 export default function ScatterPlot() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('sales');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
     const sample = data.slice(0, 200);
 
     const W = 560, H = 360, margin = { top: 20, right: 30, bottom: 55, left: 70 };
@@ -30,11 +33,22 @@ export default function ScatterPlot() {
       .call(g => g.select('.domain').remove())
       .call(g => g.selectAll('.tick line').attr('stroke', GRID_COLOR));
 
-    svg.selectAll('circle').data(sample).join('circle')
+    svg.selectAll<SVGCircleElement, typeof sample[0]>('circle').data(sample).join('circle')
       .attr('cx', d => x(d.quantity)).attr('cy', d => y(d.total_amount))
       .attr('r', 4.5).attr('fill', d => colorScale(d.region))
-      .attr('opacity', 0.7).append('title')
-      .text(d => `${d.region}: qty=${d.quantity}, total=$${d.total_amount}`);
+      .attr('opacity', 0.7)
+      .style('cursor', 'pointer')
+      .on('mousemove', function(event, d) {
+        d3.select(this).attr('r', 7).attr('opacity', 1).attr('stroke', '#fff').attr('stroke-width', 1.5);
+        show(
+          tipHtml(d.region, [['Qty', String(d.quantity)], ['Total', fmt(d.total_amount)], ['Category', d.category]]),
+          event.clientX, event.clientY
+        );
+      })
+      .on('mouseleave', function() {
+        d3.select(this).attr('r', 4.5).attr('opacity', 0.7).attr('stroke', 'none');
+        hide();
+      });
 
     // Regression line
     const xVals = sample.map(d => d.quantity);
@@ -74,8 +88,9 @@ export default function ScatterPlot() {
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Scatter Plot with Regression</div>
-      <div style={chartSubtitle}>Quantity vs total amount – with linear regression line</div>
+      <div style={chartSubtitle}>Quantity vs total amount — hover points for details</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 560 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

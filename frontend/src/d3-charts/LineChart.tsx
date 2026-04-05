@@ -3,13 +3,16 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 export default function LineChart() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('sales');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
 
     // Monthly revenue aggregation
     const byMonth = d3.rollup(
@@ -68,6 +71,26 @@ export default function LineChart() {
       .transition().duration(1200)
       .attr('stroke-dashoffset', 0);
 
+    // Dots at each data point
+    chartGroup.selectAll<SVGCircleElement, typeof chartData[0]>('.dot')
+      .data(chartData)
+      .join('circle')
+      .attr('class', 'dot')
+      .attr('cx', d => x(d.date))
+      .attr('cy', d => y(d.total))
+      .attr('r', 4)
+      .attr('fill', CHART_COLORS[0])
+      .attr('stroke', '#0f1117')
+      .attr('stroke-width', 2)
+      .style('cursor', 'pointer')
+      .on('mousemove', (event, d) => {
+        show(
+          tipHtml(d3.timeFormat('%B %Y')(d.date), [['Revenue', fmt(d.total)]]),
+          event.clientX, event.clientY
+        );
+      })
+      .on('mouseleave', () => hide());
+
     // Zoom
     const zoom = d3.zoom<SVGSVGElement, unknown>()
       .scaleExtent([1, 8])
@@ -96,8 +119,9 @@ export default function LineChart() {
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Line Chart with Zoom</div>
-      <div style={chartSubtitle}>Monthly revenue trend – scroll / pinch to zoom</div>
+      <div style={chartSubtitle}>Monthly revenue — scroll to zoom, hover dots for values</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 640, cursor: 'grab' }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

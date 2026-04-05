@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { CHART_COLORS, GRID_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, tipHtml } from '../utils/tooltipHelpers';
 
 const SCHEMA_NODES = [
   { id: 'orders', type: 'fact' }, { id: 'customers', type: 'dim' },
@@ -18,9 +19,11 @@ const SCHEMA_LINKS = [
 
 export default function NetworkGraph() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
     const W = 580, H = 380;
     d3.select(svgRef.current).selectAll('*').remove();
     const svg = d3.select(svgRef.current).attr('viewBox', `0 0 ${W} ${H}`);
@@ -49,8 +52,24 @@ export default function NetworkGraph() {
       .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
       .on('end', (event, d) => { if (!event.active) sim.alphaTarget(0); d.fx = null; d.fy = null; });
 
-    const nodeGroup = svg.append('g').selectAll('g').data(nodes).join('g')
-      .call(nodeDrag as any);
+    const nodeGroup = svg.append('g').selectAll<SVGGElement, any>('g').data(nodes).join('g')
+      .call(nodeDrag as any)
+      .style('cursor', 'pointer')
+      .on('mousemove', function(event, d) {
+        d3.select(this).select('rect').attr('opacity', 1)
+          .attr('stroke', 'rgba(255,255,255,0.4)').attr('stroke-width', 1.5);
+        const fkCount = links.filter((l: any) =>
+          l.source.id === d.id || l.target.id === d.id
+        ).length;
+        show(tipHtml(d.id, [
+          ['Type', d.type === 'fact' ? 'Fact Table' : 'Dimension'],
+          ['FK relationships', String(fkCount)],
+        ]), event.clientX, event.clientY);
+      })
+      .on('mouseleave', function() {
+        d3.select(this).select('rect').attr('opacity', 0.85).attr('stroke', 'none');
+        hide();
+      });
 
     nodeGroup.append('rect').attr('x', -38).attr('y', -16).attr('width', 76).attr('height', 32)
       .attr('rx', 6)
@@ -75,6 +94,7 @@ export default function NetworkGraph() {
       <div style={chartTitle}>Network Graph</div>
       <div style={chartSubtitle}>Schema relationship visualization – drag to reorganize</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 580 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

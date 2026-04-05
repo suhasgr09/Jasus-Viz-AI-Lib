@@ -3,13 +3,16 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 export default function HeatmapMatrix() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('sales');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
 
     const regions = [...new Set(data.map(d => d.region))].sort();
     const categories = [...new Set(data.map(d => d.category))].sort();
@@ -33,7 +36,7 @@ export default function HeatmapMatrix() {
     const color = d3.scaleSequential(d3.interpolateViridis)
       .domain([0, d3.max(matrix, d => d.value)!]);
 
-    svg.selectAll('.cell')
+    svg.selectAll<SVGRectElement, typeof matrix[0]>('.cell')
       .data(matrix)
       .join('rect')
       .attr('x', d => xScale(d.category)!)
@@ -42,8 +45,20 @@ export default function HeatmapMatrix() {
       .attr('height', yScale.bandwidth())
       .attr('rx', 3)
       .attr('fill', d => d.value > 0 ? color(d.value) : '#1e2235')
-      .append('title')
-      .text(d => `${d.region} × ${d.category}: $${d.value.toFixed(0)}`);
+      .attr('stroke', 'transparent')
+      .attr('stroke-width', 2)
+      .style('cursor', 'pointer')
+      .on('mousemove', function(event, d) {
+        d3.select(this).attr('stroke', 'rgba(255,255,255,0.6)');
+        show(
+          tipHtml(`${d.region} × ${d.category}`, [['Revenue', fmt(d.value)]]),
+          event.clientX, event.clientY
+        );
+      })
+      .on('mouseleave', function() {
+        d3.select(this).attr('stroke', 'transparent');
+        hide();
+      });;
 
     svg.append('g').attr('transform', `translate(0,${h})`)
       .call(d3.axisBottom(xScale))
@@ -71,8 +86,9 @@ export default function HeatmapMatrix() {
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Heatmap Matrix</div>
-      <div style={chartSubtitle}>Revenue intensity: region × category</div>
+      <div style={chartSubtitle}>Revenue intensity: region × category — hover to inspect</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 540 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

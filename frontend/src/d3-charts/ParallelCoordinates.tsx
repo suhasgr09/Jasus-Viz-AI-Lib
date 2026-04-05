@@ -3,15 +3,18 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 const AXES = ['salary', 'performance_score', 'years_experience'];
 
 export default function ParallelCoordinates() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('employees');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
     const sample = data.slice(0, 80);
     const departments = [...new Set(sample.map(d => d.department))];
     const color = d3.scaleOrdinal(CHART_COLORS).domain(departments);
@@ -36,13 +39,27 @@ export default function ParallelCoordinates() {
     const pathData = (d: any) =>
       line(AXES.map(ax => [x(ax)!, yScales[ax](+d[ax] || 0)]));
 
-    svg.selectAll('.pcp-line').data(sample).join('path')
+    const lines = svg.selectAll<SVGPathElement, any>('.pcp-line').data(sample).join('path')
       .attr('class', 'pcp-line')
       .attr('d', d => pathData(d))
       .attr('fill', 'none')
       .attr('stroke', d => color(d.department))
       .attr('opacity', 0.45)
-      .attr('stroke-width', 1.5);
+      .attr('stroke-width', 1.5)
+      .style('cursor', 'pointer')
+      .on('mousemove', function(event, d) {
+        d3.select(this).attr('opacity', 1).attr('stroke-width', 3);
+        lines.filter(l => l !== d).attr('opacity', 0.05);
+        show(tipHtml(d.department, [
+          ['Salary', fmt(+d.salary)],
+          ['Perf Score', parseFloat(d.performance_score).toFixed(1)],
+          ['Experience', d.years_experience + ' yrs'],
+        ]), event.clientX, event.clientY);
+      })
+      .on('mouseleave', function() {
+        lines.attr('opacity', 0.45).attr('stroke-width', 1.5);
+        hide();
+      });
 
     AXES.forEach(ax => {
       const axisG = svg.append('g').attr('transform', `translate(${x(ax)}, 0)`);
@@ -65,6 +82,7 @@ export default function ParallelCoordinates() {
       <div style={chartTitle}>Parallel Coordinates</div>
       <div style={chartSubtitle}>Multi-dimensional exploration: salary, performance, experience</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 600 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }
