@@ -15,7 +15,7 @@ from pydantic import BaseModel
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-app = FastAPI(title="Jasus-Viz-AI-Lib API", version="1.0.0")
+app = FastAPI(title="jasus-viz-AI-lib API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,

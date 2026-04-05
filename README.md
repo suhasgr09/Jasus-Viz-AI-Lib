@@ -1,6 +1,6 @@
-# Jasus Viz AI Studio
+# jasus-viz-AI-lib
 
-An AI-powered data visualization framework combining **Claude Sonnet** with **D3.js**, **React**, **pandas**, and **FastAPI** to automatically analyze datasets, suggest optimal chart types, and render 15+ interactive visualizations — including a live **Sales & Payments demo dashboard**.
+An AI-powered data visualization library combining **Claude Sonnet** with **D3.js**, **React**, **pandas**, and **FastAPI** to automatically analyze datasets, suggest optimal chart types, and render 14 fully interactive D3 visualizations — including a live **Sales & Payments demo dashboard**.
 
 ## Architecture
 
@@ -32,25 +32,26 @@ dataviz-ai-studio/
 
 ## Visualizations
 
-### 15 Core D3 Charts
+### 14 Interactive D3 Charts
 
-| # | Chart | Use Case |
-|---|-------|----------|
-| 1 | Interactive Bar Chart | Category comparisons |
-| 2 | Line Chart with Zoom | Time-series trends |
-| 3 | Heatmap Matrix | Correlation analysis |
-| 4 | Force-Directed Graph | Entity relationship mapping |
-| 5 | Treemap | Hierarchical data breakdown |
-| 6 | Sankey Diagram | Flow / funnel analysis |
-| 7 | Scatter Plot with Regression | Statistical relationships |
-| 8 | Box Plot Dashboard | Distribution analysis |
-| 9 | Choropleth Map | Geographic data |
-| 10 | Sunburst Chart | Multi-level hierarchy |
-| 11 | Radar / Spider Chart | Multi-metric comparison |
-| 12 | Stacked Area Chart | Composition over time |
-| 13 | Network Graph | Schema relationship visual |
-| 14 | Parallel Coordinates | Multi-dimensional exploration |
-| 15 | AI-Annotated Dashboard | Claude-generated insights overlay |
+All charts feature **D3 v7** hover interactions — animated highlights, opacity feedback, and styled floating tooltips with live data values.
+
+| # | Chart | Tooltip content |
+|---|-------|-----------------|
+| 1 | Interactive Bar Chart | Region, revenue, order count |
+| 2 | Line Chart with Zoom | Month, revenue |
+| 3 | Heatmap Matrix | Region × category, revenue |
+| 4 | Force-Directed Graph | Node name, connected entities |
+| 5 | Treemap | Category, revenue, % share |
+| 6 | Sankey Diagram | Source → target flow |
+| 7 | Scatter Plot | Region, qty, total, category |
+| 8 | Box Plot Dashboard | Dept + min/Q1/median/Q3/max |
+| 9 | Choropleth Map | State, region, revenue |
+| 10 | Sunburst Chart | Name, value, depth type |
+| 11 | Radar / Spider Chart | Dept + metric means |
+| 12 | Stacked Area Chart | Category, month, revenue |
+| 13 | Network Graph (Schema) | Table name, type, FK count |
+| 14 | Parallel Coordinates | Dept, salary, perf, experience |
 
 ### 🎯 Sales & Payments Demo (`/demo`)
 
@@ -71,7 +72,7 @@ A self-contained analytics dashboard built on 2,000 rows of synthetic sales + pa
 ### 1. Clone & open in Codespace
 
 ```bash
-git clone https://github.com/suhasgr09/dataviz-ai-studio
+git clone https://github.com/suhasgr09/Jasus-Viz-AI-Lib
 # Open in GitHub Codespace — devcontainer auto-installs deps
 ```
 
