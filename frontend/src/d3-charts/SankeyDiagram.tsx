@@ -52,7 +52,7 @@ export default function SankeyDiagram() {
         .on('mousemove', (event) => {
           d3.select(event.currentTarget as SVGPathElement).attr('opacity', 0.75);
           show(
-            tipHtml(`${SANKEY_NODES[l.source]} → ${SANKEY_NODES[l.target]}`, [['Flow', String(l.value) + ' units']]),
+            tipHtml(`${SANKEY_NODES[l.source]} → ${SANKEY_NODES[l.target]}`, [['Flow', String(l.value) + ' units']], CHART_COLORS[l.source % CHART_COLORS.length]),
             event.clientX, event.clientY
           );
         })
@@ -69,7 +69,7 @@ export default function SankeyDiagram() {
         .style('cursor', 'pointer')
         .on('mousemove', (event) => {
           const total = SANKEY_LINKS.filter(l => l.source === i).reduce((s, l) => s + l.value, 0);
-          show(tipHtml(n, [['Category', n], ['Total flow', String(total) + ' units']]), event.clientX, event.clientY);
+          show(tipHtml(n, [['Category', n], ['Total flow', String(total) + ' units']], CHART_COLORS[i % CHART_COLORS.length]), event.clientX, event.clientY);
         })
         .on('mouseleave', () => hide());
       svg.append('text').attr('x', leftX - 6).attr('y', ly(i) + lH / 2).attr('dy', 4)
@@ -84,7 +84,7 @@ export default function SankeyDiagram() {
         .style('cursor', 'pointer')
         .on('mousemove', (event) => {
           const total = SANKEY_LINKS.filter(l => l.target - 5 === i).reduce((s, l) => s + l.value, 0);
-          show(tipHtml(n, [['Region', n], ['Incoming flow', String(total) + ' units']]), event.clientX, event.clientY);
+          show(tipHtml(n, [['Region', n], ['Incoming flow', String(total) + ' units']], CHART_COLORS[(i + 5) % CHART_COLORS.length]), event.clientX, event.clientY);
         })
         .on('mouseleave', () => hide());
       svg.append('text').attr('x', rightX + nodeW + 6).attr('y', ry(i) + rH / 2).attr('dy', 4)

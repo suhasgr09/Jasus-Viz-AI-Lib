@@ -40,8 +40,9 @@ export default function ScatterPlot() {
       .style('cursor', 'pointer')
       .on('mousemove', function(event, d) {
         d3.select(this).attr('r', 7).attr('opacity', 1).attr('stroke', '#fff').attr('stroke-width', 1.5);
+        const elColor = d3.select(this).attr('fill') || CHART_COLORS[0];
         show(
-          tipHtml(d.region, [['Qty', String(d.quantity)], ['Total', fmt(d.total_amount)], ['Category', d.category]]),
+          tipHtml(d.region, [['Qty', String(d.quantity)], ['Total', fmt(d.total_amount)], ['Category', d.category]], elColor),
           event.clientX, event.clientY
         );
       })

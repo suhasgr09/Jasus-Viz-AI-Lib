@@ -50,11 +50,12 @@ export default function ParallelCoordinates() {
       .on('mousemove', function(event, d) {
         d3.select(this).attr('opacity', 1).attr('stroke-width', 3);
         lines.filter(l => l !== d).attr('opacity', 0.05);
+        const elColor = d3.select(this).attr('stroke') || CHART_COLORS[0];
         show(tipHtml(d.department, [
           ['Salary', fmt(+d.salary)],
           ['Perf Score', parseFloat(d.performance_score).toFixed(1)],
           ['Experience', d.years_experience + ' yrs'],
-        ]), event.clientX, event.clientY);
+        ], elColor), event.clientX, event.clientY);
       })
       .on('mouseleave', function() {
         lines.attr('opacity', 0.45).attr('stroke-width', 1.5);

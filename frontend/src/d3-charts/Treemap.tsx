@@ -39,8 +39,9 @@ export default function Treemap() {
       .on('mousemove', function(event, d: any) {
         d3.select(this).attr('opacity', 1).attr('stroke', 'rgba(255,255,255,0.4)').attr('stroke-width', 1.5);
         const pct = total > 0 ? ((d.data.value / total) * 100).toFixed(1) : '0.0';
+        const elColor = d3.select(this).attr('fill') || CHART_COLORS[0];
         show(
-          tipHtml(d.data.name, [['Revenue', fmt(d.data.value)], ['Share', `${pct}%`]]),
+          tipHtml(d.data.name, [['Revenue', fmt(d.data.value)], ['Share', `${pct}%`]], elColor),
           event.clientX, event.clientY
         );
       })

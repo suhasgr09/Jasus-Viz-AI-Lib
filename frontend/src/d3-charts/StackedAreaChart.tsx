@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
-import { TOOLTIP_STYLE, makeTip, fmt } from '../utils/tooltipHelpers';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 export default function StackedAreaChart() {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -54,9 +54,10 @@ export default function StackedAreaChart() {
         const pt = d[idx];
         const val = (pt[1] - pt[0]);
         show(
-          `<div style="font-weight:700;color:#a78bfa;margin-bottom:4px">${d.key}</div>` +
-          `Month: <strong>${d3.timeFormat('%b %Y')(new Date(pt.data.month as number))}</strong><br>` +
-          `Revenue: <strong>${fmt(val)}</strong>`,
+          tipHtml(d.key, [
+            ['Month', d3.timeFormat('%b %Y')(new Date(pt.data.month as number))],
+            ['Revenue', fmt(val)],
+          ], color(d.key)),
           event.clientX, event.clientY
         );
       })

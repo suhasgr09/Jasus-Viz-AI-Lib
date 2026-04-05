@@ -55,7 +55,8 @@ export default function SunburstChart() {
         const rows: [string, string][] = [['Value', fmt(d.value)]];
         if (parent) rows.push(['Parent', parent]);
         rows.push(['Depth', d.depth === 1 ? 'Category' : 'Region']);
-        show(tipHtml(d.data.name, rows), event.clientX, event.clientY);
+        const elColor = d3.select(this).attr('fill') || CHART_COLORS[0];
+        show(tipHtml(d.data.name, rows, elColor), event.clientX, event.clientY);
       })
       .on('mouseleave', function(_, d: any) {
         d3.select(this).attr('opacity', d.depth === 1 ? 0.9 : 0.65).attr('stroke', '#0f1117').attr('stroke-width', 0.8);
