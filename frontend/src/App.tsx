@@ -46,8 +46,8 @@ export default function App() {
       <div className={styles.shell}>
         <aside className={styles.sidebar}>
           <div className={styles.logo}>
-            <span>DataViz</span>
-            <span className={styles.logoAccent}> AI Studio</span>
+            <span>Jasus</span>
+            <span className={styles.logoAccent}>-Viz-AI-Lib</span>
           </div>
           <UploadPanel />
           <nav className={styles.nav}>
