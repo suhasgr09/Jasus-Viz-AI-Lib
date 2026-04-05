@@ -52,9 +52,10 @@ export default function ForceGraph() {
         const peers = links
           .filter((l: any) => l.source.id === d.id || l.target.id === d.id)
           .map((l: any) => l.source.id === d.id ? l.target.id : l.source.id);
+        const elColor = d3.select(this).attr('fill') || CHART_COLORS[0];
         show(tipHtml(d.id, [
           ['Connections', peers.join(', ') || 'none'],
-        ]), event.clientX, event.clientY);
+        ], elColor), event.clientX, event.clientY);
       })
       .on('mouseleave', function() {
         d3.select(this).attr('r', 28).attr('stroke', 'none');

@@ -85,7 +85,7 @@ export default function LineChart() {
       .style('cursor', 'pointer')
       .on('mousemove', (event, d) => {
         show(
-          tipHtml(d3.timeFormat('%B %Y')(d.date), [['Revenue', fmt(d.total)]]),
+          tipHtml(d3.timeFormat('%B %Y')(d.date), [['Revenue', fmt(d.total)]], CHART_COLORS[0]),
           event.clientX, event.clientY
         );
       })

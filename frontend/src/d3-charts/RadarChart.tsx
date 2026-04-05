@@ -71,7 +71,8 @@ export default function RadarChart() {
             LABELS[METRICS[i]],
             METRICS[i] === 'salary' ? `$${v.toFixed(0)}` : v.toFixed(1),
           ]);
-          show(tipHtml(dept, rows2), event.clientX, event.clientY);
+          const elColor = d3.select(this).attr('fill') || CHART_COLORS[di % CHART_COLORS.length];
+          show(tipHtml(dept, rows2, elColor), event.clientX, event.clientY);
         })
         .on('mouseleave', function() {
           d3.select(this).attr('opacity', 0.25).attr('stroke-width', 2);

@@ -61,10 +61,11 @@ export default function NetworkGraph() {
         const fkCount = links.filter((l: any) =>
           l.source.id === d.id || l.target.id === d.id
         ).length;
+        const elColor = d.type === 'fact' ? CHART_COLORS[0] : CHART_COLORS[2];
         show(tipHtml(d.id, [
           ['Type', d.type === 'fact' ? 'Fact Table' : 'Dimension'],
           ['FK relationships', String(fkCount)],
-        ]), event.clientX, event.clientY);
+        ], elColor), event.clientX, event.clientY);
       })
       .on('mouseleave', function() {
         d3.select(this).select('rect').attr('opacity', 0.85).attr('stroke', 'none');

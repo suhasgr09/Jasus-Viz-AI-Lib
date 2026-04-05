@@ -73,7 +73,7 @@ export default function BoxPlot() {
             tipHtml(d.dept, [
               ['Min', fmt(d.min)], ['Q1', fmt(d.q1)], ['Median', fmt(d.median)],
               ['Q3', fmt(d.q3)], ['Max', fmt(d.max)],
-            ]),
+            ], col),
             event.clientX, event.clientY
           );
         })

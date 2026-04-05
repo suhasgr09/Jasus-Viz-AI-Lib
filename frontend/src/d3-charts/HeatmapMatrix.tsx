@@ -50,8 +50,9 @@ export default function HeatmapMatrix() {
       .style('cursor', 'pointer')
       .on('mousemove', function(event, d) {
         d3.select(this).attr('stroke', 'rgba(255,255,255,0.6)');
+        const elColor = d3.select(this).attr('fill') || '#a78bfa';
         show(
-          tipHtml(`${d.region} × ${d.category}`, [['Revenue', fmt(d.value)]]),
+          tipHtml(`${d.region} × ${d.category}`, [['Revenue', fmt(d.value)]], elColor),
           event.clientX, event.clientY
         );
       })

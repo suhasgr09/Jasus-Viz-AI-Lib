@@ -54,7 +54,8 @@ export default function BarChart() {
       .style('cursor', 'pointer')
       .on('mousemove', function(event, d) {
         d3.select(this).attr('opacity', 1).attr('stroke', 'rgba(255,255,255,0.35)').attr('stroke-width', 1.5);
-        show(tipHtml(d.region, [['Revenue', fmt(d.total)], ['Orders', String(d.count)]]), event.clientX, event.clientY);
+        const elColor = d3.select(this).attr('fill') || CHART_COLORS[0];
+        show(tipHtml(d.region, [['Revenue', fmt(d.total)], ['Orders', String(d.count)]], elColor), event.clientX, event.clientY);
       })
       .on('mouseleave', function() {
         d3.select(this).attr('opacity', 0.85).attr('stroke', 'none');

@@ -59,10 +59,11 @@ export default function ChoroplethMap() {
         .on('mousemove', function(event) {
           d3.select(this).attr('r', 27).attr('opacity', 1)
             .attr('stroke', 'rgba(255,255,255,0.45)').attr('stroke-width', 2);
+          const elColor = d3.select(this).attr('fill') || '#3b82f6';
           show(tipHtml(state.name, [
             ['Region', state.region],
             ['Revenue', fmt(val)],
-          ]), event.clientX, event.clientY);
+          ], elColor), event.clientX, event.clientY);
         })
         .on('mouseleave', function() {
           d3.select(this).attr('r', 22).attr('opacity', 0.85)
