@@ -1,5 +1,6 @@
 {
   "name": "dataviz-ai-studio",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "AI-powered data visualization framework using Claude Sonnet",
   "scripts": {
