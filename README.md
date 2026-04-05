@@ -1,4 +1,4 @@
-# DataViz AI Studio
+# Jasus Viz AI Studio
 
 An AI-powered data visualization framework combining **Claude Sonnet** with **D3.js**, **React**, **pandas**, and **FastAPI** to automatically analyze datasets, suggest optimal chart types, and render 15+ interactive visualizations — including a live **Sales & Payments demo dashboard**.
 
