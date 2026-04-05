@@ -1,0 +1,11 @@
+{
+  "name": "dataviz-ai-studio",
+  "version": "1.0.0",
+  "description": "AI-powered data visualization framework using Claude Sonnet",
+  "scripts": {
+    "dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test",
+    "api": "uvicorn src.api:app --reload --port 8000"
+  }
+}

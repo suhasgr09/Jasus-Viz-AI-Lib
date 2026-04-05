@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+node_modules/
+frontend/build/
+*.log
+.DS_Store
+data/generated_json/*.json

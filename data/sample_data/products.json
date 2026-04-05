@@ -1,0 +1,507 @@
+{
+  "records": [
+    {
+      "product_id": 1,
+      "name": "Product-001",
+      "category": "Sports",
+      "sub_category": "Fitness",
+      "cost": 137.18,
+      "price": 381.77,
+      "stock_units": 479,
+      "rating": 1.6
+    },
+    {
+      "product_id": 2,
+      "name": "Product-002",
+      "category": "Sports",
+      "sub_category": "Fitness",
+      "cost": 143.7,
+      "price": 177.89,
+      "stock_units": 495,
+      "rating": 4.6
+    },
+    {
+      "product_id": 3,
+      "name": "Product-003",
+      "category": "Electronics",
+      "sub_category": "Accessories",
+      "cost": 168.61,
+      "price": 444.81,
+      "stock_units": 27,
+      "rating": 3.8
+    },
+    {
+      "product_id": 4,
+      "name": "Product-004",
+      "category": "Food",
+      "sub_category": "Organic",
+      "cost": 49.46,
+      "price": 93.6,
+      "stock_units": 327,
+      "rating": 4.8
+    },
+    {
+      "product_id": 5,
+      "name": "Product-005",
+      "category": "Home & Garden",
+      "sub_category": "Decor",
+      "cost": 180.83,
+      "price": 256.72,
+      "stock_units": 443,
+      "rating": 1.9
+    },
+    {
+      "product_id": 6,
+      "name": "Product-006",
+      "category": "Sports",
+      "sub_category": "Fitness",
+      "cost": 78.92,
+      "price": 226.46,
+      "stock_units": 469,
+      "rating": 2.0
+    },
+    {
+      "product_id": 7,
+      "name": "Product-007",
+      "category": "Electronics",
+      "sub_category": "Phones",
+      "cost": 187.39,
+      "price": 325.19,
+      "stock_units": 440,
+      "rating": 4.6
+    },
+    {
+      "product_id": 8,
+      "name": "Product-008",
+      "category": "Sports",
+      "sub_category": "Team Sports",
+      "cost": 127.01,
+      "price": 245.3,
+      "stock_units": 17,
+      "rating": 2.1
+    },
+    {
+      "product_id": 9,
+      "name": "Product-009",
+      "category": "Electronics",
+      "sub_category": "Laptops",
+      "cost": 164.99,
+      "price": 337.89,
+      "stock_units": 211,
+      "rating": 4.7
+    },
+    {
+      "product_id": 10,
+      "name": "Product-010",
+      "category": "Home & Garden",
+      "sub_category": "Furniture",
+      "cost": 144.04,
+      "price": 386.59,
+      "stock_units": 357,
+      "rating": 2.0
+    },
+    {
+      "product_id": 11,
+      "name": "Product-011",
+      "category": "Electronics",
+      "sub_category": "Accessories",
+      "cost": 71.67,
+      "price": 180.08,
+      "stock_units": 280,
+      "rating": 4.0
+    },
+    {
+      "product_id": 12,
+      "name": "Product-012",
+      "category": "Sports",
+      "sub_category": "Outdoor",
+      "cost": 139.65,
+      "price": 328.8,
+      "stock_units": 94,
+      "rating": 3.5
+    },
+    {
+      "product_id": 13,
+      "name": "Product-013",
+      "category": "Food",
+      "sub_category": "Beverages",
+      "cost": 28.95,
+      "price": 45.17,
+      "stock_units": 156,
+      "rating": 2.3
+    },
+    {
+      "product_id": 14,
+      "name": "Product-014",
+      "category": "Electronics",
+      "sub_category": "Phones",
+      "cost": 23.94,
+      "price": 50.98,
+      "stock_units": 496,
+      "rating": 4.1
+    },
+    {
+      "product_id": 15,
+      "name": "Product-015",
+      "category": "Food",
+      "sub_category": "Organic",
+      "cost": 153.11,
+      "price": 372.72,
+      "stock_units": 405,
+      "rating": 4.8
+    },
+    {
+      "product_id": 16,
+      "name": "Product-016",
+      "category": "Sports",
+      "sub_category": "Team Sports",
+      "cost": 96.72,
+      "price": 139.31,
+      "stock_units": 88,
+      "rating": 3.7
+    },
+    {
+      "product_id": 17,
+      "name": "Product-017",
+      "category": "Home & Garden",
+      "sub_category": "Furniture",
+      "cost": 160.31,
+      "price": 216.73,
+      "stock_units": 188,
+      "rating": 1.7
+    },
+    {
+      "product_id": 18,
+      "name": "Product-018",
+      "category": "Sports",
+      "sub_category": "Team Sports",
+      "cost": 189.06,
+      "price": 303.27,
+      "stock_units": 485,
+      "rating": 1.1
+    },
+    {
+      "product_id": 19,
+      "name": "Product-019",
+      "category": "Books",
+      "sub_category": "Academic",
+      "cost": 130.13,
+      "price": 209.73,
+      "stock_units": 45,
+      "rating": 4.9
+    },
+    {
+      "product_id": 20,
+      "name": "Product-020",
+      "category": "Clothing",
+      "sub_category": "Men",
+      "cost": 53.83,
+      "price": 69.42,
+      "stock_units": 316,
+      "rating": 2.7
+    },
+    {
+      "product_id": 21,
+      "name": "Product-021",
+      "category": "Home & Garden",
+      "sub_category": "Tools",
+      "cost": 31.55,
+      "price": 47.52,
+      "stock_units": 290,
+      "rating": 1.5
+    },
+    {
+      "product_id": 22,
+      "name": "Product-022",
+      "category": "Food",
+      "sub_category": "Beverages",
+      "cost": 106.12,
+      "price": 285.36,
+      "stock_units": 253,
+      "rating": 1.5
+    },
+    {
+      "product_id": 23,
+      "name": "Product-023",
+      "category": "Food",
+      "sub_category": "Beverages",
+      "cost": 42.22,
+      "price": 72.55,
+      "stock_units": 253,
+      "rating": 2.5
+    },
+    {
+      "product_id": 24,
+      "name": "Product-024",
+      "category": "Sports",
+      "sub_category": "Team Sports",
+      "cost": 171.55,
+      "price": 272.42,
+      "stock_units": 421,
+      "rating": 2.1
+    },
+    {
+      "product_id": 25,
+      "name": "Product-025",
+      "category": "Food",
+      "sub_category": "Snacks",
+      "cost": 39.49,
+      "price": 76.43,
+      "stock_units": 74,
+      "rating": 1.1
+    },
+    {
+      "product_id": 26,
+      "name": "Product-026",
+      "category": "Home & Garden",
+      "sub_category": "Tools",
+      "cost": 48.63,
+      "price": 137.78,
+      "stock_units": 189,
+      "rating": 3.3
+    },
+    {
+      "product_id": 27,
+      "name": "Product-027",
+      "category": "Food",
+      "sub_category": "Snacks",
+      "cost": 92.72,
+      "price": 189.52,
+      "stock_units": 446,
+      "rating": 2.3
+    },
+    {
+      "product_id": 28,
+      "name": "Product-028",
+      "category": "Food",
+      "sub_category": "Snacks",
+      "cost": 80.72,
+      "price": 200.51,
+      "stock_units": 362,
+      "rating": 2.7
+    },
+    {
+      "product_id": 29,
+      "name": "Product-029",
+      "category": "Books",
+      "sub_category": "Fiction",
+      "cost": 52.73,
+      "price": 116.14,
+      "stock_units": 26,
+      "rating": 2.3
+    },
+    {
+      "product_id": 30,
+      "name": "Product-030",
+      "category": "Clothing",
+      "sub_category": "Women",
+      "cost": 95.24,
+      "price": 285.16,
+      "stock_units": 480,
+      "rating": 3.7
+    },
+    {
+      "product_id": 31,
+      "name": "Product-031",
+      "category": "Books",
+      "sub_category": "Fiction",
+      "cost": 142.49,
+      "price": 172.36,
+      "stock_units": 258,
+      "rating": 3.5
+    },
+    {
+      "product_id": 32,
+      "name": "Product-032",
+      "category": "Home & Garden",
+      "sub_category": "Decor",
+      "cost": 195.55,
+      "price": 365.21,
+      "stock_units": 495,
+      "rating": 4.6
+    },
+    {
+      "product_id": 33,
+      "name": "Product-033",
+      "category": "Electronics",
+      "sub_category": "Laptops",
+      "cost": 116.94,
+      "price": 176.08,
+      "stock_units": 252,
+      "rating": 4.7
+    },
+    {
+      "product_id": 34,
+      "name": "Product-034",
+      "category": "Sports",
+      "sub_category": "Fitness",
+      "cost": 28.12,
+      "price": 69.69,
+      "stock_units": 221,
+      "rating": 1.6
+    },
+    {
+      "product_id": 35,
+      "name": "Product-035",
+      "category": "Electronics",
+      "sub_category": "Phones",
+      "cost": 64.03,
+      "price": 134.37,
+      "stock_units": 498,
+      "rating": 4.3
+    },
+    {
+      "product_id": 36,
+      "name": "Product-036",
+      "category": "Food",
+      "sub_category": "Beverages",
+      "cost": 73.4,
+      "price": 125.46,
+      "stock_units": 448,
+      "rating": 2.1
+    },
+    {
+      "product_id": 37,
+      "name": "Product-037",
+      "category": "Home & Garden",
+      "sub_category": "Tools",
+      "cost": 104.36,
+      "price": 292.92,
+      "stock_units": 161,
+      "rating": 3.9
+    },
+    {
+      "product_id": 38,
+      "name": "Product-038",
+      "category": "Sports",
+      "sub_category": "Outdoor",
+      "cost": 153.21,
+      "price": 337.09,
+      "stock_units": 472,
+      "rating": 3.6
+    },
+    {
+      "product_id": 39,
+      "name": "Product-039",
+      "category": "Sports",
+      "sub_category": "Outdoor",
+      "cost": 12.54,
+      "price": 16.28,
+      "stock_units": 93,
+      "rating": 1.1
+    },
+    {
+      "product_id": 40,
+      "name": "Product-040",
+      "category": "Home & Garden",
+      "sub_category": "Tools",
+      "cost": 34.38,
+      "price": 68.26,
+      "stock_units": 458,
+      "rating": 4.7
+    },
+    {
+      "product_id": 41,
+      "name": "Product-041",
+      "category": "Electronics",
+      "sub_category": "Accessories",
+      "cost": 89.42,
+      "price": 197.58,
+      "stock_units": 234,
+      "rating": 3.0
+    },
+    {
+      "product_id": 42,
+      "name": "Product-042",
+      "category": "Food",
+      "sub_category": "Snacks",
+      "cost": 173.64,
+      "price": 317.64,
+      "stock_units": 104,
+      "rating": 4.5
+    },
+    {
+      "product_id": 43,
+      "name": "Product-043",
+      "category": "Clothing",
+      "sub_category": "Kids",
+      "cost": 167.32,
+      "price": 354.0,
+      "stock_units": 139,
+      "rating": 3.3
+    },
+    {
+      "product_id": 44,
+      "name": "Product-044",
+      "category": "Food",
+      "sub_category": "Organic",
+      "cost": 117.96,
+      "price": 353.46,
+      "stock_units": 2,
+      "rating": 3.1
+    },
+    {
+      "product_id": 45,
+      "name": "Product-045",
+      "category": "Books",
+      "sub_category": "Fiction",
+      "cost": 37.75,
+      "price": 62.03,
+      "stock_units": 255,
+      "rating": 3.7
+    },
+    {
+      "product_id": 46,
+      "name": "Product-046",
+      "category": "Home & Garden",
+      "sub_category": "Decor",
+      "cost": 7.14,
+      "price": 21.18,
+      "stock_units": 62,
+      "rating": 2.6
+    },
+    {
+      "product_id": 47,
+      "name": "Product-047",
+      "category": "Books",
+      "sub_category": "Fiction",
+      "cost": 185.97,
+      "price": 503.34,
+      "stock_units": 78,
+      "rating": 1.1
+    },
+    {
+      "product_id": 48,
+      "name": "Product-048",
+      "category": "Sports",
+      "sub_category": "Team Sports",
+      "cost": 166.48,
+      "price": 343.57,
+      "stock_units": 321,
+      "rating": 4.8
+    },
+    {
+      "product_id": 49,
+      "name": "Product-049",
+      "category": "Books",
+      "sub_category": "Non-Fiction",
+      "cost": 132.29,
+      "price": 389.67,
+      "stock_units": 335,
+      "rating": 3.5
+    },
+    {
+      "product_id": 50,
+      "name": "Product-050",
+      "category": "Sports",
+      "sub_category": "Team Sports",
+      "cost": 66.33,
+      "price": 198.97,
+      "stock_units": 464,
+      "rating": 4.8
+    }
+  ],
+  "meta": {
+    "row_count": 50
+  }
+}

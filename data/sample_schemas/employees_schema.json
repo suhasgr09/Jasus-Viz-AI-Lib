@@ -1,0 +1,15 @@
+{
+  "name": "employees",
+  "description": "HR employee records",
+  "primary_key": "employee_id",
+  "fields": {
+    "employee_id": { "type": "integer", "nullable": false },
+    "name": { "type": "string", "nullable": false },
+    "department": { "type": "string", "nullable": false },
+    "role": { "type": "string", "nullable": true },
+    "salary": { "type": "float", "nullable": false },
+    "hire_date": { "type": "date", "nullable": false },
+    "performance_score": { "type": "float", "nullable": true },
+    "years_experience": { "type": "integer", "nullable": true }
+  }
+}

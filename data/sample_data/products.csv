@@ -1,0 +1,51 @@
+product_id,name,category,sub_category,cost,price,stock_units,rating
+1,Product-001,Sports,Fitness,137.18,381.77,479,1.6
+2,Product-002,Sports,Fitness,143.7,177.89,495,4.6
+3,Product-003,Electronics,Accessories,168.61,444.81,27,3.8
+4,Product-004,Food,Organic,49.46,93.6,327,4.8
+5,Product-005,Home & Garden,Decor,180.83,256.72,443,1.9
+6,Product-006,Sports,Fitness,78.92,226.46,469,2.0
+7,Product-007,Electronics,Phones,187.39,325.19,440,4.6
+8,Product-008,Sports,Team Sports,127.01,245.3,17,2.1
+9,Product-009,Electronics,Laptops,164.99,337.89,211,4.7
+10,Product-010,Home & Garden,Furniture,144.04,386.59,357,2.0
+11,Product-011,Electronics,Accessories,71.67,180.08,280,4.0
+12,Product-012,Sports,Outdoor,139.65,328.8,94,3.5
+13,Product-013,Food,Beverages,28.95,45.17,156,2.3
+14,Product-014,Electronics,Phones,23.94,50.98,496,4.1
+15,Product-015,Food,Organic,153.11,372.72,405,4.8
+16,Product-016,Sports,Team Sports,96.72,139.31,88,3.7
+17,Product-017,Home & Garden,Furniture,160.31,216.73,188,1.7
+18,Product-018,Sports,Team Sports,189.06,303.27,485,1.1
+19,Product-019,Books,Academic,130.13,209.73,45,4.9
+20,Product-020,Clothing,Men,53.83,69.42,316,2.7
+21,Product-021,Home & Garden,Tools,31.55,47.52,290,1.5
+22,Product-022,Food,Beverages,106.12,285.36,253,1.5
+23,Product-023,Food,Beverages,42.22,72.55,253,2.5
+24,Product-024,Sports,Team Sports,171.55,272.42,421,2.1
+25,Product-025,Food,Snacks,39.49,76.43,74,1.1
+26,Product-026,Home & Garden,Tools,48.63,137.78,189,3.3
+27,Product-027,Food,Snacks,92.72,189.52,446,2.3
+28,Product-028,Food,Snacks,80.72,200.51,362,2.7
+29,Product-029,Books,Fiction,52.73,116.14,26,2.3
+30,Product-030,Clothing,Women,95.24,285.16,480,3.7
+31,Product-031,Books,Fiction,142.49,172.36,258,3.5
+32,Product-032,Home & Garden,Decor,195.55,365.21,495,4.6
+33,Product-033,Electronics,Laptops,116.94,176.08,252,4.7
+34,Product-034,Sports,Fitness,28.12,69.69,221,1.6
+35,Product-035,Electronics,Phones,64.03,134.37,498,4.3
+36,Product-036,Food,Beverages,73.4,125.46,448,2.1
+37,Product-037,Home & Garden,Tools,104.36,292.92,161,3.9
+38,Product-038,Sports,Outdoor,153.21,337.09,472,3.6
+39,Product-039,Sports,Outdoor,12.54,16.28,93,1.1
+40,Product-040,Home & Garden,Tools,34.38,68.26,458,4.7
+41,Product-041,Electronics,Accessories,89.42,197.58,234,3.0
+42,Product-042,Food,Snacks,173.64,317.64,104,4.5
+43,Product-043,Clothing,Kids,167.32,354.0,139,3.3
+44,Product-044,Food,Organic,117.96,353.46,2,3.1
+45,Product-045,Books,Fiction,37.75,62.03,255,3.7
+46,Product-046,Home & Garden,Decor,7.14,21.18,62,2.6
+47,Product-047,Books,Fiction,185.97,503.34,78,1.1
+48,Product-048,Sports,Team Sports,166.48,343.57,321,4.8
+49,Product-049,Books,Non-Fiction,132.29,389.67,335,3.5
+50,Product-050,Sports,Team Sports,66.33,198.97,464,4.8
