@@ -17,6 +17,7 @@ import ParallelCoordinates from './d3-charts/ParallelCoordinates';
 import AIDashboard from './components/AIDashboard';
 import UploadPanel from './components/UploadPanel';
 import SalesPaymentDemo from './components/SalesPaymentDemo';
+import AIModelConfig from './components/AIModelConfig';
 import ChartPage from './components/ChartPage';
 import { CHART_SNIPPETS } from './utils/chartSnippets';
 import styles from './App.module.css';
@@ -38,6 +39,7 @@ const NAV_ITEMS = [
   { path: '/network', label: '🔗 Network Graph' },
   { path: '/parallel', label: '📏 Parallel Coords' },
   { path: '/ai-dashboard', label: '🤖 AI Dashboard' },
+  { path: '/ai-config', label: '⚙️ AI Model Config' },
 ];
 
 export default function App() {
@@ -83,6 +85,7 @@ export default function App() {
             <Route path="/network" element={<ChartPage snippet={CHART_SNIPPETS.network}><NetworkGraph /></ChartPage>} />
             <Route path="/parallel" element={<ChartPage snippet={CHART_SNIPPETS.parallel}><ParallelCoordinates /></ChartPage>} />
             <Route path="/ai-dashboard" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><AIDashboard /></div>} />
+            <Route path="/ai-config" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><AIModelConfig /></div>} />
             <Route path="/demo" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><SalesPaymentDemo /></div>} />
           </Routes>
           </div>

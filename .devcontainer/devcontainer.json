@@ -1,5 +1,5 @@
 {
-  "name": "DataViz AI Studio",
+  "name": "jasus-viz-ai",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
@@ -10,6 +10,16 @@
     }
   },
   "forwardPorts": [8000, 3000],
+  "portsAttributes": {
+    "8000": {
+      "label": "jasus-viz-ai backend",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "jasus-viz-ai frontend",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "postCreateCommand": "pip install -r requirements.txt && cd frontend && npm install",
   "customizations": {
     "vscode": {
