@@ -1,5 +1,5 @@
 {
-  "name": "dataviz-ai-studio",
+  "name": "jasus-viz-ai-lib",
   "license": "MIT",
   "version": "1.0.0",
   "description": "AI-powered data visualization framework using Claude Sonnet",
