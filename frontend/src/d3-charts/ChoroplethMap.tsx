@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 // Simplified US states data with representative centroids
 const US_STATES = [
@@ -25,10 +26,12 @@ const US_STATES = [
 
 export default function ChoroplethMap() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('sales');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
 
     // Map region to total revenue
     const byRegion = d3.rollup(data, v => d3.sum(v, d => d.total_amount), d => d.region);
@@ -51,12 +54,26 @@ export default function ChoroplethMap() {
         .attr('fill', color(val))
         .attr('stroke', '#2d3148')
         .attr('stroke-width', 1.5)
-        .append('title')
-        .text(`${state.name} (${state.region}): $${(val / 1000).toFixed(0)}k`);
+        .attr('opacity', 0.85)
+        .style('cursor', 'pointer')
+        .on('mousemove', function(event) {
+          d3.select(this).attr('r', 27).attr('opacity', 1)
+            .attr('stroke', 'rgba(255,255,255,0.45)').attr('stroke-width', 2);
+          show(tipHtml(state.name, [
+            ['Region', state.region],
+            ['Revenue', fmt(val)],
+          ]), event.clientX, event.clientY);
+        })
+        .on('mouseleave', function() {
+          d3.select(this).attr('r', 22).attr('opacity', 0.85)
+            .attr('stroke', '#2d3148').attr('stroke-width', 1.5);
+          hide();
+        });
 
       svg.append('text').attr('x', state.x).attr('y', state.y + 4)
         .attr('text-anchor', 'middle').attr('font-size', 9)
         .attr('fill', val > 50000 ? '#fff' : TEXT_COLOR)
+        .style('pointer-events', 'none')
         .text(state.abbr);
     });
 
@@ -81,6 +98,7 @@ export default function ChoroplethMap() {
       <div style={chartTitle}>Choropleth Map</div>
       <div style={chartSubtitle}>Revenue by sales region, mapped to representative US states</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 620 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

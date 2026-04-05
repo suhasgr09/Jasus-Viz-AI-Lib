@@ -3,13 +3,16 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt } from '../utils/tooltipHelpers';
 
 export default function StackedAreaChart() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('sales');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
 
     const categories = [...new Set(data.map(d => d.category))].sort();
     const months = [...new Set(data.map(d => d.order_date?.slice(0, 7)))].sort() as string[];
@@ -41,7 +44,23 @@ export default function StackedAreaChart() {
 
     svg.selectAll('.layer').data(series).join('path')
       .attr('class', 'layer').attr('d', area)
-      .attr('fill', d => color(d.key)).attr('opacity', 0.8);
+      .attr('fill', d => color(d.key)).attr('opacity', 0.8)
+      .style('cursor', 'crosshair')
+      .on('mousemove', (event, d) => {
+        const [mx] = d3.pointer(event);
+        const date = x.invert(mx);
+        const bisect = d3.bisector((r: any) => r.data.month).left;
+        const idx = Math.max(0, Math.min(d.length - 1, bisect(d, date)));
+        const pt = d[idx];
+        const val = (pt[1] - pt[0]);
+        show(
+          `<div style="font-weight:700;color:#a78bfa;margin-bottom:4px">${d.key}</div>` +
+          `Month: <strong>${d3.timeFormat('%b %Y')(pt.data.month)}</strong><br>` +
+          `Revenue: <strong>${fmt(val)}</strong>`,
+          event.clientX, event.clientY
+        );
+      })
+      .on('mouseleave', () => hide());
 
     // Legend
     categories.forEach((c, i) => {
@@ -62,8 +81,9 @@ export default function StackedAreaChart() {
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Stacked Area Chart</div>
-      <div style={chartSubtitle}>Revenue composition over time by category</div>
+      <div style={chartSubtitle}>Revenue composition over time — hover layers for details</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 640 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

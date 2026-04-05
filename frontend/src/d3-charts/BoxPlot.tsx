@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, fmt, tipHtml } from '../utils/tooltipHelpers';
 
 function quartiles(values: number[]) {
   const sorted = [...values].sort(d3.ascending);
@@ -17,10 +18,12 @@ function quartiles(values: number[]) {
 
 export default function BoxPlot() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('employees');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
 
     const byDept = d3.group(data, d => d.department);
     const stats = Array.from(byDept, ([dept, rows]) => ({
@@ -62,7 +65,19 @@ export default function BoxPlot() {
       // IQR box
       svg.append('rect').attr('x', x(d.dept)!).attr('y', y(d.q3)).attr('width', bw)
         .attr('height', y(d.q1) - y(d.q3)).attr('fill', col).attr('opacity', 0.35)
-        .attr('stroke', col).attr('stroke-width', 1.5).attr('rx', 3);
+        .attr('stroke', col).attr('stroke-width', 1.5).attr('rx', 3)
+        .style('cursor', 'pointer')
+        .on('mousemove', function(event) {
+          d3.select(this).attr('opacity', 0.65);
+          show(
+            tipHtml(d.dept, [
+              ['Min', fmt(d.min)], ['Q1', fmt(d.q1)], ['Median', fmt(d.median)],
+              ['Q3', fmt(d.q3)], ['Max', fmt(d.max)],
+            ]),
+            event.clientX, event.clientY
+          );
+        })
+        .on('mouseleave', function() { d3.select(this).attr('opacity', 0.35); hide(); });
 
       // Median line
       svg.append('line').attr('x1', x(d.dept)!).attr('x2', x(d.dept)! + bw)
@@ -80,8 +95,9 @@ export default function BoxPlot() {
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Box Plot Dashboard</div>
-      <div style={chartSubtitle}>Salary distribution by department</div>
+      <div style={chartSubtitle}>Salary distribution by department — hover boxes for statistics</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 580 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

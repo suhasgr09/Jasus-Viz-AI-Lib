@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { CHART_COLORS, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, tipHtml } from '../utils/tooltipHelpers';
 
 const SANKEY_NODES = ['Electronics', 'Clothing', 'Home', 'Sports', 'Books',
   'North', 'South', 'East', 'West'];
@@ -15,9 +16,11 @@ const SANKEY_LINKS = [
 
 export default function SankeyDiagram() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
     const W = 560, H = 340, pad = 20;
     d3.select(svgRef.current).selectAll('*').remove();
     const svg = d3.select(svgRef.current).attr('viewBox', `0 0 ${W} ${H}`);
@@ -44,31 +47,58 @@ export default function SankeyDiagram() {
         .attr('fill', 'none')
         .attr('stroke', CHART_COLORS[l.source % CHART_COLORS.length])
         .attr('stroke-width', Math.max(1, l.value / 10))
-        .attr('opacity', 0.4);
+        .attr('opacity', 0.4)
+        .style('cursor', 'pointer')
+        .on('mousemove', (event) => {
+          d3.select(event.currentTarget as SVGPathElement).attr('opacity', 0.75);
+          show(
+            tipHtml(`${SANKEY_NODES[l.source]} → ${SANKEY_NODES[l.target]}`, [['Flow', String(l.value) + ' units']]),
+            event.clientX, event.clientY
+          );
+        })
+        .on('mouseleave', (event) => {
+          d3.select(event.currentTarget as SVGPathElement).attr('opacity', 0.4);
+          hide();
+        });
     });
 
     // Left nodes
     leftNodes.forEach((n, i) => {
       svg.append('rect').attr('x', leftX).attr('y', ly(i)).attr('width', nodeW).attr('height', lH)
-        .attr('fill', CHART_COLORS[i % CHART_COLORS.length]).attr('rx', 3);
+        .attr('fill', CHART_COLORS[i % CHART_COLORS.length]).attr('rx', 3)
+        .style('cursor', 'pointer')
+        .on('mousemove', (event) => {
+          const total = SANKEY_LINKS.filter(l => l.source === i).reduce((s, l) => s + l.value, 0);
+          show(tipHtml(n, [['Category', n], ['Total flow', String(total) + ' units']]), event.clientX, event.clientY);
+        })
+        .on('mouseleave', () => hide());
       svg.append('text').attr('x', leftX - 6).attr('y', ly(i) + lH / 2).attr('dy', 4)
-        .attr('text-anchor', 'end').attr('fill', TEXT_COLOR).attr('font-size', 11).text(n);
+        .attr('text-anchor', 'end').attr('fill', TEXT_COLOR).attr('font-size', 11).text(n)
+        .style('pointer-events', 'none');
     });
 
     // Right nodes
     rightNodes.forEach((n, i) => {
       svg.append('rect').attr('x', rightX).attr('y', ry(i)).attr('width', nodeW).attr('height', rH)
-        .attr('fill', CHART_COLORS[(i + 5) % CHART_COLORS.length]).attr('rx', 3);
+        .attr('fill', CHART_COLORS[(i + 5) % CHART_COLORS.length]).attr('rx', 3)
+        .style('cursor', 'pointer')
+        .on('mousemove', (event) => {
+          const total = SANKEY_LINKS.filter(l => l.target - 5 === i).reduce((s, l) => s + l.value, 0);
+          show(tipHtml(n, [['Region', n], ['Incoming flow', String(total) + ' units']]), event.clientX, event.clientY);
+        })
+        .on('mouseleave', () => hide());
       svg.append('text').attr('x', rightX + nodeW + 6).attr('y', ry(i) + rH / 2).attr('dy', 4)
-        .attr('text-anchor', 'start').attr('fill', TEXT_COLOR).attr('font-size', 11).text(n);
+        .attr('text-anchor', 'start').attr('fill', TEXT_COLOR).attr('font-size', 11).text(n)
+        .style('pointer-events', 'none');
     });
   }, []);
 
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Sankey Diagram</div>
-      <div style={chartSubtitle}>Product category → sales region flow</div>
+      <div style={chartSubtitle}>Product category → sales region flow — hover links and nodes</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 560 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

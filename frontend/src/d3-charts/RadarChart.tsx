@@ -3,16 +3,19 @@ import * as d3 from 'd3';
 import { useSampleData } from '../hooks/useSampleData';
 import { CHART_COLORS, GRID_COLOR, TEXT_COLOR } from '../utils/colors';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
+import { TOOLTIP_STYLE, makeTip, tipHtml } from '../utils/tooltipHelpers';
 
 const METRICS = ['salary', 'performance_score', 'years_experience'];
 const LABELS: Record<string, string> = { salary: 'Salary', performance_score: 'Perf Score', years_experience: 'Exp (yrs)' };
 
 export default function RadarChart() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
   const { data } = useSampleData('employees');
 
   useEffect(() => {
     if (!data.length || !svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
 
     const byDept = d3.group(data, d => d.department);
     const departments = Array.from(byDept.keys()).slice(0, 5);
@@ -60,7 +63,20 @@ export default function RadarChart() {
       });
       svg.append('polygon').attr('points', points.join(' '))
         .attr('fill', CHART_COLORS[di % CHART_COLORS.length]).attr('opacity', 0.25)
-        .attr('stroke', CHART_COLORS[di % CHART_COLORS.length]).attr('stroke-width', 2);
+        .attr('stroke', CHART_COLORS[di % CHART_COLORS.length]).attr('stroke-width', 2)
+        .style('cursor', 'pointer')
+        .on('mousemove', function(event) {
+          d3.select(this).attr('opacity', 0.5).attr('stroke-width', 3);
+          const rows2: [string, string][] = means.map((v, i) => [
+            LABELS[METRICS[i]],
+            METRICS[i] === 'salary' ? `$${v.toFixed(0)}` : v.toFixed(1),
+          ]);
+          show(tipHtml(dept, rows2), event.clientX, event.clientY);
+        })
+        .on('mouseleave', function() {
+          d3.select(this).attr('opacity', 0.25).attr('stroke-width', 2);
+          hide();
+        });
     });
 
     // Legend
@@ -75,8 +91,9 @@ export default function RadarChart() {
   return (
     <div style={chartCard}>
       <div style={chartTitle}>Radar / Spider Chart</div>
-      <div style={chartSubtitle}>Multi-metric department comparison</div>
+      <div style={chartSubtitle}>Multi-metric department comparison — hover polygons for stats</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 440 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }

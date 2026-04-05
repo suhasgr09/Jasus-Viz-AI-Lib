@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { chartCard, chartTitle, chartSubtitle } from '../utils/chartStyles';
 import { CHART_COLORS, GRID_COLOR } from '../utils/colors';
+import { TOOLTIP_STYLE, makeTip, tipHtml } from '../utils/tooltipHelpers';
 
 const NODES = [
   { id: 'orders' }, { id: 'customers' }, { id: 'products' },
@@ -16,9 +17,11 @@ const LINKS = [
 
 export default function ForceGraph() {
   const svgRef = useRef<SVGSVGElement>(null);
+  const tooltipRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!svgRef.current) return;
+    const { show, hide } = makeTip(tooltipRef.current);
     const W = 500, H = 360;
     d3.select(svgRef.current).selectAll('*').remove();
     const svg = d3.select(svgRef.current).attr('viewBox', `0 0 ${W} ${H}`);
@@ -39,10 +42,24 @@ export default function ForceGraph() {
       .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
       .on('end', (event, d) => { if (!event.active) sim.alphaTarget(0); d.fx = null; d.fy = null; });
 
-    const node = svg.append('g').selectAll('circle').data(nodes).join('circle')
+    const node = svg.append('g').selectAll<SVGCircleElement, any>('circle').data(nodes).join('circle')
       .attr('r', 28).attr('fill', (_, i) => CHART_COLORS[i % CHART_COLORS.length])
       .attr('opacity', 0.9)
-      .call(drag as any);
+      .style('cursor', 'pointer')
+      .call(drag as any)
+      .on('mousemove', function(event, d) {
+        d3.select(this).attr('r', 34).attr('stroke', 'rgba(255,255,255,0.4)').attr('stroke-width', 2);
+        const peers = links
+          .filter((l: any) => l.source.id === d.id || l.target.id === d.id)
+          .map((l: any) => l.source.id === d.id ? l.target.id : l.source.id);
+        show(tipHtml(d.id, [
+          ['Connections', peers.join(', ') || 'none'],
+        ]), event.clientX, event.clientY);
+      })
+      .on('mouseleave', function() {
+        d3.select(this).attr('r', 28).attr('stroke', 'none');
+        hide();
+      });
 
     const label = svg.append('g').selectAll('text').data(nodes).join('text')
       .text(d => d.id).attr('text-anchor', 'middle').attr('dy', 4)
@@ -61,6 +78,7 @@ export default function ForceGraph() {
       <div style={chartTitle}>Force-Directed Graph</div>
       <div style={chartSubtitle}>Entity relationship mapping – drag nodes to rearrange</div>
       <svg ref={svgRef} style={{ width: '100%', maxWidth: 500 }} />
+      <div ref={tooltipRef} style={TOOLTIP_STYLE} />
     </div>
   );
 }
