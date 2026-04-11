@@ -1,9 +1,9 @@
-"""FastAPI backend – serves processed viz data and Claude insights."""
+"""FastAPI backend – serves processed viz data and AI insights (Gemini / Claude / OpenAI)."""
 import json
 import os
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
@@ -53,6 +53,24 @@ class VizPatternRequest(BaseModel):
     pattern: dict[str, Any]
 
 
+# ── AI client factory ──────────────────────────────────────────────────────
+
+Provider = Literal["gemini", "claude", "openai"]
+
+def _get_client(provider: Provider):
+    cfg = _get_config()
+    if provider == "gemini":
+        from ai_integration.gemini_client import GeminiClient
+        return GeminiClient(cfg)
+    elif provider == "claude":
+        from ai_integration.claude_client import ClaudeClient
+        return ClaudeClient(cfg)
+    elif provider == "openai":
+        from ai_integration.openai_client import OpenAIClient
+        return OpenAIClient(cfg)
+    raise ValueError(f"Unknown provider: {provider}")
+
+
 # ── Routes ─────────────────────────────────────────────────────────────────
 
 @app.get("/health")
@@ -61,11 +79,10 @@ def health():
 
 
 @app.post("/api/insights")
-def get_insights(req: InsightRequest):
-    """Ask Claude for insights about a dataset summary."""
-    from ai_integration.claude_client import ClaudeClient
+def get_insights(req: InsightRequest, provider: Provider = "gemini"):
+    """Ask an AI provider for insights about a dataset summary."""
     try:
-        client = ClaudeClient(_get_config())
+        client = _get_client(provider)
         result = client.analyze(req.dataset_summary)
         return result
     except EnvironmentError as exc:
@@ -75,11 +92,10 @@ def get_insights(req: InsightRequest):
 
 
 @app.post("/api/recommendations")
-def get_recommendations(req: RecommendationRequest):
-    """Ask Claude to recommend chart types for a schema."""
-    from ai_integration.claude_client import ClaudeClient
+def get_recommendations(req: RecommendationRequest, provider: Provider = "gemini"):
+    """Ask an AI provider to recommend chart types for a schema."""
     try:
-        client = ClaudeClient(_get_config())
+        client = _get_client(provider)
         result = client.get_schema_recommendations(req.schema, req.relationships)
         return result
     except EnvironmentError as exc:
@@ -87,11 +103,10 @@ def get_recommendations(req: RecommendationRequest):
 
 
 @app.post("/api/viz-recommendation")
-def viz_recommendation(req: VizPatternRequest):
-    """Ask Claude for the best chart type for a data pattern."""
-    from ai_integration.claude_client import ClaudeClient
+def viz_recommendation(req: VizPatternRequest, provider: Provider = "gemini"):
+    """Ask an AI provider for the best chart type for a data pattern."""
     try:
-        client = ClaudeClient(_get_config())
+        client = _get_client(provider)
         result = client.get_viz_recommendation(req.pattern)
         return result
     except EnvironmentError as exc:
@@ -103,15 +118,15 @@ async def process_upload(
     file: UploadFile = File(...),
     schema_json: str = Form("{}"),
     relationships: str = Form(""),
+    provider: str = Form("gemini"),
 ):
-    """Upload a CSV/JSON file, process it, and return viz JSON + Claude insights."""
+    """Upload a CSV/JSON file, process it, and return viz JSON + AI insights."""
     import tempfile
     import pandas as pd
     from data_engine.pandas_processor import PandasProcessor
     from data_engine.json_generator import JSONGenerator
     from schema_processor.schema_parser import SchemaParser
     from schema_processor.relationship_mapper import RelationshipMapper
-    from ai_integration.claude_client import ClaudeClient
 
     schema_dict = json.loads(schema_json)
     suffix = Path(file.filename or "upload.csv").suffix
@@ -137,10 +152,10 @@ async def process_upload(
         prompt_json = gen.for_ai_prompts(df, rel_map)
 
         try:
-            client = ClaudeClient(_get_config())
+            client = _get_client(provider)  # type: ignore[arg-type]
             ai_insights = client.analyze(prompt_json)
-        except EnvironmentError:
-            ai_insights = {"error": "ANTHROPIC_API_KEY not configured"}
+        except EnvironmentError as exc:
+            ai_insights = {"error": str(exc)}
 
         return {"viz_data": viz_json, "ai_insights": ai_insights}
     finally:

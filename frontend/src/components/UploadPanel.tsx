@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
+import { logEvent } from '../utils/analytics';
 
 export default function UploadPanel() {
   const fileRef = useRef<HTMLInputElement>(null);
@@ -24,9 +25,11 @@ export default function UploadPanel() {
       const rows = res.data?.viz_data?.meta?.row_count ?? '?';
       setStatus('done');
       setMessage(`✓ Processed ${rows} rows`);
+      logEvent('file_upload', `Upload: ${file.name}`, 'Upload', { fileName: file.name, rows: String(rows), status: 'success' });
     } catch {
       setStatus('error');
       setMessage('Upload failed');
+      logEvent('file_upload', `Upload: ${file.name}`, 'Upload', { fileName: file.name, status: 'error' });
     }
   };
 
