@@ -1,6 +1,18 @@
+gemini:
+  model: "gemini-1.5-flash"
+  api_base: "https://generativelanguage.googleapis.com/v1beta"
+  max_tokens: 4096
+  temperature: 0.3
+
 claude:
   model: "claude-sonnet-4-5"
   api_base: "https://api.anthropic.com/v1"
+  max_tokens: 4096
+  temperature: 0.3
+
+openai:
+  model: "gpt-4o"
+  api_base: "https://api.openai.com/v1"
   max_tokens: 4096
   temperature: 0.3
 
