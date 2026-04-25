@@ -1,5 +1,5 @@
 gemini:
-  model: "gemini-1.5-flash"
+  model: "gemini-2.0-flash"
   api_base: "https://generativelanguage.googleapis.com/v1beta"
   max_tokens: 4096
   temperature: 0.3
@@ -13,6 +13,11 @@ claude:
 openai:
   model: "gpt-4o"
   api_base: "https://api.openai.com/v1"
+  max_tokens: 4096
+  temperature: 0.3
+
+copilot:
+  model: "gpt-4o"
   max_tokens: 4096
   temperature: 0.3
 
