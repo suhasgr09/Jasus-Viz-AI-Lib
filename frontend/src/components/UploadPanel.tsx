@@ -1,11 +1,15 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { useUpload } from '../context/UploadContext';
 import { logEvent } from '../utils/analytics';
 
 export default function UploadPanel() {
   const fileRef = useRef<HTMLInputElement>(null);
   const [status, setStatus] = useState<'idle' | 'uploading' | 'done' | 'error'>('idle');
   const [message, setMessage] = useState('');
+  const { setResult } = useUpload();
+  const navigate = useNavigate();
 
   const handleUpload = async () => {
     const file = fileRef.current?.files?.[0];
@@ -25,7 +29,9 @@ export default function UploadPanel() {
       const rows = res.data?.viz_data?.meta?.row_count ?? '?';
       setStatus('done');
       setMessage(`✓ Processed ${rows} rows`);
+      setResult({ ...res.data, fileName: file.name });
       logEvent('file_upload', `Upload: ${file.name}`, 'Upload', { fileName: file.name, rows: String(rows), status: 'success' });
+      navigate('/upload-results');
     } catch {
       setStatus('error');
       setMessage('Upload failed');

@@ -38,13 +38,27 @@ const PROVIDERS = [
       'Paste as OPENAI_API_KEY in your .env file',
     ],
   },
+  {
+    emoji: '🤖', label: 'GitHub Copilot', envKey: 'GITHUB_TOKEN',
+    color: '#6c63ff', model: 'gpt-4o (GitHub Models API)',
+    docsUrl: 'https://github.com/settings/tokens',
+    docsLabel: 'GitHub Tokens',
+    steps: [
+      'Go to GitHub → Settings → Developer settings → Personal access tokens',
+      'Click "Generate new token (classic)"',
+      'Select scope: models:read (or read:org for Copilot Business)',
+      'Copy the token (shown only once)',
+      'Paste as GITHUB_TOKEN in your .env file',
+    ],
+  },
 ];
 
 const envBlock = `# ── AI Provider API Keys ──────────────────────────────────────────
-# Add your keys below. All three providers are supported.
+# Add your keys below. All four providers are supported.
 ANTHROPIC_API_KEY=
 GEMINI_API_KEY=
-OPENAI_API_KEY=`;
+OPENAI_API_KEY=
+GITHUB_TOKEN=`;
 
 export default function APIKeysPage() {
   const [copied, setCopied] = React.useState(false);

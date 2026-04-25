@@ -5,7 +5,7 @@ import { logEvent } from '../utils/analytics';
 
 // ── types ─────────────────────────────────────────────────────────────────────
 
-export type Provider = 'gemini' | 'claude' | 'openai';
+export type Provider = 'gemini' | 'claude' | 'openai' | 'copilot';
 
 interface Recommendation { chart_type: string; reason: string; priority: number }
 interface AIResult {
