@@ -1,6 +1,6 @@
 # jasus-viz-AI-lib
 
-An AI-powered data visualization **library** combining **Claude Sonnet** with **D3.js**, **React**, **pandas**, and **FastAPI** to automatically analyze datasets, suggest optimal chart types, and render 14 fully interactive D3 visualizations — including a live **Sales & Payments demo dashboard**.
+An AI-powered data visualization **library** combining **GitHub Copilot (gpt-4o)** with **D3.js**, **React**, **pandas**, and **FastAPI** to automatically analyze datasets, infer multi-table relationships, suggest optimal chart types, and render 14 fully interactive D3 visualizations — including a live **Sales & Payments demo dashboard**.
 
 ## Why jasus-viz-AI-lib
 
@@ -11,7 +11,8 @@ Most AI-driven visualization tools are closed exploration products — point-and
 | **Embeddable as Python modules**       | `schema_processor`, `data_engine`, and `ai_integration` are importable packages — drop them into any project                                               |
 | **Works fully offline**                | The `/demo` dashboard generates data client-side; zero AI key needed to see real charts                                                                    |
 | **Live D3 code alongside every chart** | Every chart ships with a collapsible code panel showing the exact D3 v7 source — built for learning and forking                                            |
-| **AI as an advisor, not a gatekeeper** | Claude recommends chart types and surfaces insights; you retain full rendering control via hand-crafted D3                                                 |
+| **AI as an advisor, not a gatekeeper** | Copilot recommends chart types and surfaces insights; you retain full rendering control via hand-crafted D3                                                 |
+| **Multi-table data model**             | Upload 2+ files and Copilot automatically infers FK relationships, renders an SVG table map, and recommends cross-table visualisations                      |
 | **Multi-model aware**                  | In-app model switcher documents Claude, GPT-4o, Gemini, and Ollama side-by-side with reasoning scores, cost, privacy ratings, and copy-paste code snippets |
 | **Minimal ops**                        | `uvicorn src.api:app` + `npm start` — no sandboxed execution environment, no identity layer, no cloud dependency                                           |
 | **Tested**                             | 26-test pytest suite covering schema parsing, data processing, and AI integration                                                                          |
@@ -24,7 +25,7 @@ dataviz-ai-studio/
 ├── src/
 │   ├── schema_processor/   # Schema parsing, relationship mapping, validation
 │   ├── data_engine/        # pandas processing, JSON generation, prompt building
-│   ├── ai_integration/     # Claude Sonnet client + response parser
+│   ├── ai_integration/     # GitHub Copilot + Gemini + Claude + OpenAI clients
 │   ├── api.py              # FastAPI backend (REST API)
 │   └── main.py             # CLI entry point
 ├── frontend/               # React + TypeScript + D3.js app
@@ -33,7 +34,8 @@ dataviz-ai-studio/
 │       ├── components/
 │       │   ├── demo/       # Sales & Payments demo charts + table
 │       │   ├── SalesPaymentDemo.tsx  # Live demo dashboard page
-│       │   ├── AIDashboard.tsx       # Claude-generated insights
+│       │   ├── AIDashboard.tsx       # Copilot-generated insights
+│       │   ├── CopilotPage.tsx       # Multi-file upload + relationship map + visual generator
 │       │   └── UploadPanel.tsx       # File upload interface
 │       └── hooks/          # useSalesPaymentData, useSampleData
 ├── data/
@@ -91,11 +93,12 @@ git clone https://github.com/suhasgr09/Jasus-Viz-AI-Lib
 # Open in GitHub Codespace — devcontainer auto-installs deps
 ```
 
-### 2. Set your Anthropic API key
+### 2. Set your GitHub token
 
 ```bash
 cp .env.example .env
-# Edit .env and set: ANTHROPIC_API_KEY=your_key_here
+# Edit .env and set: GITHUB_TOKEN=ghp_your_token_here
+# Generate a token at https://github.com/settings/tokens (scope: models:read)
 ```
 
 ### 3. Generate sample data
@@ -146,15 +149,39 @@ python src/main.py \
 
 ## API Endpoints
 
-| Method | Path                         | Description                                                       |
-| ------ | ---------------------------- | ----------------------------------------------------------------- |
-| GET    | `/health`                    | Health check                                                      |
-| POST   | `/api/insights`              | Claude dataset insights                                           |
-| POST   | `/api/recommendations`       | Chart recommendations from schema                                 |
-| POST   | `/api/viz-recommendation`    | Best chart for a data pattern                                     |
-| POST   | `/api/process`               | Upload CSV/JSON → viz JSON + Claude insights                      |
-| GET    | `/api/sample-data/{dataset}` | Pre-built sample data (`sales`/`employees`/`products`/`payments`) |
-| GET    | `/api/demo/sales-payments`   | Joined sales + payments with pre-computed summary stats           |
+| Method | Path                          | Description                                                       |
+| ------ | ----------------------------- | ----------------------------------------------------------------- |
+| GET    | `/health`                     | Health check                                                      |
+| POST   | `/api/insights`               | AI dataset insights (provider query param: `copilot`/`gemini`/…) |
+| POST   | `/api/recommendations`        | Chart recommendations from schema                                 |
+| POST   | `/api/viz-recommendation`     | Best chart for a data pattern                                     |
+| POST   | `/api/multi-table/analyze`    | Infer FK relationships between multiple table schemas (Copilot)   |
+| POST   | `/api/process`                | Upload CSV/JSON → viz JSON + Copilot insights                     |
+| GET    | `/api/sample-data/{dataset}`  | Pre-built sample data (`sales`/`employees`/`products`/`payments`) |
+| GET    | `/api/demo/sales-payments`    | Joined sales + payments with pre-computed summary stats           |
+
+## Multi-Table Analysis
+
+Upload two or more CSV/JSON files to the **GitHub Copilot** page (`/copilot`) to enable multi-table relationship detection:
+
+1. **Schema inference** — column types (numeric / categorical / datetime) are detected client-side immediately on upload.
+2. **Copilot relationship analysis** — the schemas are sent to `/api/multi-table/analyze` where Copilot identifies FK join columns, primary keys, relationship cardinality, and confidence scores.
+3. **SVG table map** — an interactive SVG canvas renders each table as a card with colour-coded column type badges, bezier curves connecting join columns, and a confidence percentage on each link.
+4. **Cross-table recommendations** — Copilot suggests the best chart types to visualise the joined dataset, including which tables each chart involves.
+5. **Per-table visuals** — the original per-file schema display and AI-driven chart grid remain accessible via the file tabs below the map.
+
+The multi-table analysis is non-blocking (fire-and-forget) so the per-file charts appear immediately while the relationship map loads in the background.
+
+## Configuration
+
+Edit `config/claude_config.yaml` to change model parameters for any provider.
+
+```yaml
+copilot:
+  model: "gpt-4o"
+  max_tokens: 4096
+  temperature: 0.3
+```
 
 ## Running Tests
 
@@ -179,7 +206,7 @@ claude:
 
 | Layer           | Technology                                                  |
 | --------------- | ----------------------------------------------------------- |
-| AI              | Anthropic Claude Sonnet (`claude-sonnet-4-5`)               |
+| AI              | GitHub Copilot (gpt-4o via GitHub Models API); Gemini, Claude, OpenAI also supported |
 | Backend         | Python 3.12, FastAPI, uvicorn, pandas 2.x, PyYAML, pydantic |
 | Frontend        | React 18, TypeScript, D3.js v7, react-router-dom v6, axios  |
 | Testing         | pytest (26 tests)                                           |
