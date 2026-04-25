@@ -13,3 +13,6 @@ frontend/build/
 *.log
 .DS_Store
 data/generated_json/*.json
+archive/fact_sales_denormalized.csv
+archive/fact_sales_normalized.csv
+archive/dim_customers.csv

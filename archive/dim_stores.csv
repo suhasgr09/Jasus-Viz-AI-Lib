@@ -1,0 +1,501 @@
+store_sk,store_id,store_name,store_type,store_location,store_manager_sk
+1,STR_00001,TechWorld,Large Malls / Complexes,Los Angeles,670
+2,STR_00002,Roomify,Small Stores / Shops,Baltimore,171
+3,STR_00003,EcoMart,Supermarkets ,Phoenix,12
+4,STR_00004,TechBazaar,Small Stores / Shops,Tampa,1450
+5,STR_00005,FurniCart,Large Malls / Complexes,San Antonio,175
+6,STR_00006,NeoStore,Supermarkets ,Raleigh,2
+7,STR_00007,FitNGo,Supermarkets ,Arlington,782
+8,STR_00008,DailyDeals,Supermarkets ,Kansas City,957
+9,STR_00009,QuickCart,Supermarkets ,Las Vegas,81
+10,STR_00010,NeoStore,Supermarkets ,Denver,1098
+11,STR_00011,ElectroPoint,Supermarkets ,Miami,450
+12,STR_00012,NextGenMart,Large Malls / Complexes,San Antonio,418
+13,STR_00013,ShopEase,Supermarkets ,Albuquerque,598
+14,STR_00014,DailyDeals,Large Malls / Complexes,El Paso,1366
+15,STR_00015,Roomify,Supermarkets ,Los Angeles,1696
+16,STR_00016,ActiveLife,Supermarkets ,San Antonio,1750
+17,STR_00017,DailyMart,Supermarkets ,Minneapolis,1104
+18,STR_00018,HomeHaven,Large Malls / Complexes,Louisville,516
+19,STR_00019,DailyMart,Supermarkets ,Fresno,1640
+20,STR_00020,WearWell,Supermarkets ,Long Beach,848
+21,STR_00021,FurniWorld,Small Stores / Shops,New Orleans,1515
+22,STR_00022,FabNest,Small Stores / Shops,Phoenix,278
+23,STR_00023,UrbanGear,Supermarkets ,San Jose,1826
+24,STR_00024,NeoStore,Small Stores / Shops,Louisville,38
+25,STR_00025,StyleStop,Small Stores / Shops,Milwaukee,341
+26,STR_00026,ClothCorner,Large Malls / Complexes,Virginia Beach,258
+27,STR_00027,FashionFiesta,Supermarkets ,Washington,419
+28,STR_00028,HomeEssence,Small Stores / Shops,Colorado Springs,751
+29,STR_00029,TechBazaar,Supermarkets ,Denver,1578
+30,STR_00030,FreshNest,Small Stores / Shops,Austin,1355
+31,STR_00031,TechBazaar,Supermarkets ,Indianapolis,990
+32,STR_00032,TechBazaar,Large Malls / Complexes,Fresno,1342
+33,STR_00033,Roomify,Large Malls / Complexes,San Jose,880
+34,STR_00034,CityMart,Supermarkets ,Atlanta,334
+35,STR_00035,CityMart,Large Malls / Complexes,Tulsa,1694
+36,STR_00036,TechBazaar,Large Malls / Complexes,Memphis,1339
+37,STR_00037,FashionFiesta,Large Malls / Complexes,Fresno,570
+38,STR_00038,NeoStore,Supermarkets ,San Jose,1306
+39,STR_00039,QuickCart,Large Malls / Complexes,Boston,1892
+40,STR_00040,StyleStop,Supermarkets ,Miami,749
+41,STR_00041,NextGenMart,Small Stores / Shops,Portland,456
+42,STR_00042,GrocerEase,Large Malls / Complexes,Virginia Beach,791
+43,STR_00043,StyleStop,Supermarkets ,New York,742
+44,STR_00044,MegaMart,Large Malls / Complexes,Dallas,783
+45,STR_00045,GearUp,Large Malls / Complexes,Tampa,559
+46,STR_00046,ShopEase,Small Stores / Shops,Los Angeles,23
+47,STR_00047,ValueDepot,Large Malls / Complexes,Tucson,158
+48,STR_00048,MegaDeals,Supermarkets ,Columbus,1235
+49,STR_00049,GoStyle,Supermarkets ,Washington,931
+50,STR_00050,FurniWorld,Supermarkets ,New York,1582
+51,STR_00051,NeoStore,Large Malls / Complexes,Charlotte,251
+52,STR_00052,DailyMart,Supermarkets ,Columbus,1797
+53,STR_00053,WearWell,Large Malls / Complexes,Philadelphia,1621
+54,STR_00054,ActiveLife,Large Malls / Complexes,Mesa,1441
+55,STR_00055,GadgetZone,Supermarkets ,Fresno,1368
+56,STR_00056,NovaMart,Large Malls / Complexes,Seattle,1389
+57,STR_00057,UrbanGear,Small Stores / Shops,New Orleans,547
+58,STR_00058,NeoStore,Supermarkets ,Mesa,1805
+59,STR_00059,NeoStore,Supermarkets ,Atlanta,1924
+60,STR_00060,VivaStores,Large Malls / Complexes,Milwaukee,517
+61,STR_00061,FurniWorld,Small Stores / Shops,El Paso,1656
+62,STR_00062,MegaDeals,Supermarkets ,Columbus,389
+63,STR_00063,SmartChoice,Supermarkets ,Minneapolis,1591
+64,STR_00064,TechWorld,Large Malls / Complexes,Fresno,1051
+65,STR_00065,NextGenMart,Large Malls / Complexes,El Paso,44
+66,STR_00066,StyleHub,Supermarkets ,Jacksonville,1418
+67,STR_00067,UrbanStyles,Supermarkets ,Detroit,1308
+68,STR_00068,DailyMart,Supermarkets ,Kansas City,651
+69,STR_00069,StyleStop,Supermarkets ,Boston,1166
+70,STR_00070,HomeCentre,Supermarkets ,Jacksonville,847
+71,STR_00071,EcoMart,Small Stores / Shops,Austin,772
+72,STR_00072,NeoStore,Small Stores / Shops,Los Angeles,1470
+73,STR_00073,ActiveLife,Large Malls / Complexes,Austin,553
+74,STR_00074,UrbanStyles,Large Malls / Complexes,Los Angeles,1322
+75,STR_00075,FreshFlow,Supermarkets ,Fort Worth,202
+76,STR_00076,HomeEssence,Large Malls / Complexes,Colorado Springs,612
+77,STR_00077,BudgetBuy,Large Malls / Complexes,Milwaukee,893
+78,STR_00078,UrbanGear,Small Stores / Shops,Houston,404
+79,STR_00079,ClothCorner,Large Malls / Complexes,Colorado Springs,466
+80,STR_00080,QuickCart,Small Stores / Shops,Jacksonville,943
+81,STR_00081,StyleStop,Large Malls / Complexes,Houston,219
+82,STR_00082,FreshNest,Small Stores / Shops,Raleigh,1244
+83,STR_00083,ClothCorner,Small Stores / Shops,Fort Worth,1637
+84,STR_00084,DailyMart,Large Malls / Complexes,New York,1378
+85,STR_00085,FashionFiesta,Small Stores / Shops,Columbus,889
+86,STR_00086,ElectroPoint,Supermarkets ,Tucson,899
+87,STR_00087,ModernMart,Large Malls / Complexes,Fort Worth,942
+88,STR_00088,WearWell,Large Malls / Complexes,Indianapolis,1775
+89,STR_00089,MegaMart,Small Stores / Shops,Arlington,1341
+90,STR_00090,CosmoMart,Small Stores / Shops,Phoenix,1944
+91,STR_00091,ClothCorner,Supermarkets ,Houston,1404
+92,STR_00092,DailyDeals,Small Stores / Shops,Phoenix,648
+93,STR_00093,GrocerEase,Small Stores / Shops,Arlington,393
+94,STR_00094,ClothCorner,Small Stores / Shops,Denver,1512
+95,STR_00095,FitNGo,Supermarkets ,Jacksonville,1787
+96,STR_00096,CityMart,Supermarkets ,Jacksonville,1917
+97,STR_00097,SmartBuy,Large Malls / Complexes,Miami,392
+98,STR_00098,HomeEssence,Large Malls / Complexes,Minneapolis,1561
+99,STR_00099,SportShack,Large Malls / Complexes,Detroit,1286
+100,STR_00100,WearWell,Large Malls / Complexes,Columbus,1883
+101,STR_00101,FabNest,Supermarkets ,San Francisco,1069
+102,STR_00102,GoStyle,Small Stores / Shops,Milwaukee,707
+103,STR_00103,CosmoMart,Small Stores / Shops,Sacramento,540
+104,STR_00104,CosmoMart,Supermarkets ,Virginia Beach,1658
+105,STR_00105,HyperMart,Supermarkets ,Baltimore,1551
+106,STR_00106,ZenHome,Large Malls / Complexes,Indianapolis,1488
+107,STR_00107,NeoStore,Small Stores / Shops,Sacramento,594
+108,STR_00108,FreshNest,Small Stores / Shops,Los Angeles,620
+109,STR_00109,Roomify,Small Stores / Shops,Oklahoma City,107
+110,STR_00110,Trendify,Small Stores / Shops,Washington,1057
+111,STR_00111,Roomify,Large Malls / Complexes,Seattle,536
+112,STR_00112,StyleStop,Small Stores / Shops,Washington,923
+113,STR_00113,CosmoMart,Large Malls / Complexes,Fort Worth,997
+114,STR_00114,SmartChoice,Large Malls / Complexes,Mesa,1422
+115,STR_00115,SmartBuy,Small Stores / Shops,Charlotte,427
+116,STR_00116,HomeCentre,Small Stores / Shops,Sacramento,264
+117,STR_00117,NextGenMart,Small Stores / Shops,Detroit,441
+118,STR_00118,ApplianceHub,Supermarkets ,Fresno,1089
+119,STR_00119,GrocerEase,Supermarkets ,Oklahoma City,667
+120,STR_00120,DailyMart,Small Stores / Shops,Minneapolis,611
+121,STR_00121,FabNest,Supermarkets ,Detroit,1583
+122,STR_00122,CosmoMart,Small Stores / Shops,San Antonio,1688
+123,STR_00123,CityMart,Small Stores / Shops,New Orleans,831
+124,STR_00124,UrbanStyles,Large Malls / Complexes,Mesa,1249
+125,STR_00125,ModernMart,Small Stores / Shops,Baltimore,933
+126,STR_00126,UrbanGear,Small Stores / Shops,Miami,310
+127,STR_00127,FitNGo,Small Stores / Shops,Austin,1558
+128,STR_00128,ValueDepot,Large Malls / Complexes,Kansas City,39
+129,STR_00129,WearWell,Small Stores / Shops,El Paso,348
+130,STR_00130,GadgetZone,Small Stores / Shops,Oakland,187
+131,STR_00131,MegaDeals,Supermarkets ,Milwaukee,314
+132,STR_00132,NextGenMart,Large Malls / Complexes,Jacksonville,626
+133,STR_00133,ActiveLife,Large Malls / Complexes,Detroit,22
+134,STR_00134,TechWorld,Small Stores / Shops,Nashville,1951
+135,STR_00135,ZenHome,Large Malls / Complexes,Seattle,1809
+136,STR_00136,Roomify,Small Stores / Shops,Denver,105
+137,STR_00137,TechBazaar,Small Stores / Shops,Virginia Beach,1984
+138,STR_00138,TechBazaar,Small Stores / Shops,Nashville,260
+139,STR_00139,FreshFlow,Large Malls / Complexes,San Diego,1115
+140,STR_00140,Roomify,Large Malls / Complexes,Louisville,1962
+141,STR_00141,FitNGo,Large Malls / Complexes,Philadelphia,1105
+142,STR_00142,Trendify,Large Malls / Complexes,El Paso,1162
+143,STR_00143,CityMart,Small Stores / Shops,Jacksonville,1835
+144,STR_00144,DailyMart,Large Malls / Complexes,Minneapolis,385
+145,STR_00145,HomeEssence,Supermarkets ,Minneapolis,698
+146,STR_00146,TechWorld,Large Malls / Complexes,Charlotte,1330
+147,STR_00147,ValueDepot,Supermarkets ,Minneapolis,54
+148,STR_00148,ClothCorner,Small Stores / Shops,Boston,1156
+149,STR_00149,WearWell,Large Malls / Complexes,Las Vegas,823
+150,STR_00150,NovaMart,Large Malls / Complexes,Las Vegas,67
+151,STR_00151,FreshNest,Small Stores / Shops,Austin,31
+152,STR_00152,StyleStop,Small Stores / Shops,Jacksonville,1073
+153,STR_00153,HomeHaven,Supermarkets ,Long Beach,1047
+154,STR_00154,ValueDepot,Large Malls / Complexes,Omaha,894
+155,STR_00155,HomeHaven,Large Malls / Complexes,Colorado Springs,1435
+156,STR_00156,SportShack,Supermarkets ,Kansas City,429
+157,STR_00157,SportShack,Small Stores / Shops,Fresno,552
+158,STR_00158,ModernMart,Supermarkets ,Denver,1486
+159,STR_00159,ElectroPoint,Large Malls / Complexes,Atlanta,1333
+160,STR_00160,UrbanGear,Supermarkets ,San Jose,813
+161,STR_00161,FurniSquare,Small Stores / Shops,Omaha,939
+162,STR_00162,FreshNest,Supermarkets ,New Orleans,1830
+163,STR_00163,QuickCart,Supermarkets ,Houston,1861
+164,STR_00164,FitNGo,Supermarkets ,Washington,703
+165,STR_00165,Roomify,Small Stores / Shops,Tulsa,1928
+166,STR_00166,TechBazaar,Supermarkets ,Tampa,786
+167,STR_00167,SmartChoice,Supermarkets ,Los Angeles,75
+168,STR_00168,HomeHaven,Large Malls / Complexes,Boston,841
+169,STR_00169,FurniSquare,Supermarkets ,Sacramento,822
+170,STR_00170,TechWorld,Small Stores / Shops,Baltimore,1866
+171,STR_00171,Roomify,Large Malls / Complexes,Albuquerque,353
+172,STR_00172,FitNGo,Supermarkets ,Louisville,347
+173,STR_00173,QuickCart,Supermarkets ,Washington,1056
+174,STR_00174,EcoMart,Small Stores / Shops,Tulsa,1870
+175,STR_00175,CosmoMart,Large Malls / Complexes,Oklahoma City,909
+176,STR_00176,FreshFlow,Small Stores / Shops,Dallas,1248
+177,STR_00177,FurniSquare,Large Malls / Complexes,Chicago,1302
+178,STR_00178,BudgetBuy,Large Malls / Complexes,Virginia Beach,868
+179,STR_00179,VivaStores,Large Malls / Complexes,Mesa,1327
+180,STR_00180,Roomify,Large Malls / Complexes,Colorado Springs,1956
+181,STR_00181,CityMart,Small Stores / Shops,New York,256
+182,STR_00182,QuickCart,Large Malls / Complexes,Fort Worth,769
+183,STR_00183,DailyDeals,Large Malls / Complexes,Tulsa,21
+184,STR_00184,NextGenMart,Small Stores / Shops,Atlanta,1764
+185,STR_00185,FreshNest,Supermarkets ,Sacramento,1973
+186,STR_00186,NeoStore,Large Malls / Complexes,Kansas City,1257
+187,STR_00187,FreshFlow,Large Malls / Complexes,Baltimore,1347
+188,STR_00188,FitNGo,Supermarkets ,San Antonio,420
+189,STR_00189,UrbanStyles,Supermarkets ,Arlington,62
+190,STR_00190,DailyDeals,Small Stores / Shops,New Orleans,954
+191,STR_00191,VivaStores,Large Malls / Complexes,Los Angeles,1380
+192,STR_00192,ValueDepot,Large Malls / Complexes,Atlanta,230
+193,STR_00193,DailyDeals,Supermarkets ,Washington,585
+194,STR_00194,DailyDeals,Small Stores / Shops,Memphis,1294
+195,STR_00195,SmartBuy,Small Stores / Shops,New Orleans,1540
+196,STR_00196,CityMart,Large Malls / Complexes,El Paso,1706
+197,STR_00197,MegaDeals,Large Malls / Complexes,Tucson,636
+198,STR_00198,CosmoMart,Large Malls / Complexes,Las Vegas,1739
+199,STR_00199,TrendWay,Supermarkets ,Memphis,1501
+200,STR_00200,ActiveLife,Small Stores / Shops,Raleigh,869
+201,STR_00201,MegaDeals,Small Stores / Shops,San Jose,1878
+202,STR_00202,NextGenMart,Large Malls / Complexes,Minneapolis,1049
+203,STR_00203,NextGenMart,Small Stores / Shops,Mesa,720
+204,STR_00204,ValueDepot,Small Stores / Shops,Miami,600
+205,STR_00205,ActiveLife,Supermarkets ,Baltimore,630
+206,STR_00206,TrendWay,Large Malls / Complexes,Colorado Springs,1127
+207,STR_00207,FashionFiesta,Small Stores / Shops,Tucson,1391
+208,STR_00208,ValueDepot,Large Malls / Complexes,Nashville,1668
+209,STR_00209,SmartChoice,Large Malls / Complexes,Charlotte,1150
+210,STR_00210,Trendify,Large Malls / Complexes,San Antonio,164
+211,STR_00211,GearUp,Supermarkets ,Tulsa,459
+212,STR_00212,StyleStop,Supermarkets ,Kansas City,1230
+213,STR_00213,HomeHaven,Large Malls / Complexes,Raleigh,1753
+214,STR_00214,HomeCentre,Supermarkets ,El Paso,857
+215,STR_00215,EcoMart,Supermarkets ,Long Beach,415
+216,STR_00216,SmartChoice,Large Malls / Complexes,Virginia Beach,671
+217,STR_00217,HomeEssence,Supermarkets ,Mesa,1768
+218,STR_00218,SmartChoice,Small Stores / Shops,Detroit,1529
+219,STR_00219,NeoStore,Small Stores / Shops,Los Angeles,298
+220,STR_00220,EcoMart,Small Stores / Shops,Nashville,337
+221,STR_00221,MegaMart,Supermarkets ,Baltimore,550
+222,STR_00222,HyperMart,Small Stores / Shops,San Diego,1026
+223,STR_00223,NeoStore,Small Stores / Shops,Memphis,451
+224,STR_00224,MegaDeals,Small Stores / Shops,Omaha,1400
+225,STR_00225,ActiveLife,Supermarkets ,Denver,1123
+226,STR_00226,Roomify,Small Stores / Shops,Atlanta,1774
+227,STR_00227,ModernMart,Large Malls / Complexes,Denver,1926
+228,STR_00228,StyleHub,Supermarkets ,New Orleans,1860
+229,STR_00229,NextGenMart,Supermarkets ,Arlington,1309
+230,STR_00230,QuickCart,Large Malls / Complexes,Austin,684
+231,STR_00231,MegaDeals,Large Malls / Complexes,Louisville,1867
+232,STR_00232,TechBazaar,Small Stores / Shops,Philadelphia,621
+233,STR_00233,FurniCart,Large Malls / Complexes,Indianapolis,1857
+234,STR_00234,FabNest,Large Malls / Complexes,Mesa,1665
+235,STR_00235,HomeHaven,Large Malls / Complexes,Austin,759
+236,STR_00236,ApplianceHub,Large Malls / Complexes,Tulsa,99
+237,STR_00237,ValueDepot,Supermarkets ,Seattle,1499
+238,STR_00238,FurniSquare,Supermarkets ,Las Vegas,1060
+239,STR_00239,FabNest,Large Malls / Complexes,Tulsa,1664
+240,STR_00240,MegaDeals,Large Malls / Complexes,Charlotte,721
+241,STR_00241,FitNGo,Small Stores / Shops,Baltimore,1103
+242,STR_00242,FurniWorld,Small Stores / Shops,Detroit,1152
+243,STR_00243,FurniSquare,Large Malls / Complexes,Chicago,763
+244,STR_00244,DailyDeals,Small Stores / Shops,Memphis,212
+245,STR_00245,SmartChoice,Supermarkets ,Fort Worth,1500
+246,STR_00246,UrbanStyles,Large Malls / Complexes,Louisville,541
+247,STR_00247,Roomify,Small Stores / Shops,Milwaukee,312
+248,STR_00248,WearWell,Large Malls / Complexes,Austin,1979
+249,STR_00249,TechBazaar,Small Stores / Shops,Jacksonville,1210
+250,STR_00250,UrbanGear,Small Stores / Shops,Tampa,1850
+251,STR_00251,BudgetBuy,Small Stores / Shops,Virginia Beach,1078
+252,STR_00252,Roomify,Small Stores / Shops,Las Vegas,159
+253,STR_00253,FitNGo,Small Stores / Shops,Fort Worth,1208
+254,STR_00254,VivaStores,Small Stores / Shops,Houston,339
+255,STR_00255,FurniWorld,Large Malls / Complexes,Louisville,330
+256,STR_00256,SmartChoice,Supermarkets ,Omaha,595
+257,STR_00257,FabNest,Supermarkets ,Albuquerque,1608
+258,STR_00258,SmartChoice,Small Stores / Shops,Colorado Springs,461
+259,STR_00259,FreshNest,Small Stores / Shops,Philadelphia,1864
+260,STR_00260,HyperMart,Large Malls / Complexes,San Francisco,489
+261,STR_00261,UrbanGear,Small Stores / Shops,Kansas City,70
+262,STR_00262,GearUp,Supermarkets ,Tucson,925
+263,STR_00263,SportShack,Large Malls / Complexes,San Antonio,305
+264,STR_00264,MegaMart,Large Malls / Complexes,Atlanta,1670
+265,STR_00265,StyleStop,Large Malls / Complexes,San Diego,1938
+266,STR_00266,SmartBuy,Small Stores / Shops,Baltimore,1731
+267,STR_00267,ActiveLife,Small Stores / Shops,Baltimore,199
+268,STR_00268,HomeCentre,Supermarkets ,Indianapolis,1429
+269,STR_00269,SmartBuy,Large Malls / Complexes,Chicago,1534
+270,STR_00270,QuickCart,Supermarkets ,Jacksonville,565
+271,STR_00271,WearWell,Small Stores / Shops,Tucson,1765
+272,STR_00272,Trendify,Small Stores / Shops,Oklahoma City,1980
+273,STR_00273,ActiveLife,Supermarkets ,New York,1369
+274,STR_00274,EcoMart,Supermarkets ,Nashville,1493
+275,STR_00275,SmartBuy,Large Malls / Complexes,Columbus,1958
+276,STR_00276,FurniCart,Large Malls / Complexes,Omaha,82
+277,STR_00277,ModernMart,Supermarkets ,Seattle,1299
+278,STR_00278,FurniSquare,Small Stores / Shops,Chicago,1304
+279,STR_00279,FitNGo,Supermarkets ,Arlington,394
+280,STR_00280,DailyDeals,Supermarkets ,Indianapolis,860
+281,STR_00281,NeoStore,Small Stores / Shops,Jacksonville,717
+282,STR_00282,CosmoMart,Small Stores / Shops,Seattle,1794
+283,STR_00283,HyperMart,Small Stores / Shops,New York,1904
+284,STR_00284,DailyDeals,Supermarkets ,Charlotte,1009
+285,STR_00285,ValueDepot,Small Stores / Shops,Indianapolis,1356
+286,STR_00286,SportShack,Small Stores / Shops,Fort Worth,1862
+287,STR_00287,ActiveLife,Supermarkets ,Atlanta,1743
+288,STR_00288,ShopEase,Supermarkets ,Fresno,1178
+289,STR_00289,UrbanGear,Small Stores / Shops,Tampa,1674
+290,STR_00290,Trendify,Supermarkets ,San Antonio,1041
+291,STR_00291,ActiveLife,Large Malls / Complexes,Portland,437
+292,STR_00292,EcoMart,Supermarkets ,Louisville,484
+293,STR_00293,FurniSquare,Large Malls / Complexes,Portland,842
+294,STR_00294,UrbanStyles,Small Stores / Shops,Los Angeles,1991
+295,STR_00295,ModernMart,Supermarkets ,Arlington,911
+296,STR_00296,TrendWay,Supermarkets ,Kansas City,1298
+297,STR_00297,HomeCentre,Large Malls / Complexes,Columbus,531
+298,STR_00298,StyleHub,Large Malls / Complexes,Raleigh,1096
+299,STR_00299,QuickCart,Supermarkets ,New Orleans,383
+300,STR_00300,HomeCentre,Small Stores / Shops,Long Beach,425
+301,STR_00301,FitNGo,Small Stores / Shops,Arlington,1641
+302,STR_00302,GearUp,Small Stores / Shops,Columbus,1144
+303,STR_00303,StyleHub,Small Stores / Shops,San Francisco,380
+304,STR_00304,ApplianceHub,Large Malls / Complexes,Charlotte,177
+305,STR_00305,FitNGo,Supermarkets ,Fort Worth,30
+306,STR_00306,NextGenMart,Small Stores / Shops,Sacramento,1625
+307,STR_00307,StyleHub,Small Stores / Shops,Los Angeles,896
+308,STR_00308,FurniCart,Large Malls / Complexes,Las Vegas,1454
+309,STR_00309,FurniCart,Small Stores / Shops,Indianapolis,1475
+310,STR_00310,ModernMart,Supermarkets ,Long Beach,1388
+311,STR_00311,FashionFiesta,Large Malls / Complexes,Seattle,1572
+312,STR_00312,HyperMart,Large Malls / Complexes,Tucson,482
+313,STR_00313,FabNest,Supermarkets ,San Jose,243
+314,STR_00314,HomeCentre,Supermarkets ,Portland,1267
+315,STR_00315,Trendify,Supermarkets ,Houston,453
+316,STR_00316,ShopEase,Large Malls / Complexes,Houston,1818
+317,STR_00317,MegaDeals,Small Stores / Shops,Portland,1202
+318,STR_00318,Roomify,Large Malls / Complexes,Raleigh,421
+319,STR_00319,NeoStore,Large Malls / Complexes,Long Beach,1562
+320,STR_00320,ZenHome,Small Stores / Shops,Columbus,469
+321,STR_00321,HyperMart,Small Stores / Shops,Las Vegas,1759
+322,STR_00322,Trendify,Large Malls / Complexes,Miami,359
+323,STR_00323,Roomify,Supermarkets ,Boston,1786
+324,STR_00324,SmartBuy,Small Stores / Shops,Phoenix,434
+325,STR_00325,HyperMart,Supermarkets ,Dallas,1331
+326,STR_00326,SportShack,Large Malls / Complexes,Tulsa,1528
+327,STR_00327,FurniCart,Large Malls / Complexes,Jacksonville,762
+328,STR_00328,GearUp,Large Malls / Complexes,San Francisco,863
+329,STR_00329,ActiveLife,Small Stores / Shops,Fresno,1048
+330,STR_00330,GearUp,Large Malls / Complexes,Omaha,765
+331,STR_00331,DailyDeals,Supermarkets ,Memphis,1550
+332,STR_00332,HomeEssence,Small Stores / Shops,Fresno,1058
+333,STR_00333,WearWell,Supermarkets ,Fort Worth,1116
+334,STR_00334,MegaDeals,Supermarkets ,Detroit,221
+335,STR_00335,DailyDeals,Supermarkets ,Boston,557
+336,STR_00336,ShopEase,Large Malls / Complexes,Indianapolis,821
+337,STR_00337,NeoStore,Supermarkets ,Fort Worth,338
+338,STR_00338,CityMart,Small Stores / Shops,Washington,167
+339,STR_00339,UrbanStyles,Supermarkets ,Tucson,679
+340,STR_00340,NovaMart,Small Stores / Shops,San Diego,1477
+341,STR_00341,ShopEase,Supermarkets ,Oakland,1177
+342,STR_00342,FurniSquare,Small Stores / Shops,Washington,1193
+343,STR_00343,HomeCentre,Small Stores / Shops,Indianapolis,840
+344,STR_00344,HomeEssence,Small Stores / Shops,Albuquerque,982
+345,STR_00345,WearWell,Supermarkets ,Fort Worth,1606
+346,STR_00346,FurniCart,Supermarkets ,Colorado Springs,1398
+347,STR_00347,EcoMart,Small Stores / Shops,Fresno,1384
+348,STR_00348,DailyDeals,Large Malls / Complexes,Seattle,1158
+349,STR_00349,UrbanGear,Large Malls / Complexes,Louisville,362
+350,STR_00350,MegaMart,Supermarkets ,Miami,846
+351,STR_00351,SmartChoice,Supermarkets ,Fresno,1430
+352,STR_00352,SportShack,Small Stores / Shops,Virginia Beach,1295
+353,STR_00353,ElectroPoint,Small Stores / Shops,Denver,476
+354,STR_00354,HyperMart,Small Stores / Shops,Kansas City,492
+355,STR_00355,BudgetBuy,Small Stores / Shops,Nashville,1906
+356,STR_00356,CityMart,Supermarkets ,Austin,571
+357,STR_00357,BudgetBuy,Large Malls / Complexes,San Diego,223
+358,STR_00358,GadgetZone,Supermarkets ,San Antonio,86
+359,STR_00359,FurniWorld,Supermarkets ,Atlanta,45
+360,STR_00360,ClothCorner,Supermarkets ,Tulsa,1374
+361,STR_00361,Trendify,Large Malls / Complexes,New York,760
+362,STR_00362,FurniCart,Large Malls / Complexes,San Francisco,1536
+363,STR_00363,FreshNest,Small Stores / Shops,Oklahoma City,1894
+364,STR_00364,ValueDepot,Large Malls / Complexes,Colorado Springs,1083
+365,STR_00365,ActiveLife,Small Stores / Shops,Chicago,134
+366,STR_00366,HomeHaven,Supermarkets ,Detroit,1146
+367,STR_00367,MegaMart,Small Stores / Shops,El Paso,1053
+368,STR_00368,NextGenMart,Small Stores / Shops,Houston,1859
+369,STR_00369,HomeCentre,Large Malls / Complexes,Fort Worth,1012
+370,STR_00370,QuickCart,Supermarkets ,Baltimore,1546
+371,STR_00371,TrendWay,Large Malls / Complexes,Colorado Springs,1617
+372,STR_00372,WearWell,Supermarkets ,Washington,1881
+373,STR_00373,QuickCart,Supermarkets ,San Antonio,406
+374,STR_00374,FashionFiesta,Large Malls / Complexes,New Orleans,386
+375,STR_00375,MegaDeals,Small Stores / Shops,El Paso,558
+376,STR_00376,FurniCart,Supermarkets ,Columbus,1981
+377,STR_00377,GrocerEase,Small Stores / Shops,Tucson,245
+378,STR_00378,ElectroPoint,Supermarkets ,Oklahoma City,343
+379,STR_00379,FurniSquare,Large Malls / Complexes,El Paso,1006
+380,STR_00380,ShopEase,Large Malls / Complexes,New Orleans,1185
+381,STR_00381,UrbanStyles,Large Malls / Complexes,Denver,141
+382,STR_00382,UrbanGear,Large Malls / Complexes,Detroit,665
+383,STR_00383,UrbanGear,Large Malls / Complexes,Dallas,1464
+384,STR_00384,UrbanStyles,Supermarkets ,San Francisco,1654
+385,STR_00385,SmartChoice,Large Malls / Complexes,Seattle,1371
+386,STR_00386,GoStyle,Supermarkets ,Jacksonville,645
+387,STR_00387,TrendWay,Supermarkets ,Austin,1411
+388,STR_00388,GearUp,Large Malls / Complexes,Fort Worth,1386
+389,STR_00389,TechBazaar,Large Malls / Complexes,Seattle,587
+390,STR_00390,CityMart,Large Malls / Complexes,Indianapolis,1236
+391,STR_00391,DailyMart,Small Stores / Shops,San Jose,834
+392,STR_00392,SportShack,Small Stores / Shops,Atlanta,1442
+393,STR_00393,ModernMart,Large Malls / Complexes,Denver,335
+394,STR_00394,QuickCart,Small Stores / Shops,Tampa,1276
+395,STR_00395,ActiveLife,Small Stores / Shops,Louisville,1373
+396,STR_00396,Trendify,Large Malls / Complexes,Columbus,562
+397,STR_00397,ModernMart,Small Stores / Shops,San Antonio,1182
+398,STR_00398,ValueDepot,Supermarkets ,Memphis,1597
+399,STR_00399,HomeCentre,Small Stores / Shops,Sacramento,1776
+400,STR_00400,HyperMart,Large Malls / Complexes,Long Beach,1948
+401,STR_00401,SportShack,Supermarkets ,San Francisco,930
+402,STR_00402,ElectroPoint,Large Malls / Complexes,Boston,1900
+403,STR_00403,Trendify,Supermarkets ,Las Vegas,1552
+404,STR_00404,FreshFlow,Large Malls / Complexes,Columbus,162
+405,STR_00405,VivaStores,Supermarkets ,Tulsa,1986
+406,STR_00406,BudgetBuy,Supermarkets ,Phoenix,1819
+407,STR_00407,HomeHaven,Supermarkets ,Baltimore,405
+408,STR_00408,HomeCentre,Supermarkets ,Washington,100
+409,STR_00409,FreshFlow,Small Stores / Shops,Austin,1586
+410,STR_00410,ModernMart,Small Stores / Shops,Tulsa,1820
+411,STR_00411,FitNGo,Supermarkets ,Boston,218
+412,STR_00412,NeoStore,Supermarkets ,Albuquerque,9
+413,STR_00413,SmartBuy,Large Malls / Complexes,Arlington,318
+414,STR_00414,DailyDeals,Small Stores / Shops,Philadelphia,1563
+415,STR_00415,QuickCart,Supermarkets ,Boston,93
+416,STR_00416,FitNGo,Supermarkets ,Louisville,1975
+417,STR_00417,FurniSquare,Supermarkets ,San Antonio,586
+418,STR_00418,FashionFiesta,Supermarkets ,Fresno,172
+419,STR_00419,NeoStore,Small Stores / Shops,New Orleans,745
+420,STR_00420,QuickCart,Supermarkets ,Seattle,197
+421,STR_00421,SmartChoice,Small Stores / Shops,Colorado Springs,1574
+422,STR_00422,TechWorld,Small Stores / Shops,Fresno,1522
+423,STR_00423,ApplianceHub,Supermarkets ,Sacramento,1788
+424,STR_00424,NeoStore,Small Stores / Shops,Dallas,412
+425,STR_00425,Roomify,Supermarkets ,Long Beach,601
+426,STR_00426,BudgetBuy,Supermarkets ,Albuquerque,853
+427,STR_00427,WearWell,Small Stores / Shops,Albuquerque,1198
+428,STR_00428,GearUp,Supermarkets ,Phoenix,229
+429,STR_00429,FurniWorld,Small Stores / Shops,Philadelphia,1824
+430,STR_00430,TechWorld,Small Stores / Shops,Albuquerque,1678
+431,STR_00431,SmartChoice,Supermarkets ,Las Vegas,1163
+432,STR_00432,StyleHub,Small Stores / Shops,New York,938
+433,STR_00433,ZenHome,Small Stores / Shops,Washington,321
+434,STR_00434,QuickCart,Large Malls / Complexes,Colorado Springs,1983
+435,STR_00435,ShopEase,Supermarkets ,Nashville,1200
+436,STR_00436,BudgetBuy,Supermarkets ,Seattle,780
+437,STR_00437,ModernMart,Small Stores / Shops,Kansas City,111
+438,STR_00438,ElectroPoint,Large Malls / Complexes,Portland,996
+439,STR_00439,FreshFlow,Small Stores / Shops,San Francisco,970
+440,STR_00440,StyleStop,Small Stores / Shops,Nashville,1929
+441,STR_00441,ShopEase,Large Malls / Complexes,Arlington,1192
+442,STR_00442,SmartBuy,Small Stores / Shops,Los Angeles,1357
+443,STR_00443,FurniWorld,Supermarkets ,Oakland,660
+444,STR_00444,FurniWorld,Supermarkets ,Virginia Beach,1061
+445,STR_00445,FurniCart,Large Malls / Complexes,San Antonio,870
+446,STR_00446,ClothCorner,Supermarkets ,Seattle,236
+447,STR_00447,ValueDepot,Large Malls / Complexes,Kansas City,315
+448,STR_00448,FabNest,Supermarkets ,New York,1677
+449,STR_00449,GrocerEase,Large Malls / Complexes,Fort Worth,947
+450,STR_00450,FabNest,Supermarkets ,Miami,507
+451,STR_00451,ActiveLife,Supermarkets ,Indianapolis,1016
+452,STR_00452,VivaStores,Supermarkets ,Detroit,96
+453,STR_00453,QuickCart,Supermarkets ,Oakland,1872
+454,STR_00454,ShopEase,Small Stores / Shops,Oakland,1614
+455,STR_00455,FurniWorld,Large Malls / Complexes,Seattle,643
+456,STR_00456,FurniSquare,Small Stores / Shops,Miami,346
+457,STR_00457,HyperMart,Supermarkets ,Seattle,26
+458,STR_00458,CosmoMart,Large Malls / Complexes,Boston,1184
+459,STR_00459,SmartChoice,Small Stores / Shops,Portland,3
+460,STR_00460,ActiveLife,Small Stores / Shops,Long Beach,185
+461,STR_00461,FreshNest,Supermarkets ,Kansas City,131
+462,STR_00462,HomeEssence,Supermarkets ,Las Vegas,514
+463,STR_00463,EcoMart,Large Malls / Complexes,Jacksonville,490
+464,STR_00464,NeoStore,Supermarkets ,Los Angeles,852
+465,STR_00465,FurniSquare,Supermarkets ,Tampa,422
+466,STR_00466,SmartChoice,Supermarkets ,Louisville,1789
+467,STR_00467,UrbanStyles,Large Malls / Complexes,Boston,1834
+468,STR_00468,UrbanGear,Supermarkets ,Indianapolis,452
+469,STR_00469,ZenHome,Large Malls / Complexes,Austin,1217
+470,STR_00470,DailyDeals,Supermarkets ,Minneapolis,616
+471,STR_00471,MegaDeals,Large Malls / Complexes,Tucson,1745
+472,STR_00472,HomeCentre,Large Malls / Complexes,Chicago,779
+473,STR_00473,HomeHaven,Large Malls / Complexes,Phoenix,1766
+474,STR_00474,TrendWay,Supermarkets ,Louisville,259
+475,STR_00475,HyperMart,Small Stores / Shops,El Paso,193
+476,STR_00476,SmartBuy,Small Stores / Shops,Raleigh,1256
+477,STR_00477,MegaDeals,Small Stores / Shops,Charlotte,483
+478,STR_00478,BudgetBuy,Small Stores / Shops,Tucson,874
+479,STR_00479,FitNGo,Small Stores / Shops,Detroit,1701
+480,STR_00480,HyperMart,Small Stores / Shops,Tampa,304
+481,STR_00481,DailyMart,Small Stores / Shops,Dallas,1921
+482,STR_00482,QuickCart,Supermarkets ,San Antonio,1149
+483,STR_00483,ActiveLife,Small Stores / Shops,Dallas,1585
+484,STR_00484,ApplianceHub,Supermarkets ,Omaha,978
+485,STR_00485,EcoMart,Supermarkets ,Raleigh,901
+486,STR_00486,HomeEssence,Supermarkets ,Denver,690
+487,STR_00487,TrendWay,Small Stores / Shops,Charlotte,929
+488,STR_00488,UrbanStyles,Large Malls / Complexes,Houston,1557
+489,STR_00489,FurniWorld,Large Malls / Complexes,New York,642
+490,STR_00490,FurniWorld,Small Stores / Shops,Indianapolis,534
+491,STR_00491,FurniCart,Small Stores / Shops,Long Beach,124
+492,STR_00492,FreshNest,Supermarkets ,Houston,91
+493,STR_00493,GrocerEase,Large Malls / Complexes,Charlotte,1035
+494,STR_00494,FitNGo,Small Stores / Shops,San Antonio,1732
+495,STR_00495,DailyMart,Supermarkets ,Tampa,1157
+496,STR_00496,GrocerEase,Small Stores / Shops,Long Beach,291
+497,STR_00497,ShopEase,Large Malls / Complexes,Virginia Beach,659
+498,STR_00498,GoStyle,Small Stores / Shops,Washington,512
+499,STR_00499,MegaDeals,Supermarkets ,Nashville,731
+500,STR_00500,DailyMart,Large Malls / Complexes,San Francisco,1778
