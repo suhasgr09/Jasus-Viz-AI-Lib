@@ -22,8 +22,11 @@ import OpenAIPage from './components/OpenAIPage';
 import APIKeysPage from './components/APIKeysPage';
 import UsageReportPage from './components/UsageReportPage';
 import UploadPanel from './components/UploadPanel';
+import UploadResultsPage from './components/UploadResultsPage';
 import SalesPaymentDemo from './components/SalesPaymentDemo';
 import ChartPage from './components/ChartPage';
+import CopilotPage from './components/CopilotPage';
+import { UploadProvider } from './context/UploadContext';
 import { CHART_SNIPPETS } from './utils/chartSnippets';
 import { logEvent } from './utils/analytics';
 import styles from './App.module.css';
@@ -49,14 +52,16 @@ const NAV_ITEMS = [
 ];
 
 const AI_NAV = [
-  { path: '/ai/gemini', label: '💎 Gemini',   section: 'AI Providers' },
-  { path: '/ai/claude', label: '🧠 Claude',   section: 'AI Providers' },
-  { path: '/ai/openai', label: '⚡ OpenAI',   section: 'AI Providers' },
-  { path: '/ai/keys',   label: '🔑 API Keys', section: 'AI Providers' },
+  { path: '/ai/gemini',  label: '💎 Gemini',         section: 'AI Providers' },
+  { path: '/ai/claude',  label: '🧠 Claude',         section: 'AI Providers' },
+  { path: '/ai/openai',  label: '⚡ OpenAI',         section: 'AI Providers' },
+  { path: '/ai/copilot', label: '🤖 Copilot',        section: 'AI Providers' },
+  { path: '/ai/keys',    label: '🔑 API Keys',       section: 'AI Providers' },
 ];
 
 const ANALYTICS_NAV = [
-  { path: '/report', label: '📊 Usage Report', section: 'Analytics' },
+  { path: '/report',          label: '📊 Usage Report',    section: 'Analytics' },
+  { path: '/upload-results',  label: '📂 Upload Results',  section: 'Analytics' },
 ];
 
 const sectionDivider: React.CSSProperties = {
@@ -84,6 +89,7 @@ function TrackPageViews() {
 export default function App() {
   return (
     <BrowserRouter>
+      <UploadProvider>
       <TrackPageViews />
       <div className={styles.shell}>
         <aside className={styles.sidebar}>
@@ -158,14 +164,17 @@ export default function App() {
             {/* ── AI Provider pages ── */}
             <Route path="/ai/gemini" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><GeminiPage /></div>} />
             <Route path="/ai/claude" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><ClaudePage /></div>} />
-            <Route path="/ai/openai" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><OpenAIPage /></div>} />
-            <Route path="/ai/keys"   element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><APIKeysPage /></div>} />
+            <Route path="/ai/openai"  element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><OpenAIPage /></div>} />
+            <Route path="/ai/copilot" element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><CopilotPage /></div>} />
+            <Route path="/ai/keys"    element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><APIKeysPage /></div>} />
               {/* Analytics */}
-              <Route path="/report"     element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><UsageReportPage /></div>} />
+              <Route path="/report"         element={<div style={{ overflowY: 'auto', height: '100%', padding: 28 }}><UsageReportPage /></div>} />
+              <Route path="/upload-results"  element={<UploadResultsPage />} />
           </Routes>
           </div>
         </main>
       </div>
+      </UploadProvider>
     </BrowserRouter>
   );
 }
