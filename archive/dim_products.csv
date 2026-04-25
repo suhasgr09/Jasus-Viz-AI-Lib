@@ -1,0 +1,211 @@
+product_sk,product_id,product_name,category,brand,origin_location
+1,PROD_00001,Bravia X90J TV,Electronics,Sony,Kansas City
+2,PROD_00002,WH-1000XM4 Headphones,Electronics,Sony,San Francisco
+3,PROD_00003,PlayStation 5,Electronics,Sony,San Jose
+4,PROD_00004,4K Blu-ray Player,Electronics,Sony,Los Angeles
+5,PROD_00005,Noise Cancelling Earbuds,Electronics,Sony,Memphis
+6,PROD_00006,Smart Watch,Electronics,Sony,Charlotte
+7,PROD_00007,Bluetooth Speaker,Electronics,Sony,Indianapolis
+8,PROD_00008,Galaxy S21,Electronics,Samsung,Houston
+9,PROD_00009,Galaxy Tab S8,Electronics,Samsung,Sacramento
+10,PROD_00010,QLED 4K TV,Electronics,Samsung,San Jose
+11,PROD_00011,Smartwatch Active,Electronics,Samsung,Seattle
+12,PROD_00012,Galaxy Buds Pro,Electronics,Samsung,Arlington
+13,PROD_00013,Portable SSD,Electronics,Samsung,Seattle
+14,PROD_00014,Smart Fridge,Electronics,Samsung,Milwaukee
+15,PROD_00015,iPhone 14,Electronics,Apple,Raleigh
+16,PROD_00016,MacBook Air M2,Electronics,Apple,Virginia Beach
+17,PROD_00017,iPad Pro,Electronics,Apple,Oakland
+18,PROD_00018,Apple Watch Series 7,Electronics,Apple,Las Vegas
+19,PROD_00019,AirPods Pro,Electronics,Apple,Atlanta
+20,PROD_00020,HomePod Mini,Electronics,Apple,Long Beach
+21,PROD_00021,Magic Keyboard,Electronics,Apple,Colorado Springs
+22,PROD_00022,OLED TV,Electronics,LG,Indianapolis
+23,PROD_00023,LG Gram Laptop,Electronics,LG,Dallas
+24,PROD_00024,V60 ThinQ Smartphone,Electronics,LG,Tulsa
+25,PROD_00025,UltraGear Monitor,Electronics,LG,Virginia Beach
+26,PROD_00026,LG Tone Free Headphones,Electronics,LG,Houston
+27,PROD_00027,LG Smart Speaker,Electronics,LG,Oakland
+28,PROD_00028,LG UltraWide Monitor,Electronics,LG,Austin
+29,PROD_00029,Lumix GH5,Electronics,Panasonic,Milwaukee
+30,PROD_00030,Cordless Vacuum,Electronics,Panasonic,Oklahoma City
+31,PROD_00031,4K Blu-ray Player,Electronics,Panasonic,San Antonio
+32,PROD_00032,Smart Fridge,Electronics,Panasonic,Memphis
+33,PROD_00033,Portable Speaker,Electronics,Panasonic,Las Vegas
+34,PROD_00034,Panasonic Microwave,Electronics,Panasonic,San Diego
+35,PROD_00035,Soundbar,Electronics,Panasonic,Seattle
+36,PROD_00036,Front Load Washing Machine,Home Appliances,LG,Milwaukee
+37,PROD_00037,Smart Refrigerator,Home Appliances,LG,Virginia Beach
+38,PROD_00038,Microwave Oven,Home Appliances,LG,Virginia Beach
+39,PROD_00039,Dehumidifier,Home Appliances,LG,Columbus
+40,PROD_00040,Dishwasher,Home Appliances,LG,Mesa
+41,PROD_00041,Air Purifier,Home Appliances,LG,Fort Worth
+42,PROD_00042,Cordless Vacuum Cleaner,Home Appliances,LG,Atlanta
+43,PROD_00043,Double Door Fridge,Home Appliances,Whirlpool,Colorado Springs
+44,PROD_00044,Dishwasher 360,Home Appliances,Whirlpool,Charlotte
+45,PROD_00045,Top Load Washer,Home Appliances,Whirlpool,San Antonio
+46,PROD_00046,Air Cooler,Home Appliances,Whirlpool,San Antonio
+47,PROD_00047,Smart Air Fryer,Home Appliances,Whirlpool,Tampa
+48,PROD_00048,Washing Machine,Home Appliances,Whirlpool,San Antonio
+49,PROD_00049,Induction Cooktop,Home Appliances,Whirlpool,Detroit
+50,PROD_00050,Series 4 Dishwasher,Home Appliances,Bosch,Omaha
+51,PROD_00051,Built-in Oven,Home Appliances,Bosch,Columbus
+52,PROD_00052,Cooktop 700,Home Appliances,Bosch,Sacramento
+53,PROD_00053,Bosch Refrigerator,Home Appliances,Bosch,Baltimore
+54,PROD_00054,Washer Dryer,Home Appliances,Bosch,Phoenix
+55,PROD_00055,Smart Coffee Maker,Home Appliances,Bosch,Tucson
+56,PROD_00056,Dishwasher Detergent,Home Appliances,Bosch,Minneapolis
+57,PROD_00057,Convertible Refrigerator,Home Appliances,Samsung,Miami
+58,PROD_00058,Samsung Washing Machine,Home Appliances,Samsung,Mesa
+59,PROD_00059,Dishwasher,Home Appliances,Samsung,Raleigh
+60,PROD_00060,Dual Cook Oven,Home Appliances,Samsung,Atlanta
+61,PROD_00061,Smart Oven,Home Appliances,Samsung,Charlotte
+62,PROD_00062,Smart Air Fryer,Home Appliances,Samsung,Chicago
+63,PROD_00063,Food Processor,Home Appliances,Samsung,Sacramento
+64,PROD_00064,Top Load Washing Machine,Home Appliances,Haier,Albuquerque
+65,PROD_00065,Air Cooler,Home Appliances,Haier,Austin
+66,PROD_00066,Oven Toaster Grill,Home Appliances,Haier,Albuquerque
+67,PROD_00067,Deep Freezer,Home Appliances,Haier,Fort Worth
+68,PROD_00068,Dehumidifier,Home Appliances,Haier,Milwaukee
+69,PROD_00069,Water Purifier,Home Appliances,Haier,Las Vegas
+70,PROD_00070,Ice Maker,Home Appliances,Haier,Jacksonville
+71,PROD_00071,Air Max 90,Clothing,Nike,San Antonio
+72,PROD_00072,Dri-FIT T-Shirt,Clothing,Nike,New Orleans
+73,PROD_00073,Running Shorts,Clothing,Nike,Memphis
+74,PROD_00074,Nike Jacket,Clothing,Nike,Columbus
+75,PROD_00075,Air Force 1 Sneakers,Clothing,Nike,San Diego
+76,PROD_00076,Compression Socks,Clothing,Nike,Jacksonville
+77,PROD_00077,Nike Hoodies,Clothing,Nike,New Orleans
+78,PROD_00078,Ultraboost 22,Clothing,Adidas,San Jose
+79,PROD_00079,Climalite Jacket,Clothing,Adidas,Fort Worth
+80,PROD_00080,Training Pants,Clothing,Adidas,Boston
+81,PROD_00081,Superstar Sneakers,Clothing,Adidas,Los Angeles
+82,PROD_00082,Adidas 3-Stripes,Clothing,Adidas,Minneapolis
+83,PROD_00083,Running Tights,Clothing,Adidas,Washington
+84,PROD_00084,Adidas Football Shirt,Clothing,Adidas,Dallas
+85,PROD_00085,Slim Fit Shirt,Clothing,Zara,Columbus
+86,PROD_00086,Casual Blazer,Clothing,Zara,Tampa
+87,PROD_00087,Chino Trousers,Clothing,Zara,Austin
+88,PROD_00088,Belted Coat,Clothing,Zara,Kansas City
+89,PROD_00089,Puffer Jacket,Clothing,Zara,Tampa
+90,PROD_00090,Patterned Dress,Clothing,Zara,El Paso
+91,PROD_00091,High-Waist Pants,Clothing,Zara,Phoenix
+92,PROD_00092,Clyde Sneakers,Clothing,Puma,Tulsa
+93,PROD_00093,Puma Tracksuit,Clothing,Puma,Austin
+94,PROD_00094,Training Shirt,Clothing,Puma,Omaha
+95,PROD_00095,Running Shoes,Clothing,Puma,Virginia Beach
+96,PROD_00096,Puma Hoodie,Clothing,Puma,Colorado Springs
+97,PROD_00097,Puma Socks,Clothing,Puma,Louisville
+98,PROD_00098,Puma Capri Pants,Clothing,Puma,Denver
+99,PROD_00099,501 Original Jeans,Clothing,Levi's,Memphis
+100,PROD_00100,Denim Jacket,Clothing,Levi's,Arlington
+101,PROD_00101,T-shirt Pack,Clothing,Levi's,Columbus
+102,PROD_00102,Chino Shorts,Clothing,Levi's,Dallas
+103,PROD_00103,Leather Belt,Clothing,Levi's,Las Vegas
+104,PROD_00104,Bootcut Jeans,Clothing,Levi's,Minneapolis
+105,PROD_00105,Graphic Tee,Clothing,Levi's,Sacramento
+106,PROD_00106,Corn Flakes,Groceries,Kellogg's,Phoenix
+107,PROD_00107,Choco Fills,Groceries,Kellogg's,Nashville
+108,PROD_00108,Muesli 5-in-1,Groceries,Kellogg's,Omaha
+109,PROD_00109,Froot Loops,Groceries,Kellogg's,Louisville
+110,PROD_00110,Rice Krispies,Groceries,Kellogg's,Oakland
+111,PROD_00111,Special K,Groceries,Kellogg's,Portland
+112,PROD_00112,Granola Bars,Groceries,Kellogg's,Minneapolis
+113,PROD_00113,Maggi Noodles,Groceries,Nestle,New Orleans
+114,PROD_00114,Everyday Milk Powder,Groceries,Nestle,El Paso
+115,PROD_00115,KitKat,Groceries,Nestle,Raleigh
+116,PROD_00116,Nescafé Instant Coffee,Groceries,Nestle,Memphis
+117,PROD_00117,Nestle Cornflakes,Groceries,Nestle,Indianapolis
+118,PROD_00118,La Vie Water,Groceries,Nestle,Omaha
+119,PROD_00119,Milk Chocolate,Groceries,Nestle,New Orleans
+120,PROD_00120,Butter 500g,Groceries,Amul,Chicago
+121,PROD_00121,Cheese Slices,Groceries,Amul,Atlanta
+122,PROD_00122,Taaza Milk,Groceries,Amul,Miami
+123,PROD_00123,Ice Cream,Groceries,Amul,Oakland
+124,PROD_00124,Curd,Groceries,Amul,San Francisco
+125,PROD_00125,Ghee,Groceries,Amul,Louisville
+126,PROD_00126,Chocolates,Groceries,Amul,Charlotte
+127,PROD_00127,Good Day Biscuits,Groceries,Britannia,Louisville
+128,PROD_00128,Milk Bikis,Groceries,Britannia,Las Vegas
+129,PROD_00129,Cheese Slice,Groceries,Britannia,Virginia Beach
+130,PROD_00130,Crackers,Groceries,Britannia,Portland
+131,PROD_00131,Bread,Groceries,Britannia,Indianapolis
+132,PROD_00132,Muffins,Groceries,Britannia,Phoenix
+133,PROD_00133,Little Hearts Biscuits,Groceries,Britannia,Sacramento
+134,PROD_00134,Tata Tea,Groceries,Tata,Los Angeles
+135,PROD_00135,Tata Salt,Groceries,Tata,Long Beach
+136,PROD_00136,Tata Water,Groceries,Tata,Chicago
+137,PROD_00137,Tata Coffee,Groceries,Tata,Tulsa
+138,PROD_00138,Tata Sampann Lentils,Groceries,Tata,Portland
+139,PROD_00139,Tata Coriander Powder,Groceries,Tata,Austin
+140,PROD_00140,Tata Sugar,Groceries,Tata,Chicago
+141,PROD_00141,MALM Bed Frame,Furniture,IKEA,Portland
+142,PROD_00142,BILLY Bookcase,Furniture,IKEA,Jacksonville
+143,PROD_00143,POÄNG Armchair,Furniture,IKEA,Tucson
+144,PROD_00144,KALLAX Shelf Unit,Furniture,IKEA,Dallas
+145,PROD_00145,LACK Coffee Table,Furniture,IKEA,Chicago
+146,PROD_00146,BESTÅ TV Unit,Furniture,IKEA,Memphis
+147,PROD_00147,HEMNES Dresser,Furniture,IKEA,Los Angeles
+148,PROD_00148,Recliner Sofa,Furniture,Urban Ladder,Tucson
+149,PROD_00149,Solid Wood Dining Table,Furniture,Urban Ladder,San Diego
+150,PROD_00150,Bedside Table,Furniture,Urban Ladder,Philadelphia
+151,PROD_00151,Recliner Chair,Furniture,Urban Ladder,Houston
+152,PROD_00152,Solid Wood Bed,Furniture,Urban Ladder,Colorado Springs
+153,PROD_00153,Storage Cabinet,Furniture,Urban Ladder,San Diego
+154,PROD_00154,Book Shelf,Furniture,Urban Ladder,Milwaukee
+155,PROD_00155,Office Desk,Furniture,Godrej Interio,San Francisco
+156,PROD_00156,Ergonomic Chair,Furniture,Godrej Interio,Austin
+157,PROD_00157,Wardrobe 3-Door,Furniture,Godrej Interio,Kansas City
+158,PROD_00158,Dining Table Set,Furniture,Godrej Interio,Tampa
+159,PROD_00159,Almirah,Furniture,Godrej Interio,Las Vegas
+160,PROD_00160,Sofa Set,Furniture,Godrej Interio,Jacksonville
+161,PROD_00161,Coffee Table,Furniture,Godrej Interio,Charlotte
+162,PROD_00162,Sofa Bed,Furniture,Home Centre,Long Beach
+163,PROD_00163,Coffee Table,Furniture,Home Centre,Houston
+164,PROD_00164,Side Table,Furniture,Home Centre,Washington
+165,PROD_00165,Teakwood Bed,Furniture,Home Centre,Austin
+166,PROD_00166,Wardrobe with Drawers,Furniture,Home Centre,Raleigh
+167,PROD_00167,Recliner,Furniture,Home Centre,Sacramento
+168,PROD_00168,Dining Chair,Furniture,Home Centre,Sacramento
+169,PROD_00169,Sofa Set,Furniture,Pepperfry,Kansas City
+170,PROD_00170,Teak Dining Table,Furniture,Pepperfry,Minneapolis
+171,PROD_00171,Leather Recliner,Furniture,Pepperfry,Chicago
+172,PROD_00172,Storage Cabinet,Furniture,Pepperfry,Miami
+173,PROD_00173,Book Shelf,Furniture,Pepperfry,Washington
+174,PROD_00174,Glass Coffee Table,Furniture,Pepperfry,Detroit
+175,PROD_00175,Bar Stools,Furniture,Pepperfry,Miami
+176,PROD_00176,Trekking Backpack,Sports & Outdoors,Decathlon,Los Angeles
+177,PROD_00177,Camping Tent,Sports & Outdoors,Decathlon,Oakland
+178,PROD_00178,Mountain Bike,Sports & Outdoors,Decathlon,Omaha
+179,PROD_00179,Yoga Mat,Sports & Outdoors,Decathlon,Houston
+180,PROD_00180,Tennis Racket,Sports & Outdoors,Decathlon,Kansas City
+181,PROD_00181,Badminton Shuttlecocks,Sports & Outdoors,Decathlon,Memphis
+182,PROD_00182,Football,Sports & Outdoors,Decathlon,Baltimore
+183,PROD_00183,Football,Sports & Outdoors,Nike,Fort Worth
+184,PROD_00184,Running Shoes,Sports & Outdoors,Nike,Louisville
+185,PROD_00185,Basketball,Sports & Outdoors,Nike,Louisville
+186,PROD_00186,Yoga Mat,Sports & Outdoors,Nike,San Jose
+187,PROD_00187,Track Pants,Sports & Outdoors,Nike,Denver
+188,PROD_00188,Football Boots,Sports & Outdoors,Nike,Tampa
+189,PROD_00189,Tennis Shoes,Sports & Outdoors,Nike,Tucson
+190,PROD_00190,Soccer Ball,Sports & Outdoors,Adidas,El Paso
+191,PROD_00191,Exercise Dumbbells,Sports & Outdoors,Adidas,Indianapolis
+192,PROD_00192,Yoga Block,Sports & Outdoors,Adidas,San Francisco
+193,PROD_00193,Running Shoes,Sports & Outdoors,Adidas,Raleigh
+194,PROD_00194,Tennis Racket,Sports & Outdoors,Adidas,Washington
+195,PROD_00195,Basketball,Sports & Outdoors,Adidas,Jacksonville
+196,PROD_00196,Water Bottle,Sports & Outdoors,Adidas,Baltimore
+197,PROD_00197,Sports Water Bottle,Sports & Outdoors,Puma,San Diego
+198,PROD_00198,Football,Sports & Outdoors,Puma,Virginia Beach
+199,PROD_00199,Running Shoes,Sports & Outdoors,Puma,Houston
+200,PROD_00200,Yoga Mat,Sports & Outdoors,Puma,Los Angeles
+201,PROD_00201,Tennis Shoes,Sports & Outdoors,Puma,Oklahoma City
+202,PROD_00202,Track Jacket,Sports & Outdoors,Puma,Baltimore
+203,PROD_00203,Socks,Sports & Outdoors,Puma,Dallas
+204,PROD_00204,Dumbbells,Sports & Outdoors,Reebok,Dallas
+205,PROD_00205,Resistance Bands,Sports & Outdoors,Reebok,San Antonio
+206,PROD_00206,Tennis Racket,Sports & Outdoors,Reebok,Kansas City
+207,PROD_00207,Running Shorts,Sports & Outdoors,Reebok,Las Vegas
+208,PROD_00208,Training Pants,Sports & Outdoors,Reebok,San Jose
+209,PROD_00209,Yoga Mat,Sports & Outdoors,Reebok,San Diego
+210,PROD_00210,Sweatshirt,Sports & Outdoors,Reebok,Omaha
