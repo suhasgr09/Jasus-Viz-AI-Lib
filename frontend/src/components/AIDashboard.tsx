@@ -43,18 +43,18 @@ export default function AIDashboard() {
         },
         region_revenue: byRegion,
       };
-      const res = await axios.post('/api/insights', { dataset_summary: summary });
+      const res = await axios.post('/api/insights?provider=copilot', { dataset_summary: summary });
       setResult(res.data);
       setBackendUp(true);
     } catch (e: any) {
       const detail: string = e.response?.data?.detail ?? '';
       if (!e.response) {
         setBackendUp(false);
-        setError('Backend is not running. Start it with:\n\ncd /workspaces/dataviz-ai-studio\nsource .venv/bin/activate\nuvicorn src.api:app --reload --port 8000');
-      } else if (detail.toLowerCase().includes('anthropic_api_key') || detail.toLowerCase().includes('api key')) {
-        setError('ANTHROPIC_API_KEY is not set.\n\nCopy .env.example to .env and add your key:\n\nANTHROPIC_API_KEY=sk-ant-...');
+        setError('Backend is not running. Start it with:\n\nuvicorn src.api:app --reload --port 8000');
+      } else if (detail.toLowerCase().includes('github_token') || detail.toLowerCase().includes('github token')) {
+        setError('GITHUB_TOKEN is not set.\n\nAdd it to your .env file:\n\nGITHUB_TOKEN=ghp_your_token_here\n\nThen restart the backend.');
       } else {
-        setError(detail || 'Claude analysis failed. Check the backend logs.');
+        setError(detail || 'GitHub Copilot analysis failed. Check the backend logs.');
       }
     } finally {
       setLoading(false);
@@ -65,7 +65,7 @@ export default function AIDashboard() {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div style={chartCard}>
         <div style={chartTitle}>AI-Annotated Dashboard</div>
-        <div style={chartSubtitle}>Claude Sonnet analyzes your sales data and generates insights</div>
+        <div style={chartSubtitle}>GitHub Copilot analyzes your sales data and generates insights</div>
 
         {/* Backend status badge */}
         <div style={{ marginTop: 10, display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -83,7 +83,7 @@ export default function AIDashboard() {
           opacity: backendUp === false ? 0.45 : 1,
           cursor: backendUp === false ? 'not-allowed' : 'pointer',
         }}>
-          {loading ? 'Analyzing…' : '🤖 Run Claude Analysis'}
+          {loading ? 'Analyzing…' : '🤖 Run Copilot Analysis'}
         </button>
 
         {error && (
@@ -100,8 +100,6 @@ export default function AIDashboard() {
         {backendUp === false && !error && (
           <div style={errorBox}>
             <p style={{ margin: '0 0 6px', color: '#f87171', fontSize: '0.85rem' }}>Backend is not running. Start it with:</p>
-            <code style={codeStyle}>cd /workspaces/dataviz-ai-studio</code>
-            <code style={codeStyle}>source .venv/bin/activate</code>
             <code style={codeStyle}>uvicorn src.api:app --reload --port 8000</code>
           </div>
         )}
