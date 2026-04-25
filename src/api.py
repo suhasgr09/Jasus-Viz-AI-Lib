@@ -53,9 +53,21 @@ class VizPatternRequest(BaseModel):
     pattern: dict[str, Any]
 
 
+class TableSummary(BaseModel):
+    name: str
+    columns: list[str] = []
+    col_types: dict[str, str] = {}
+    row_count: int = 0
+    sample_values: dict[str, list] = {}
+
+
+class MultiTableRequest(BaseModel):
+    tables: list[TableSummary]
+
+
 # ── AI client factory ──────────────────────────────────────────────────────
 
-Provider = Literal["gemini", "claude", "openai"]
+Provider = Literal["gemini", "claude", "openai", "copilot"]
 
 def _get_client(provider: Provider):
     cfg = _get_config()
@@ -68,6 +80,9 @@ def _get_client(provider: Provider):
     elif provider == "openai":
         from ai_integration.openai_client import OpenAIClient
         return OpenAIClient(cfg)
+    elif provider == "copilot":
+        from ai_integration.copilot_client import CopilotClient
+        return CopilotClient(cfg)
     raise ValueError(f"Unknown provider: {provider}")
 
 
@@ -113,6 +128,24 @@ def viz_recommendation(req: VizPatternRequest, provider: Provider = "gemini"):
         raise HTTPException(status_code=500, detail=str(exc))
 
 
+@app.post("/api/multi-table/analyze")
+def multi_table_analyze(req: MultiTableRequest, provider: Provider = "copilot"):
+    """Use AI to infer FK relationships between multiple table schemas and recommend cross-table visualizations."""
+    try:
+        client = _get_client(provider)
+        if not hasattr(client, "analyze_multi_table"):
+            raise HTTPException(
+                status_code=400,
+                detail=f"Provider '{provider}' does not support multi-table analysis.",
+            )
+        result = client.analyze_multi_table([t.model_dump() for t in req.tables])
+        return result
+    except EnvironmentError as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+    except RuntimeError as exc:
+        raise HTTPException(status_code=502, detail=str(exc))
+
+
 @app.post("/api/process")
 async def process_upload(
     file: UploadFile = File(...),
@@ -154,7 +187,7 @@ async def process_upload(
         try:
             client = _get_client(provider)  # type: ignore[arg-type]
             ai_insights = client.analyze(prompt_json)
-        except EnvironmentError as exc:
+        except (EnvironmentError, RuntimeError) as exc:
             ai_insights = {"error": str(exc)}
 
         return {"viz_data": viz_json, "ai_insights": ai_insights}
