@@ -20,6 +20,33 @@ Combines **GitHub Copilot (gpt-4o)**, **D3.js v7**, **React 18**, **pandas**, an
 
 ---
 
+## 📄 Paper
+
+This repository is the reference implementation for:
+
+> Gorur Ravi Kumar, S. (2026). *From Dashboards to Dialogues: Using AI and AI Agents to Build Self-Service Business Intelligence Reports.* Zenodo. https://doi.org/10.5281/zenodo.19801306
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19801306.svg)](https://doi.org/10.5281/zenodo.19801306)
+
+<details>
+<summary>BibTeX citation</summary>
+
+```bibtex
+@misc{goruravikumar2026dashboards,
+  author    = {Gorur Ravi Kumar, Suhas},
+  title     = {From Dashboards to Dialogues: Using AI and AI Agents 
+               to Build Self-Service Business Intelligence Reports},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.19801306},
+  url       = {https://doi.org/10.5281/zenodo.19801306}
+}
+```
+
+</details>
+
+---
+
 ## Why jasus-viz-AI-lib?
 
 Most AI-driven visualization tools are closed exploration products — point-and-click, black-box, hard to self-host, and impossible to embed in your own app. **jasus-viz-AI-lib is built as a library first.**
@@ -40,6 +67,7 @@ Most AI-driven visualization tools are closed exploration products — point-and
 
 ## Table of Contents
 
+- [Paper](#-paper)
 - [Architecture](#architecture)
 - [Quick Start](#quick-start)
 - [Environment Variables](#environment-variables)
