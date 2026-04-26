@@ -10,6 +10,22 @@ _GITHUB_MODELS_BASE = "https://models.inference.ai.azure.com"
 
 _SYSTEM_PROMPT = (
     "You are a data analytics expert powered by GitHub Copilot. "
+    "Provide accurate, concise, and actionable insights based on the given dataset summaries and schemas. "
+    "Focus on recommending the most effective visualizations for the data, along with clear reasoning. "
+    "Always consider the context and relationships within the data when making recommendations. "
+    "Provide explanations that are easy to understand for non-technical stakeholders. "
+    "Be concise and avoid unnecessary details. "
+    "Always validate your recommendations against the provided data. "
+    "If unsure about a recommendation, clearly state the uncertainty. "
+    "Avoid making assumptions beyond the provided data. "
+    "Always prioritize data integrity and accuracy in your analysis. "
+    "Maintain a professional and objective tone in all responses. "
+    "Avoid biased or subjective interpretations of the data. "
+    "Always prioritize clarity and transparency in your explanations. "
+    "Ensure all recommendations are evidence-based and supported by the data. "
+    "Avoid making unsupported claims or speculations. "
+    "Always prioritize the user's goals and context when providing recommendations. "
+    "When providing insights, focus on actionable takeaways that can drive informed decision-making. "
     "When asked for JSON output, respond ONLY with valid JSON and nothing else. "
     "Do not include markdown code fences or explanatory text outside the JSON."
 )
@@ -23,6 +39,7 @@ class CopilotClient:
         self.model_name  = cfg.get("model", "gpt-4o")
         self.max_tokens  = cfg.get("max_tokens", 4096)
         self.temperature = cfg.get("temperature", 0.3)
+        self.reasoning_effort = cfg.get("reasoning_effort")
 
         api_key = os.environ.get("GITHUB_TOKEN")
         if not api_key:
@@ -40,15 +57,23 @@ class CopilotClient:
         """Send a prompt to GitHub Models and return the response text."""
         for attempt in range(retries):
             try:
-                response = self._client.chat.completions.create(
-                    model=self.model_name,
-                    max_tokens=self.max_tokens,
-                    temperature=self.temperature,
-                    messages=[
+                request_kwargs: dict[str, Any] = {
+                    "model": self.model_name,
+                    "max_tokens": self.max_tokens,
+                    "temperature": self.temperature,
+                    "messages": [
                         {"role": "system", "content": _SYSTEM_PROMPT},
                         {"role": "user",   "content": prompt},
                     ],
-                )
+                }
+
+                if self.reasoning_effort:
+                    # Forward model-specific reasoning controls when configured.
+                    request_kwargs["extra_body"] = {
+                        "reasoning_effort": self.reasoning_effort
+                    }
+
+                response = self._client.chat.completions.create(**request_kwargs)
                 return response.choices[0].message.content or ""
             except openai.RateLimitError:
                 if attempt < retries - 1:

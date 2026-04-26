@@ -20,6 +20,7 @@ copilot:
   model: "gpt-4o"
   max_tokens: 4096
   temperature: 0.3
+  reasoning_effort: "xhigh"
 
 prompts:
   schema_analysis: |
