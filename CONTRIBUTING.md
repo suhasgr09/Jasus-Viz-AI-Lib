@@ -5,6 +5,7 @@ Thank you for your interest in contributing! jasus-viz-AI-lib is an open-source 
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
+- [Repository Security Model](#repository-security-model)
 - [Ways to Contribute](#ways-to-contribute)
 - [Development Setup](#development-setup)
 - [Branch & Commit Conventions](#branch--commit-conventions)
@@ -20,6 +21,33 @@ Thank you for your interest in contributing! jasus-viz-AI-lib is an open-source 
 ## Code of Conduct
 
 This project follows a simple rule: **treat everyone with respect**. Any form of harassment, discrimination, or exclusion will not be tolerated. If you experience or witness unacceptable behavior, please open a GitHub issue tagged `[conduct]` or email the maintainers directly.
+
+---
+
+## Repository Security Model
+
+This repo uses the following branch and access controls — please read before submitting a PR:
+
+| Rule | Detail |
+|------|--------|
+| **Default branch** | `Release` — all forks and clones start here |
+| **Protected branches** | `main` and `Release` — direct pushes are blocked for everyone |
+| **Pull requests required** | All changes to `main` or `Release` must go through a PR |
+| **Required approver** | Every PR requires approval from **@suhasgr09** (code owner) before merge |
+| **Stale review dismissal** | New commits on a PR invalidate previous approvals automatically |
+| **Force pushes** | Blocked on both protected branches |
+| **CODEOWNERS** | `.github/CODEOWNERS` maps all files (`*`) to `@suhasgr09` |
+
+### What this means for contributors
+
+1. **Fork from `Release`** — it is the default branch and always reflects the latest stable state.
+2. **Create your branch from `Release`**, not from `main`:
+   ```bash
+   git checkout -b feat/your-feature Release
+   ```
+3. **Open your PR targeting `Release`** (GitHub will pre-select this as it is the default branch).
+4. Your PR will be reviewed and merged by @suhasgr09. Do not expect self-merge or auto-merge.
+5. Never commit secrets, API keys, or tokens. The `.env` file is gitignored — use `.env.example` as your template.
 
 ---
 

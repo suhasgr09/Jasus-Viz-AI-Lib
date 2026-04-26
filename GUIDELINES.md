@@ -323,6 +323,22 @@ Always return HTTP 422 for validation errors and HTTP 500 for unexpected server 
 
 ## Security Guidelines
 
+### Repository access controls
+
+This repository enforces the following branch protection rules. All contributors must work within these constraints:
+
+| Control | Setting |
+|---|---|
+| **Default branch** | `Release` — forks and clones land here by default |
+| **Protected branches** | `main` and `Release` |
+| **Direct pushes** | Blocked on both protected branches |
+| **Merge method** | PR required; 1 approval from **@suhasgr09** mandatory |
+| **Code owner review** | Enforced via `.github/CODEOWNERS` (`*` → `@suhasgr09`) |
+| **Stale review dismissal** | Enabled — any new commit resets approval |
+| **Force pushes / deletions** | Blocked |
+
+Contributors must **branch from `Release`** and open PRs back to `Release`. The `main` branch is an internal integration branch managed by the maintainer.
+
 These are non-negotiable requirements for all code in this repository.
 
 ### Secrets management
