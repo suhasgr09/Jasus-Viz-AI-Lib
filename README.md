@@ -24,9 +24,9 @@ Combines **GitHub Copilot (gpt-4o)**, **D3.js v7**, **React 18**, **pandas**, an
 
 This repository is the reference implementation for:
 
-> Gorur Ravi Kumar, S. (2026). *From Dashboards to Dialogues: Using AI and AI Agents to Build Self-Service Business Intelligence Reports.* Zenodo. https://doi.org/10.5281/zenodo.19801306
+> Gorur Ravi Kumar, S. (2026). *From Dashboards to Dialogues: Using AI and AI Agents to Build Self-Service Business Intelligence Reports.* Zenodo. https://doi.org/10.5281/zenodo.19801307
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19801306.svg)](https://doi.org/10.5281/zenodo.19801306)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19801307.svg)](https://doi.org/10.5281/zenodo.19801307)
 
 <details>
 <summary>BibTeX citation</summary>
@@ -38,8 +38,8 @@ This repository is the reference implementation for:
                to Build Self-Service Business Intelligence Reports},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.19801306},
-  url       = {https://doi.org/10.5281/zenodo.19801306}
+  doi       = {10.5281/zenodo.19801307},
+  url       = {https://doi.org/10.5281/zenodo.19801307}
 }
 ```
 
