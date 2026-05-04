@@ -81,6 +81,8 @@ Most AI-driven visualization tools are closed exploration products — point-and
 - [Troubleshooting](#troubleshooting)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Security Policy](#security-policy)
 - [License](#license)
 
 ---
@@ -720,6 +722,16 @@ Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full contribution pro
 5. Push and open a Pull Request
 
 ---
+
+## Code of Conduct
+
+This project has adopted the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+---
+
+## Security Policy
+
+Please see our [Security Policy](SECURITY.md) for information on reporting security vulnerabilities.
 
 ## License
 
