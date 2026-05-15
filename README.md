@@ -1,8 +1,14 @@
 <div align="center">
 
-# jasus-viz-AI-lib
+# 📊 jasus-viz-AI-lib
 
-**An open-source AI-powered data visualization library**
+### An open-source AI-powered data visualization library
+
+Combines **GitHub Copilot (gpt-4o)** 🤖, **D3.js v7** 📈, **React 18** ⚛️, **pandas** 🐼, and **FastAPI** 🚀  
+to automatically analyze datasets, infer multi-table relationships, suggest optimal chart types,  
+and render **14 fully interactive D3 visualizations** with a live Sales & Payments demo dashboard.
+
+---
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-brightgreen.svg)](https://python.org)
@@ -11,10 +17,9 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688.svg)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18-61dafb.svg)](https://react.dev)
 [![D3.js](https://img.shields.io/badge/D3.js-v7-f9a03c.svg)](https://d3js.org)
+[![Codecov](https://img.shields.io/badge/tests-26%20passed-brightgreen.svg)](#running-tests)
 
-Combines **GitHub Copilot (gpt-4o)**, **D3.js v7**, **React 18**, **pandas**, and **FastAPI** to automatically analyze datasets, infer multi-table relationships, suggest optimal chart types, and render **14 fully interactive D3 visualizations** — with a live Sales & Payments demo dashboard included.
-
-[Quick Start](#quick-start) · [API Reference](#api-reference) · [D3 Charts](#visualizations) · [Multi-Table Analysis](#multi-table-analysis) · [Contributing](CONTRIBUTING.md) · [Guidelines](GUIDELINES.md)
+[🚀 Quick Start](#-quick-start) · [📚 Documentation](#-table-of-contents) · [🎨 Charts](#-visualizations) · [📖 Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -24,12 +29,12 @@ Combines **GitHub Copilot (gpt-4o)**, **D3.js v7**, **React 18**, **pandas**, an
 
 This repository is the reference implementation for:
 
-> Gorur Ravi Kumar, S. (2026). *From Dashboards to Dialogues: Using AI and AI Agents to Build Self-Service Business Intelligence Reports.* Zenodo. https://doi.org/10.5281/zenodo.19801307
+> Gorur Ravi Kumar, S. (2026). *From Dashboards to Dialogues: Using AI and AI Agents to Build Self-Service Business Intelligence Reports.* Zenodo.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19801307.svg)](https://doi.org/10.5281/zenodo.19801307)
 
 <details>
-<summary>BibTeX citation</summary>
+<summary>📋 BibTeX citation</summary>
 
 ```bibtex
 @misc{goruravikumar2026dashboards,
@@ -47,47 +52,49 @@ This repository is the reference implementation for:
 
 ---
 
-## Why jasus-viz-AI-lib?
+## 🌟 Why jasus-viz-AI-lib?
 
-Most AI-driven visualization tools are closed exploration products — point-and-click, black-box, hard to self-host, and impossible to embed in your own app. **jasus-viz-AI-lib is built as a library first.**
+Most AI-driven visualization tools are **closed exploration products** — point-and-click, black-box, hard to self-host.  
+**jasus-viz-AI-lib is built as a library first.**
 
-| Capability | Description |
-|---|---|
-| **Embeddable Python modules** | `schema_processor`, `data_engine`, and `ai_integration` are importable packages — drop them into any project |
-| **Works fully offline** | The `/demo` dashboard generates data client-side; zero AI key needed to see real charts |
-| **Live D3 source with every chart** | Every chart ships with a collapsible code panel showing the exact D3 v7 source — built for learning and forking |
-| **AI as an advisor, not a gatekeeper** | Copilot recommends chart types and surfaces insights; you retain full rendering control via hand-crafted D3 |
-| **Multi-table data model** | Upload 2+ files and Copilot automatically infers FK relationships, renders an SVG table map, and recommends cross-table visualisations |
-| **Multi-model aware** | Supports GitHub Copilot (gpt-4o), Google Gemini, Anthropic Claude, and OpenAI with a unified client interface |
-| **Minimal ops** | `uvicorn src.api:app` + `npm start` — no sandboxed execution, no identity layer, no cloud dependency |
-| **Fully tested** | 26-test pytest suite covering schema parsing, data processing, and AI integration |
-| **Full D3 rendering control** | Custom animations, force simulations, SVG draw-on effects, and tooltip styling that declarative charting specs cannot express |
-
----
-
-## Table of Contents
-
-- [Paper](#-paper)
-- [Architecture](#architecture)
-- [Quick Start](#quick-start)
-- [Environment Variables](#environment-variables)
-- [Visualizations](#visualizations)
-- [Multi-Table Analysis](#multi-table-analysis)
-- [API Reference](#api-reference)
-- [Using as a Python Library](#using-as-a-python-library)
-- [Configuration](#configuration)
-- [Running Tests](#running-tests)
-- [Tech Stack](#tech-stack)
-- [Troubleshooting](#troubleshooting)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Code of Conduct](#code-of-conduct)
-- [Security Policy](#security-policy)
-- [License](#license)
+| Feature | Description |
+|---------|-------------|
+| 🔌 **Embeddable** | Import `schema_processor`, `data_engine`, `ai_integration` directly into your projects |
+| 🌐 **Fully Offline** | Demo dashboard generates data client-side; zero API keys needed |
+| 💻 **Live D3 Source** | Every chart includes a collapsible code panel with the exact D3 v7 implementation |
+| 🤖 **AI as Advisor** | Copilot recommends charts; you control the rendering via D3 |
+| 🔗 **Multi-Table Support** | Upload 2+ CSVs; AI automatically infers FK relationships & suggests visualizations |
+| 🔄 **Multi-Model Ready** | Copilot, Gemini, Claude, or OpenAI — unified client interface |
+| 📦 **Minimal Ops** | `uvicorn` + `npm start` — no sandboxing, no identity layer, no cloud dependency |
+| ✅ **Fully Tested** | 26 tests covering schema, data processing, and AI integration |
+| 🎨 **Full D3 Control** | Custom animations, force simulations, SVG effects, styled tooltips |
 
 ---
 
-## Architecture
+## 📚 Table of Contents
+
+- [📄 Paper](#-paper)
+- [🌟 Why jasus-viz-AI-lib?](#-why-jasus-viz-ai-lib)
+- [🏗️ Architecture](#️-architecture)
+- [🚀 Quick Start](#-quick-start)
+- [⚙️ Environment Variables](#️-environment-variables)
+- [🎨 Visualizations](#-visualizations)
+- [🔗 Multi-Table Analysis](#-multi-table-analysis)
+- [🔌 API Reference](#-api-reference)
+- [📦 Using as a Python Library](#-using-as-a-python-library)
+- [🔧 Configuration](#-configuration)
+- [✅ Running Tests](#-running-tests)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🆘 Troubleshooting](#-troubleshooting)
+- [🗺️ Roadmap](#️-roadmap)
+- [🤝 Contributing](#-contributing)
+- [📜 Code of Conduct](#-code-of-conduct)
+- [🔐 Security Policy](#-security-policy)
+- [📄 License](#-license)
+
+---
+
+## 🏗️ Architecture
 
 ```
 jasus-viz-AI-lib/
@@ -178,25 +185,25 @@ JSONGenerator            ← viz_json (records + summaries)
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
-### Prerequisites
+### 📋 Prerequisites
 
-| Tool | Version |
-|------|---------|
-| Python | 3.12 or 3.13 |
-| Node.js | 22+ |
-| pip | latest |
-| npm | 10+ |
+| Tool | Version | Download |
+|------|---------|----------|
+| **Python** | 3.12 or 3.13 | [python.org](https://python.org) |
+| **Node.js** | 22+ | [nodejs.org](https://nodejs.org) |
+| **npm** | 10+ | Included with Node.js |
+| **Git** | Latest | [git-scm.com](https://git-scm.com) |
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/suhasgr09/Jasus-Viz-AI-Lib.git
 cd Jasus-Viz-AI-Lib
 ```
 
-### 2. Install Python dependencies
+### 2️⃣ Install Python dependencies
 
 ```bash
 python -m venv .venv
@@ -204,84 +211,91 @@ source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Install frontend dependencies
+### 3️⃣ Install frontend dependencies
 
 ```bash
 cd frontend && npm install && cd ..
 ```
 
-### 4. Configure environment variables
+### 4️⃣ Configure environment variables
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` and add your keys (only the providers you want to use — all are optional except the one you pick):
+Edit `.env` and add your AI provider keys (all optional — pick at least one):
 
 ```env
-# GitHub Copilot — recommended primary provider
-# Generate at https://github.com/settings/tokens (scope: models:read)
+# 🤖 GitHub Copilot (recommended)
+# Generate: https://github.com/settings/tokens (scope: models:read)
 GITHUB_TOKEN=ghp_your_token_here
 
-# Google Gemini — free tier available
+# 🔮 Google Gemini (free tier available)
 GEMINI_API_KEY=your_gemini_key
 
-# Anthropic Claude
+# 🧠 Anthropic Claude
 ANTHROPIC_API_KEY=sk-ant-your_key
 
-# OpenAI
+# 🟢 OpenAI GPT-4
 OPENAI_API_KEY=sk-your_key
 ```
 
-### 5. Generate sample data
+### 5️⃣ Generate sample data
 
 ```bash
 python data/generate_samples.py
-# Creates: sales (1000 rows), employees (200 rows), products (50 rows), payments (1000 rows)
+# ✅ Creates: sales, employees, products, payments datasets
 ```
 
-### 6. Start the backend
+### 6️⃣ Start the backend
 
 ```bash
 uvicorn src.api:app --reload --port 8000
 ```
 
-### 7. Start the frontend
+You should see:
+```
+INFO:     Uvicorn running on http://127.0.0.1:8000
+INFO:     Application startup complete
+```
+
+### 7️⃣ Start the frontend (new terminal)
 
 ```bash
 cd frontend && npm start
 ```
 
-Open **http://localhost:3000** — the sidebar gives access to all 14 charts and the demo dashboard.
+The browser opens to **http://localhost:3000** — use the sidebar to explore all charts.
 
-### App Routes
+### 🗺️ Main Routes
 
 | Route | Page | Notes |
 |-------|------|-------|
-| `/demo` | 🎯 Sales & Payments Demo | Start here — works without backend |
-| `/copilot` | GitHub Copilot Analysis | Multi-file upload + relationship map |
+| **`/demo`** | 🎯 Sales & Payments Demo | **← Start here!** Works without backend |
+| `/copilot` | GitHub Copilot Analysis | Multi-file upload + FK relationship map |
 | `/ai-dashboard` | AI Dashboard | Copilot insights on sample data |
-| `/upload` | File Upload | Single file → viz JSON |
-| `/ai-providers` | AI Provider Comparison | Models side-by-side |
+| `/upload` | File Upload | Single file → visualization JSON |
+| `/ai-providers` | AI Provider Comparison | Side-by-side model comparison |
 | `/api-keys` | API Keys Setup | Configure all provider tokens |
-| `/` | Bar Chart | |
-| `/line` | Line Chart | |
-| `/heatmap` | Heatmap Matrix | |
-| `/scatter` | Scatter Plot | |
-| `/boxplot` | Box Plot | |
-| `/treemap` | Treemap | |
-| `/sankey` | Sankey Diagram | |
-| `/sunburst` | Sunburst Chart | |
-| `/radar` | Radar Chart | |
-| `/force` | Force-Directed Graph | |
-| `/network` | Network Graph | |
-| `/choropleth` | Choropleth Map | |
-| `/parallel` | Parallel Coordinates | |
-| `/stacked-area` | Stacked Area Chart | |
+| **Charts** | | 14 interactive D3 visualizations |
+| `/` | Bar Chart | `scaleBand` + animated transitions |
+| `/line` | Line Chart | Time-series with SVG clipping |
+| `/heatmap` | Heatmap Matrix | Color quantize + cell hover |
+| `/scatter` | Scatter Plot | Brush selection + zoom |
+| `/boxplot` | Box Plot | Statistical quartiles |
+| `/treemap` | Treemap | Hierarchical rectangles |
+| `/sankey` | Sankey Diagram | Flow relationships |
+| `/sunburst` | Sunburst Chart | Radial hierarchy |
+| `/radar` | Radar Chart | Polar coordinates |
+| `/force` | Force-Directed Graph | Node + link simulation |
+| `/network` | Network Graph | Schema FK relationships |
+| `/choropleth` | Choropleth Map | Geographic heatmap |
+| `/parallel` | Parallel Coordinates | Multi-axis brushing |
+| `/stacked-area` | Stacked Area Chart | Time-series composition |
 
 ---
 
-## Environment Variables
+## ⚙️ Environment Variables
 
 | Variable | Provider | Required | Description |
 |----------|----------|----------|-------------|
@@ -294,9 +308,9 @@ Open **http://localhost:3000** — the sidebar gives access to all 14 charts and
 
 ---
 
-## Visualizations
+## 🎨 Visualizations
 
-### 14 Interactive D3 Charts
+### 📊 14 Interactive D3 Charts
 
 Every chart features D3 v7 hover interactions — animated highlights, opacity feedback, and styled floating tooltips with live data values. Each also ships with a collapsible **"Show Code"** panel displaying the exact D3 source.
 
@@ -333,7 +347,7 @@ A self-contained analytics dashboard built on 2,000 rows of synthetic data. Work
 
 ---
 
-## Multi-Table Analysis
+## 🔗 Multi-Table Analysis
 
 Upload **two or more** CSV/JSON files to the Copilot page (`/copilot`) to enable automatic data model detection:
 
@@ -423,7 +437,7 @@ POST /api/multi-table/analyze?provider=copilot
 
 ---
 
-## API Reference
+## 🔌 API Reference
 
 All endpoints return JSON. The `provider` query parameter accepts `copilot`, `gemini`, `claude`, or `openai`.
 
@@ -507,7 +521,7 @@ Returns combined sales + payments data with pre-computed KPI summary stats.
 
 ---
 
-## Using as a Python Library
+## 📦 Using as a Python Library
 
 All three backend packages are independently importable:
 
@@ -566,7 +580,7 @@ result = client.analyze_multi_table([
 
 ---
 
-## Configuration
+## 🔧 Configuration
 
 `config/claude_config.yaml` controls model parameters and prompt templates for all providers:
 
@@ -599,7 +613,7 @@ prompts:
 
 ---
 
-## Running Tests
+## ✅ Running Tests
 
 ```bash
 # Activate your virtual environment first
@@ -619,7 +633,7 @@ Expected output: **26 passed** across `test_ai_integration.py`, `test_data_engin
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology | Version |
 |-------|-----------|---------|
@@ -636,7 +650,7 @@ Expected output: **26 passed** across `test_ai_integration.py`, `test_data_engin
 
 ---
 
-## Troubleshooting
+## 🆘 Troubleshooting
 
 ### Backend won't start
 
@@ -693,7 +707,7 @@ These are pre-existing type definition issues in `@types/d3-dispatch` — they d
 
 ---
 
-## Roadmap
+## 🗺️ Roadmap
 
 - [ ] **Ollama / local LLM support** — run analysis fully offline with llama3 / mistral
 - [ ] **CSV column mapping UI** — manually override inferred column types before sending to AI
@@ -708,7 +722,7 @@ These are pre-existing type definition issues in `@types/d3-dispatch` — they d
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions of all kinds — bug fixes, new chart types, AI provider integrations, documentation improvements, and more.
 
@@ -723,17 +737,17 @@ Please read **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full contribution pro
 
 ---
 
-## Code of Conduct
+## 📜 Code of Conduct
 
 This project has adopted the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ---
 
-## Security Policy
+## 🔐 Security Policy
 
 Please see our [Security Policy](SECURITY.md) for information on reporting security vulnerabilities.
 
-## License
+## 📄 License
 
 Released under the **MIT License** — see [LICENSE](LICENSE) for details.
 
