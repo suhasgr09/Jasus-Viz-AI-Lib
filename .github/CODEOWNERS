@@ -1,2 +1,29 @@
-# All files require review and approval from @suhasgr09
+# CODEOWNERS file — Assign code reviews for pull requests
+# Every PR requires approval from the owners listed below
+
+# Root and configuration files
+*.md @suhasgr09
+*.yml @suhasgr09
+*.yaml @suhasgr09
+.github/ @suhasgr09
+
+# Python backend — main code owner
+src/ @suhasgr09
+tests/ @suhasgr09
+data/ @suhasgr09
+config/ @suhasgr09
+pyproject.toml @suhasgr09
+requirements.txt @suhasgr09
+
+# React frontend — main code owner
+frontend/ @suhasgr09
+
+# Security and governance
+SECURITY.md @suhasgr09
+CODE_OF_CONDUCT.md @suhasgr09
+CONTRIBUTING.md @suhasgr09
+GUIDELINES.md @suhasgr09
+LICENSE @suhasgr09
+
+# Default fallback for any uncovered files
 * @suhasgr09
